@@ -30,7 +30,6 @@
       padding-bottom: 60px;
     }
 
-    /* 顶部导航与控制栏 */
     .nav-header {
       position: sticky;
       top: 0;
@@ -78,7 +77,6 @@
       flex-wrap: wrap;
     }
 
-    /* 艾宾浩斯复习过滤器按钮 */
     .review-filter-btn {
       border: 1px solid #f59e0b;
       background: #fffbeb;
@@ -99,7 +97,6 @@
       box-shadow: 0 2px 6px rgba(245, 158, 11, 0.3);
     }
 
-    /* 音色选择器 */
     .voice-picker-wrap {
       display: flex;
       align-items: center;
@@ -118,13 +115,12 @@
       color: var(--text-main);
       outline: none;
       cursor: pointer;
-      max-width: 150px;
+      max-width: 160px;
       text-overflow: ellipsis;
       white-space: nowrap;
       overflow: hidden;
     }
 
-    /* 二级胶囊导航 */
     .tab-scroll-box {
       display: flex;
       gap: 8px;
@@ -165,7 +161,6 @@
     .tab-pane { display: none; }
     .tab-pane.active { display: block; }
 
-    /* ================= 艾宾浩斯复习底栏 ================= */
     .ebbinghaus-bar {
       margin-top: 14px;
       padding-top: 10px;
@@ -194,11 +189,7 @@
     .status-learning { background: #e0e7ff; color: #4338ca; }
     .status-mastered { background: #dcfce7; color: #15803d; }
 
-    .ebbinghaus-actions {
-      display: flex;
-      gap: 6px;
-    }
-
+    .ebbinghaus-actions { display: flex; gap: 6px; }
     .btn-ebh {
       border: none;
       padding: 4px 10px;
@@ -213,7 +204,6 @@
     .btn-remember { background: #f0fdf4; color: #16a34a; border: 1px solid #bbf7d0; }
     .btn-remember:hover { background: #dcfce7; }
 
-    /* 模块 1：词汇 */
     .vocab-wrapper {
       background: var(--card-bg);
       border-radius: 20px;
@@ -267,7 +257,6 @@
     .vocab-img-wrap { width: 84px; height: 84px; background-color: #f2f5f2; border-radius: 10px; flex-shrink: 0; overflow: hidden; }
     .vocab-img-wrap img { width: 100%; height: 100%; object-fit: cover; }
 
-    /* 模块 2：生活口语 */
     .daily-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
     .daily-card { background: var(--card-bg); border-radius: 16px; padding: 18px; border: 1px solid var(--border-light); }
     .scene-tag { display: inline-block; background: #ecfeff; color: #0891b2; font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 6px; margin-bottom: 10px; }
@@ -277,7 +266,6 @@
     .speaker-b { background: #e6fffa; align-self: flex-start; border-left: 3px solid #0d9488; }
     .nuance-tip { background: #fffbeb; border-radius: 8px; padding: 9px 12px; font-size: 0.85rem; color: #92400e; }
 
-    /* 模块 3：职场沟通 */
     .work-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
     .work-card { background: var(--card-bg); border-radius: 16px; padding: 20px; border: 1px solid var(--border-light); display: flex; flex-direction: column; gap: 12px; }
     .work-header { display: flex; justify-content: space-between; align-items: center; }
@@ -287,7 +275,6 @@
     .pro-good { background: #f0fdf4; border-left: 3px solid #22c55e; padding: 12px 14px; border-radius: 0 8px 8px 0; font-size: 0.95rem; font-weight: 600; color: #15803d; cursor: pointer; }
     .work-formula { background: #f8fafc; padding: 10px 14px; border-radius: 8px; font-size: 0.85rem; color: var(--text-sub); }
 
-    /* 模块 4：雅思口语 */
     .ielts-grid { display: grid; grid-template-columns: 1fr; gap: 18px; }
     .ielts-card { background: var(--card-bg); border-radius: 16px; padding: 20px; border: 1px solid var(--border-light); }
     .ielts-badge { display: inline-block; background: #e0f2fe; color: #0369a1; font-size: 0.8rem; font-weight: 700; padding: 3px 8px; border-radius: 6px; margin-bottom: 10px; }
@@ -296,7 +283,6 @@
     .chunk-highlight { background: #fef08a; color: #854d0e; font-weight: 600; padding: 1px 4px; border-radius: 4px; }
     .chunk-list { background: #fffbeb; border-left: 4px solid #f59e0b; padding: 10px 14px; border-radius: 0 8px 8px 0; font-size: 0.85rem; color: #92400e; }
 
-    /* 模块 5：商业破局 */
     .biz-grid { display: grid; grid-template-columns: 1fr; gap: 18px; }
     .biz-card { background: var(--card-bg); border-radius: 16px; padding: 20px; border: 1px solid var(--border-light); display: flex; flex-direction: column; gap: 10px; }
     .biz-tag-trap { display: inline-block; background: #fee2e2; color: var(--accent-red); font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; }
@@ -305,7 +291,6 @@
     .biz-response-box { background: #f8fafc; border-left: 3px solid var(--primary-green); padding: 12px 14px; font-size: 0.95rem; line-height: 1.55; cursor: pointer; }
     .biz-punchline { background: #1e293b; color: #f8fafc; padding: 10px 14px; border-radius: 8px; font-size: 0.9rem; font-weight: 700; margin-top: auto; }
 
-    /* 模块 6：TED 演说 */
     .ted-grid { display: grid; grid-template-columns: 1fr; gap: 18px; }
     .ted-card { background: var(--card-bg); border-radius: 16px; padding: 20px; border: 1px solid var(--border-light); }
     .ted-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; border-bottom: 1px solid #f3f4f6; padding-bottom: 8px; }
@@ -344,12 +329,10 @@
         </div>
 
         <div class="right-tools">
-          <!-- 艾宾浩斯一键复习过滤按钮 -->
           <button id="reviewFilterBtn" class="review-filter-btn" onclick="toggleReviewOnly()">
             🔔 今日待复习 (<span id="dueCount">0</span>)
           </button>
 
-          <!-- 音色选择 -->
           <div class="voice-picker-wrap">
             <label for="voiceSelect">🔊</label>
             <select id="voiceSelect" class="voice-select" onchange="onVoiceChange()">
@@ -359,7 +342,6 @@
         </div>
       </div>
 
-      <!-- 二级胶囊导航 -->
       <div class="tab-scroll-box">
         <button class="tab-chip active" data-stage="practical" onclick="switchTab('vocab')">词汇语块</button>
         <button class="tab-chip" data-stage="practical" onclick="switchTab('daily')">生活口语</button>
@@ -401,18 +383,13 @@
   </main>
 
   <script>
-    // ================= 艾宾浩斯复习算法配置 =================
-    // 阶梯天数：0天(当天), 1天, 2天, 4天, 7天, 15天, 30天(永久掌握)
     const EBBINGHAUS_DAYS = [0, 1, 2, 4, 7, 15, 30];
-    let isReviewOnly = false; // 是否开启“仅看今日待复习”模式
+    let isReviewOnly = false;
 
-    // 从 localStorage 读取记忆库
     function getMemoryStore() {
       try {
         return JSON.parse(localStorage.getItem('ebbinghaus_memory_v1') || '{}');
-      } catch (e) {
-        return {};
-      }
+      } catch (e) { return {}; }
     }
 
     function saveMemoryStore(store) {
@@ -420,7 +397,6 @@
       updateDueCount();
     }
 
-    // 生成每张卡片的唯一 Key
     function getCardKey(module, item, idx) {
       if (module === 'vocab') return `vocab_${item.word || idx}`;
       if (module === 'daily') return `daily_${item.scene || idx}`;
@@ -431,7 +407,6 @@
       return `${module}_${idx}`;
     }
 
-    // 获取单条卡片的艾宾浩斯状态
     function getCardEbhStatus(cardKey) {
       const store = getMemoryStore();
       const record = store[cardKey] || { level: 0, nextReview: 0 };
@@ -453,7 +428,6 @@
       return { record, isDue, badgeHtml };
     }
 
-    // 触发复习打卡
     function reviewCard(module, cardKey, remembered) {
       const store = getMemoryStore();
       const current = store[cardKey] || { level: 0, nextReview: 0 };
@@ -465,15 +439,13 @@
         const nextReviewTime = now + (daysToAdd * 24 * 60 * 60 * 1000);
         store[cardKey] = { level: nextLevel, nextReview: nextReviewTime, lastReview: now };
       } else {
-        // 遗忘：重置回 Lv.0 并设为当前立即到期
         store[cardKey] = { level: 0, nextReview: now, lastReview: now };
       }
 
       saveMemoryStore(store);
-      renderModule(module); // 重新渲染刷新状态
+      renderModule(module);
     }
 
-    // 生成卡片底部的艾宾浩斯操作栏 HTML
     function renderEbhBar(module, cardKey) {
       const { badgeHtml } = getCardEbhStatus(cardKey);
       return `
@@ -490,15 +462,22 @@
       `;
     }
 
-    // 更新顶部“今日待复习”全局角标
+    // 辅助函数：统一获取模块列表（兼容数组与对象）
+    function getModuleList(name) {
+      const data = appData[name];
+      if (!data) return [];
+      if (Array.isArray(data)) return data;
+      if (Array.isArray(data.items)) return data.items;
+      return [];
+    }
+
     function updateDueCount() {
       const store = getMemoryStore();
       const now = Date.now();
       let due = 0;
 
-      // 遍历所有已加载的数据模块
-      Object.keys(appData).forEach(modKey => {
-        const items = modKey === 'vocab' ? (appData.vocab.items || []) : (appData[modKey] || []);
+      ['vocab', 'daily', 'work', 'ielts', 'biz', 'ted'].forEach(modKey => {
+        const items = getModuleList(modKey);
         items.forEach((item, idx) => {
           const key = getCardKey(modKey, item, idx);
           const record = store[key];
@@ -511,12 +490,10 @@
       document.getElementById('dueCount').textContent = due;
     }
 
-    // 切换“仅看今日待复习”模式
     function toggleReviewOnly() {
       isReviewOnly = !isReviewOnly;
       const btn = document.getElementById('reviewFilterBtn');
       btn.classList.toggle('active', isReviewOnly);
-      // 重新渲染当前激活模块
       const activePane = document.querySelector('.tab-pane.active');
       if (activePane) {
         const modKey = activePane.id.replace('pane-', '');
@@ -524,7 +501,6 @@
       }
     }
 
-    // ================= 数据加载与渲染 =================
     const appData = {};
 
     async function loadModule(name) {
@@ -535,7 +511,7 @@
         renderModule(name);
         updateDueCount();
       } catch (err) {
-        console.warn(`未检测到 ./data/${name}.json 或格式有误`, err);
+        console.warn(`未检测到 ./data/${name}.json`, err);
         const container = document.getElementById(`${name}Container`);
         if (container) {
           container.innerHTML = `<div class="loading-hint">请在 GitHub 的 data/${name}.json 中上传内容</div>`;
@@ -544,23 +520,21 @@
     }
 
     function renderModule(name) {
-      const now = Date.now();
+      let items = getModuleList(name);
 
-      // 1. 词汇
+      // 1. 词汇模块
       if (name === 'vocab' && appData.vocab) {
-        document.getElementById('vocabCategory').textContent = appData.vocab.category || '词汇语块';
-        let items = appData.vocab.items || [];
+        const title = Array.isArray(appData.vocab) ? '词汇语块' : (appData.vocab.category || '词汇语块');
+        document.getElementById('vocabCategory').textContent = title;
         
         if (isReviewOnly) {
-          items = items.filter((item, idx) => {
-            const key = getCardKey('vocab', item, idx);
-            const { isDue } = getCardEbhStatus(key);
-            return isDue;
-          });
+          items = items.filter((item, idx) => getCardEbhStatus(getCardKey('vocab', item, idx)).isDue);
         }
 
-        if (items.length === 0 && isReviewOnly) {
-          document.getElementById('vocabContainer').innerHTML = `<div class="loading-hint">🎉 太棒了！当前模块今日已全部复习完毕！</div>`;
+        if (items.length === 0) {
+          document.getElementById('vocabContainer').innerHTML = isReviewOnly
+            ? `<div class="loading-hint">🎉 太棒了！词汇模块今日已全部复习完毕！</div>`
+            : `<div class="loading-hint">暂无词汇数据</div>`;
           return;
         }
 
@@ -573,11 +547,11 @@
                   <div class="word-row">
                     <span class="index-num">${item.id || (idx + 1)}</span>
                     <span class="word-title" onclick="playVoice('vocab', ${idx}, 'word')">${item.word} 🔊</span>
-                    <span class="word-meta">${item.pos}（${item.meaning}）</span>
+                    <span class="word-meta">${item.pos || ''}（${item.meaning || ''}）</span>
                   </div>
-                  <div class="phonetic">${item.phonetic}</div>
-                  <div class="sentence-en" onclick="playVoice('vocab', ${idx}, 'sentence')">${item.sentence} 🔊</div>
-                  <div class="sentence-zh">（${item.translation}）</div>
+                  <div class="phonetic">${item.phonetic || ''}</div>
+                  <div class="sentence-en" onclick="playVoice('vocab', ${idx}, 'sentence')">${item.sentence || ''} 🔊</div>
+                  <div class="sentence-zh">（${item.translation || ''}）</div>
                 </div>
                 ${item.image ? `<div class="vocab-img-wrap"><img src="${item.image}" alt="${item.word}" loading="lazy"></div>` : ''}
               </div>
@@ -589,12 +563,13 @@
 
       // 2. 生活口语
       if (name === 'daily' && appData.daily) {
-        let items = appData.daily || [];
         if (isReviewOnly) {
           items = items.filter((item, idx) => getCardEbhStatus(getCardKey('daily', item, idx)).isDue);
         }
-        if (items.length === 0 && isReviewOnly) {
-          document.getElementById('dailyContainer').innerHTML = `<div class="loading-hint">🎉 太棒了！当前模块今日已全部复习完毕！</div>`;
+        if (items.length === 0) {
+          document.getElementById('dailyContainer').innerHTML = isReviewOnly
+            ? `<div class="loading-hint">🎉 太棒了！生活口语今日已全部复习完毕！</div>`
+            : `<div class="loading-hint">暂无数据</div>`;
           return;
         }
 
@@ -622,12 +597,13 @@
 
       // 3. 职场沟通
       if (name === 'work' && appData.work) {
-        let items = appData.work || [];
         if (isReviewOnly) {
           items = items.filter((item, idx) => getCardEbhStatus(getCardKey('work', item, idx)).isDue);
         }
-        if (items.length === 0 && isReviewOnly) {
-          document.getElementById('workContainer').innerHTML = `<div class="loading-hint">🎉 太棒了！当前模块今日已全部复习完毕！</div>`;
+        if (items.length === 0) {
+          document.getElementById('workContainer').innerHTML = isReviewOnly
+            ? `<div class="loading-hint">🎉 太棒了！职场沟通今日已全部复习完毕！</div>`
+            : `<div class="loading-hint">暂无数据</div>`;
           return;
         }
 
@@ -656,12 +632,13 @@
 
       // 4. 雅思口语
       if (name === 'ielts' && appData.ielts) {
-        let items = appData.ielts || [];
         if (isReviewOnly) {
           items = items.filter((item, idx) => getCardEbhStatus(getCardKey('ielts', item, idx)).isDue);
         }
-        if (items.length === 0 && isReviewOnly) {
-          document.getElementById('ieltsContainer').innerHTML = `<div class="loading-hint">🎉 太棒了！当前模块今日已全部复习完毕！</div>`;
+        if (items.length === 0) {
+          document.getElementById('ieltsContainer').innerHTML = isReviewOnly
+            ? `<div class="loading-hint">🎉 太棒了！雅思口语今日已全部复习完毕！</div>`
+            : `<div class="loading-hint">暂无数据</div>`;
           return;
         }
 
@@ -689,12 +666,13 @@
 
       // 5. 商业破局
       if (name === 'biz' && appData.biz) {
-        let items = appData.biz || [];
         if (isReviewOnly) {
           items = items.filter((item, idx) => getCardEbhStatus(getCardKey('biz', item, idx)).isDue);
         }
-        if (items.length === 0 && isReviewOnly) {
-          document.getElementById('bizContainer').innerHTML = `<div class="loading-hint">🎉 太棒了！当前模块今日已全部复习完毕！</div>`;
+        if (items.length === 0) {
+          document.getElementById('bizContainer').innerHTML = isReviewOnly
+            ? `<div class="loading-hint">🎉 太棒了！商业破局今日已全部复习完毕！</div>`
+            : `<div class="loading-hint">暂无数据</div>`;
           return;
         }
 
@@ -719,12 +697,13 @@
 
       // 6. TED 演说
       if (name === 'ted' && appData.ted) {
-        let items = appData.ted || [];
         if (isReviewOnly) {
           items = items.filter((item, idx) => getCardEbhStatus(getCardKey('ted', item, idx)).isDue);
         }
-        if (items.length === 0 && isReviewOnly) {
-          document.getElementById('tedContainer').innerHTML = `<div class="loading-hint">🎉 太棒了！当前模块今日已全部复习完毕！</div>`;
+        if (items.length === 0) {
+          document.getElementById('tedContainer').innerHTML = isReviewOnly
+            ? `<div class="loading-hint">🎉 太棒了！TED演说今日已全部复习完毕！</div>`
+            : `<div class="loading-hint">暂无数据</div>`;
           return;
         }
 
@@ -759,7 +738,6 @@
       }
     }
 
-    // ================= 音频播放与音色选择 =================
     let availableVoices = [];
     let selectedVoice = null;
 
@@ -833,14 +811,12 @@
     }
 
     function playVoice(module, idx, field) {
-      if (!appData[module]) return;
-      let targetText = '';
-      if (module === 'vocab') targetText = appData.vocab.items[idx][field];
-      else targetText = appData[module][idx][field];
+      const items = getModuleList(module);
+      if (!items[idx]) return;
+      const targetText = items[idx][field];
       if (targetText) speakText(targetText);
     }
 
-    // Tab 导航切换
     function switchTab(tabKey) {
       document.querySelectorAll('.tab-chip').forEach(btn => btn.classList.remove('active'));
       document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
@@ -874,7 +850,6 @@
       if (firstVisible) firstVisible.click();
     }
 
-    // 初始化并发加载 6 大模块
     ['vocab', 'daily', 'work', 'ielts', 'biz', 'ted'].forEach(loadModule);
   </script>
 </body>
