@@ -1,1 +1,10 @@
-
+[
+  {
+    "topic": "推迟交付 / 向上管理",
+    "scenario": "当手头任务冲突，无法在领导要求的原定截止日前完成时：",
+    "directBad": "❌ 生硬拒绝：I can't finish this by tomorrow, I'm too busy.",
+    "proGood": "I'm currently prioritizing the month-end closing report. If this new task takes precedence, I can deliver it by Wednesday instead. Would that work?",
+    "proGoodZh": "我目前正在优先处理月末关账报表。如果这项新任务优先级更高，我可以在周三前交付。您看这样合适吗？",
+    "formula": "📌 话术公式：陈述当前高优事项 + 给出可替代交付时间 + 留出决策权"
+  }
+]
