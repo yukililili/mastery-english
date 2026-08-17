@@ -1,15 +1,502 @@
-{
-  "category": "挑选商品与日常购物",
-  "items": [
-    {
-      "id": 1,
-      "word": "fresh",
-      "pos": "adj.",
-      "meaning": "新鲜的",
-      "phonetic": "/freʃ/",
-      "sentence": "Is this fresh?",
-      "translation": "这个新鲜吗？",
-      "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=300&q=80"
-    }
-  ]
-}
+[
+  {
+    "id": 1,
+    "word": "DM",
+    "pos": "n.",
+    "meaning": "私信 / 设计手册",
+    "phonetic": "/ˌdiː ˈem/",
+    "sentence": "Slide into my DMs if you have any questions.",
+    "translation": "有任何问题随时给我发私信。",
+    "image": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=300&q=80"
+  },
+  {
+    "id": 2,
+    "word": "forte",
+    "pos": "n.",
+    "meaning": "长处 / 特长",
+    "phonetic": "/ˈfɔːrteɪ/",
+    "sentence": "Public speaking has never been my forte.",
+    "translation": "公开演讲从来都不是我的强项。",
+    "image": "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=300&q=80"
+  },
+  {
+    "id": 3,
+    "word": "rucksack",
+    "pos": "n.",
+    "meaning": "双肩背包 / 登山包",
+    "phonetic": "/ˈrʌksæk/",
+    "sentence": "Pack your rucksack, we leave at dawn.",
+    "translation": "收拾好背包，我们拂晓就出发。",
+    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=300&q=80"
+  },
+  {
+    "id": 4,
+    "word": "yomp",
+    "pos": "v.",
+    "meaning": "负重长途跋涉 / 远足",
+    "phonetic": "/jɑːmp/",
+    "sentence": "We yomped 20 miles across the hills.",
+    "translation": "我们背着装备徒步翻越了 20 英里的山路。",
+    "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=300&q=80"
+  },
+  {
+    "id": 5,
+    "word": "pay off",
+    "pos": "phrase",
+    "meaning": "取得回报 / 偿清",
+    "phonetic": "/peɪ ɔːf/",
+    "sentence": "All the late nights will eventually pay off.",
+    "translation": "所有的熬夜苦拼最终都会获得回报。",
+    "image": "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=300&q=80"
+  },
+  {
+    "id": 6,
+    "word": "idiomatic expression",
+    "pos": "n.",
+    "meaning": "地道习惯用语 / 成语",
+    "phonetic": "/ˌɪdiəˈmætɪk ɪkˈspreʃn/",
+    "sentence": "Mastering idiomatic expressions takes immersion.",
+    "translation": "掌握地道表达需要沉浸式的语言环境。",
+    "image": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=300&q=80"
+  },
+  {
+    "id": 7,
+    "word": "stoop low",
+    "pos": "phrase",
+    "meaning": "自贬身价 / 做出下作手段",
+    "phonetic": "/stuːp loʊ/",
+    "sentence": "I wouldn't stoop so low as to spread rumors.",
+    "translation": "我绝不至于自贬身份去造谣中伤。",
+    "image": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=300&q=80"
+  },
+  {
+    "id": 8,
+    "word": "go the extra mile",
+    "pos": "phrase",
+    "meaning": "加倍努力 / 做到极致",
+    "phonetic": "/ɡoʊ ði ˈekstrə maɪl/",
+    "sentence": "She always goes the extra mile for her clients.",
+    "translation": "对待客户，她总是竭尽全力做到极致。",
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=300&q=80"
+  },
+  {
+    "id": 9,
+    "word": "leave no stone unturned",
+    "pos": "phrase",
+    "meaning": "千方百计 / 穷尽一切办法",
+    "phonetic": "/liːv noʊ stoʊn ʌnˈtɜːrnd/",
+    "sentence": "We will leave no stone unturned to find a fix.",
+    "translation": "我们将想尽一切办法找到解决方案。",
+    "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=300&q=80"
+  },
+  {
+    "id": 10,
+    "word": "pull out all the stops",
+    "pos": "phrase",
+    "meaning": "全力以赴 / 毫无保留",
+    "phonetic": "/pʊl aʊt ɔːl ðə stɑːps/",
+    "sentence": "They pulled out all the stops for the product launch.",
+    "translation": "他们为这场新品发布会倾尽了全部资源。",
+    "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=300&q=80"
+  },
+  {
+    "id": 11,
+    "word": "stretched thin",
+    "pos": "adj.",
+    "meaning": "精疲力竭 / 人手资源紧张",
+    "phonetic": "/stretʃt θɪn/",
+    "sentence": "The team is stretched thin across multiple projects.",
+    "translation": "团队同时跟进多个项目，人手已经捉襟见肘。",
+    "image": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=300&q=80"
+  },
+  {
+    "id": 12,
+    "word": "canary in the coal mine",
+    "pos": "phrase",
+    "meaning": "早期预警 / 危险前兆",
+    "phonetic": "/kəˈneri ɪn ðə koʊl maɪn/",
+    "sentence": "Early turnover is the canary in the coal mine.",
+    "translation": "早期员工离职率升高是团队出现问题的预警信号。",
+    "image": "https://images.unsplash.com/photo-1508873696983-2df57046475b?w=300&q=80"
+  },
+  {
+    "id": 13,
+    "word": "hold a candle to",
+    "pos": "phrase",
+    "meaning": "比得上 / 望其项背",
+    "phonetic": "/hoʊld ə ˈkændl tuː/",
+    "sentence": "Nothing can hold a candle to mom's home cooking.",
+    "translation": "没有什么山珍海味能比得上妈妈做的家常菜。",
+    "image": "https://images.unsplash.com/photo-1517840901100-8179e982acb7?w=300&q=80"
+  },
+  {
+    "id": 14,
+    "word": "brace oneself",
+    "pos": "v.",
+    "meaning": "做好心理准备 / 严阵以待",
+    "phonetic": "/breɪs wʌnˈself/",
+    "sentence": "Brace yourself, this audit will be intense.",
+    "translation": "做好心理准备，这次审计会非常严格。",
+    "image": "https://images.unsplash.com/photo-1499209974431-9dac3ada0047?w=300&q=80"
+  },
+  {
+    "id": 15,
+    "word": "knock-on effect",
+    "pos": "n.",
+    "meaning": "连锁反应 / 连带影响",
+    "phonetic": "/ˈnɑːk ɑːn ɪˈfekt/",
+    "sentence": "The price hike had a knock-on effect on demand.",
+    "translation": "价格上涨对市场需求产生了直接的连锁反应。",
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=300&q=80"
+  },
+  {
+    "id": 16,
+    "word": "a stick in the mud",
+    "pos": "n.",
+    "meaning": "墨守成规的人 / 扫兴鬼",
+    "phonetic": "/ə stɪk ɪn ðə mʌd/",
+    "sentence": "Don't be a stick in the mud; join the party!",
+    "translation": "别这么扫兴嘛，一起过来嗨！",
+    "image": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=300&q=80"
+  },
+  {
+    "id": 17,
+    "word": "proof is in the pudding",
+    "pos": "phrase",
+    "meaning": "实践出真知 / 事实胜于雄辩",
+    "phonetic": "/pruːf ɪz ɪn ðə ˈpʊdɪŋ/",
+    "sentence": "It sounds good on paper, but the proof is in the pudding.",
+    "translation": "纸面上听着不错，但实际效果还得看落地检验。",
+    "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=300&q=80"
+  },
+  {
+    "id": 18,
+    "word": "talk is cheap",
+    "pos": "phrase",
+    "meaning": "空谈无益 / 拿结果说话",
+    "phonetic": "/tɔːk ɪz tʃiːp/",
+    "sentence": "Talk is cheap, show me the code.",
+    "translation": "光说不练没用，直接拿代码说话。",
+    "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=300&q=80"
+  },
+  {
+    "id": 19,
+    "word": "warm up to",
+    "pos": "phrase",
+    "meaning": "逐渐喜欢上 / 开始接受",
+    "phonetic": "/wɔːrm ʌp tuː/",
+    "sentence": "He slowly warmed up to the new workflow.",
+    "translation": "他逐渐开始适应并喜欢上这套新流程了。",
+    "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=300&q=80"
+  },
+  {
+    "id": 20,
+    "word": "ripple effect",
+    "pos": "n.",
+    "meaning": "涟漪效应 / 扩散影响",
+    "phonetic": "/ˈrɪpl ɪˈfekt/",
+    "sentence": "A single decision can create huge ripple effects.",
+    "translation": "一个看似微小的决定可能会产生巨大的连锁波及效应。",
+    "image": "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=300&q=80"
+  },
+  {
+    "id": 21,
+    "word": "a can of worms",
+    "pos": "n.",
+    "meaning": "棘手的大麻烦 / 一团乱麻",
+    "phonetic": "/ə kæn əv wɜːrmz/",
+    "sentence": "Revising this policy will open a can of worms.",
+    "translation": "修改这项政策恐怕会牵扯出一大堆复杂麻烦。",
+    "image": "https://images.unsplash.com/photo-1450133064473-71024230f91b?w=300&q=80"
+  },
+  {
+    "id": 22,
+    "word": "awe-inspiring",
+    "pos": "adj.",
+    "meaning": "令人叹为观止的 / 震撼人心的",
+    "phonetic": "/ˈɔː ɪnˌspaɪərɪŋ/",
+    "sentence": "The mountain view at sunrise was awe-inspiring.",
+    "translation": "日出时的雪山景色令人叹为观止。",
+    "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=300&q=80"
+  },
+  {
+    "id": 23,
+    "word": "a wake-up call",
+    "pos": "n.",
+    "meaning": "当头棒喝 / 警钟",
+    "phonetic": "/ə ˈweɪk ʌp kɔːl/",
+    "sentence": "The sudden system crash was a real wake-up call.",
+    "translation": "那次系统突发崩溃给我们所有人敲响了警钟。",
+    "image": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=300&q=80"
+  },
+  {
+    "id": 24,
+    "word": "lose bearings",
+    "pos": "phrase",
+    "meaning": "迷失方向 / 失去分寸",
+    "phonetic": "/luːz ˈberɪŋz/",
+    "sentence": "In the chaotic market, many traders lose their bearings.",
+    "translation": "在剧烈波动的市场中，很多交易员容易迷失方向。",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=300&q=80"
+  },
+  {
+    "id": 25,
+    "word": "make a dent",
+    "pos": "phrase",
+    "meaning": "取得初步成效 / 削减一大块",
+    "phonetic": "/meɪk ə dent/",
+    "sentence": "We finally made a dent in our backlog of tasks.",
+    "translation": "我们终于把积压已久的任务消灭了一大半。",
+    "image": "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=300&q=80"
+  }，
+  {
+    "id": 26,
+    "word": "blue in the face",
+    "pos": "phrase",
+    "meaning": "费尽口舌 / 徒劳无功",
+    "phonetic": "/bluː ɪn ðə feɪs/",
+    "sentence": "You can argue until you are blue in the face, but he won't budge.",
+    "translation": "你就算争得面红耳赤、费尽口舌，他也绝不会让步半步。",
+    "image": "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=300&q=80"
+  },
+  {
+    "id": 27,
+    "word": "have your cake and eat it too",
+    "pos": "phrase",
+    "meaning": "鱼与熊掌兼得 / 两全其美",
+    "phonetic": "/hæv jər keɪk ənd iːt ɪt tuː/",
+    "sentence": "You can't reduce working hours and demand higher pay; you can't have your cake and eat it too.",
+    "translation": "你不能既想减少工时又想拿更高薪酬，天底下没有两全其美的事。",
+    "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=300&q=80"
+  },
+  {
+    "id": 28,
+    "word": "take the pledge",
+    "pos": "phrase",
+    "meaning": "宣誓戒酒 / 立下坚定誓约",
+    "phonetic": "/teɪk ðə pledʒ/",
+    "sentence": "He decided to take the pledge and adopt a healthier lifestyle.",
+    "translation": "他下定决心立誓戒酒，开启更健康自律的生活方式。",
+    "image": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=300&q=80"
+  },
+  {
+    "id": 29,
+    "word": "take the plunge",
+    "pos": "phrase",
+    "meaning": "毅然决定 / 勇敢迈出关键一步",
+    "phonetic": "/teɪk ðə plʌndʒ/",
+    "sentence": "After debating for months, she finally took the plunge and started her firm.",
+    "translation": "犹豫了几个月后，她终于勇敢迈出那一步，创办了自己的公司。",
+    "image": "https://images.unsplash.com/photo-1507525428033-b723cf961d3e?w=300&q=80"
+  },
+  {
+    "id": 30,
+    "word": "shake things up",
+    "pos": "phrase",
+    "meaning": "大刀阔斧改革 / 打破现状",
+    "phonetic": "/ʃeɪk θɪŋz ʌp/",
+    "sentence": "The incoming director wants to shake things up across the team.",
+    "translation": "新上任的业务总监希望打破现状，对整个团队进行大刀阔斧的改革。",
+    "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=300&q=80"
+  },
+  {
+    "id": 31,
+    "word": "euthanize",
+    "pos": "v.",
+    "meaning": "对……施安乐死",
+    "phonetic": "/ˈjuːθənaɪz/",
+    "sentence": "The vet gently explained why they had to euthanize the ailing dog.",
+    "translation": "兽医温和地解释了为什么不得不对病重的爱犬实施安乐死。",
+    "image": "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=300&q=80"
+  },
+  {
+    "id": 32,
+    "word": "euthanasia",
+    "pos": "n.",
+    "meaning": "安乐死",
+    "phonetic": "/ˌjuːθəˈneɪʒə/",
+    "sentence": "The legal implications of euthanasia remain widely debated worldwide.",
+    "translation": "安乐死所涉及的法律与伦理问题在世界范围内仍饱受广泛探讨。",
+    "image": "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=300&q=80"
+  },
+  {
+    "id": 33,
+    "word": "slope",
+    "pos": "n.",
+    "meaning": "斜坡 / 倾斜度",
+    "phonetic": "/sloʊp/",
+    "sentence": "The cottage sits on a gentle slope overlooking the quiet valley.",
+    "translation": "小屋坐落在一处缓坡上，可以俯瞰整座宁静的山谷。",
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=300&q=80"
+  },
+  {
+    "id": 34,
+    "word": "over the top",
+    "pos": "adj.",
+    "meaning": "过火 / 夸张得离谱",
+    "phonetic": "/ˌoʊvər ðə ˈtɑːp/",
+    "sentence": "His reaction was completely over the top for such a minor hiccup.",
+    "translation": "面对这么一点小插曲，他的反应未免也太夸张过头了。",
+    "image": "https://images.unsplash.com/photo-1513151233558-d860c5398176?w=300&q=80"
+  },
+  {
+    "id": 35,
+    "word": "entrée",
+    "pos": "n.",
+    "meaning": "正餐主菜 / 入场资格",
+    "phonetic": "/ˈɑːntreɪ/",
+    "sentence": "For our entrée, we selected the pan-seared sea bass.",
+    "translation": "在主菜方面，我们挑选了香煎海鲈鱼。",
+    "image": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=300&q=80"
+  },
+  {
+    "id": 36,
+    "word": "pensive",
+    "pos": "adj.",
+    "meaning": "沉思的 / 若有所思的",
+    "phonetic": "/ˈpensɪv/",
+    "sentence": "She wore a pensive expression while staring at the draft report.",
+    "translation": "她凝视着报告草案，脸上浮现出若有所思的神情。",
+    "image": "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=300&q=80"
+  },
+  {
+    "id": 37,
+    "word": "fallaway",
+    "pos": "n.",
+    "meaning": "后仰动作 / 散开剥落",
+    "phonetic": "/ˈfɔːləweɪ/",
+    "sentence": "He drilled a clean fallaway jumper right before the buzzer sounded.",
+    "translation": "他在终场哨响前命中了一记干净利落的后仰跳投。",
+    "image": "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=300&q=80"
+  },
+  {
+    "id": 38,
+    "word": "alma mater",
+    "pos": "n.",
+    "meaning": "母校",
+    "phonetic": "/ˌælmə ˈmɑːtər/",
+    "sentence": "He returned to his alma mater to deliver the commencement speech.",
+    "translation": "他重返母校，在毕业典礼上发表了致辞。",
+    "image": "https://images.unsplash.com/photo-1562774053-701939374585?w=300&q=80"
+  },
+  {
+    "id": 39,
+    "word": "filet",
+    "pos": "n.",
+    "meaning": "无骨肉柳 / 菲力肉块",
+    "phonetic": "/fɪˈleɪ/",
+    "sentence": "The chef prepared a tender beef filet with roasted vegetables.",
+    "translation": "主厨精心烹制了一份配有烤时蔬的鲜嫩牛里脊菲力。",
+    "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=300&q=80"
+  },
+  {
+    "id": 40,
+    "word": "argon",
+    "pos": "n.",
+    "meaning": "氩（惰性气体）",
+    "phonetic": "/ˈɑːrɡɑːn/",
+    "sentence": "Argon gas is pumped between window panes to improve insulation.",
+    "translation": "双层窗户夹层中注入了氩气，用以显著提升隔热保温性能。",
+    "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=300&q=80"
+  },
+  {
+    "id": 41,
+    "word": "pitch in",
+    "pos": "phrase",
+    "meaning": "齐心协力 / 共同凑钱出力",
+    "phonetic": "/pɪtʃ ɪn/",
+    "sentence": "If everyone pitches in, we can wrap up the month-end closing early.",
+    "translation": "只要大家齐心协力分工协作，我们就能提前完成月末关账。",
+    "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=300&q=80"
+  },
+  {
+    "id": 42,
+    "word": "don't have the bandwidth",
+    "pos": "phrase",
+    "meaning": "抽不出多余精力 / 负荷已满",
+    "phonetic": "/doʊnt hæv ðə ˈbændwɪdθ/",
+    "sentence": "I'd love to help with the audit, but I simply don't have the bandwidth this week.",
+    "translation": "我很想协助这次审计，但我这周实在抽不出多余精力了。",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=300&q=80"
+  },
+  {
+    "id": 43,
+    "word": "rough patch",
+    "pos": "n.",
+    "meaning": "低谷期 / 艰难困境",
+    "phonetic": "/rʌf pætʃ/",
+    "sentence": "Our cash flow hit a rough patch, but sales are recovering steadily.",
+    "translation": "我们的现金流经历了一段短暂的艰难期，不过销售额正在稳步回升。",
+    "image": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=300&q=80"
+  },
+  {
+    "id": 44,
+    "word": "fill in for",
+    "pos": "phrase",
+    "meaning": "顶替 / 代理（某人的职务）",
+    "phonetic": "/fɪl ɪn fər/",
+    "sentence": "Could you fill in for me during the regional budget review?",
+    "translation": "区域预算复盘会议期间，你能帮我临时顶替代班一下吗？",
+    "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&q=80"
+  },
+  {
+    "id": 45,
+    "word": "dive right into",
+    "pos": "phrase",
+    "meaning": "直奔主题 / 立即全身心投入",
+    "phonetic": "/daɪv raɪt ˈɪntuː/",
+    "sentence": "Let's skip the small talk and dive right into the financial analysis.",
+    "translation": "咱们免去闲聊客套，直接切入核心财务指标的分析吧。",
+    "image": "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=300&q=80"
+  },
+  {
+    "id": 46,
+    "word": "cost an arm and a leg",
+    "pos": "phrase",
+    "meaning": "贵得离谱 / 代价极为高昂",
+    "phonetic": "/kɔːst ən ɑːrm ənd ə leɡ/",
+    "sentence": "Deploying dedicated on-premise servers will cost an arm and a leg.",
+    "translation": "采购并部署专属本地服务器的成本极其高昂。",
+    "image": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=300&q=80"
+  },
+  {
+    "id": 47,
+    "word": "pummel",
+    "pos": "v.",
+    "meaning": "接连重击 / 猛烈打击",
+    "phonetic": "/ˈpʌml/",
+    "sentence": "Market volatility continued to pummel regional tech equities.",
+    "translation": "剧烈的市场波动持续重创区域性科技板块股票。",
+    "image": "https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?w=300&q=80"
+  },
+  {
+    "id": 48,
+    "word": "last-minute thing",
+    "pos": "n.",
+    "meaning": "突发情况 / 临时紧急事项",
+    "phonetic": "/ˌlæst ˈmɪnɪt θɪŋ/",
+    "sentence": "I had to reschedule our call because a last-minute thing cropped up at the office.",
+    "translation": "我不得不推迟通话时间，因为办公室临时冒出了一件突发急事。",
+    "image": "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=300&q=80"
+  },
+  {
+    "id": 49,
+    "word": "itinerary",
+    "pos": "n.",
+    "meaning": "行程规划 / 路线表",
+    "phonetic": "/aɪˈtɪnəreri/",
+    "sentence": "The detailed itinerary includes route milestones and fuel stops.",
+    "translation": "这份详尽的行程表列明了沿途关键打卡点及加油补给站。",
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=300&q=80"
+  },
+  {
+    "id": 50,
+    "word": "weasel one's way out of",
+    "pos": "phrase",
+    "meaning": "耍滑头逃避 / 钻空子脱身",
+    "phonetic": "/ˈwiːzl wʌnz weɪ aʊt əv/",
+    "sentence": "He always attempts to weasel his way out of cross-departmental reviews.",
+    "translation": "每当遇到跨部门的对账复盘，他总是变着法子耍滑头推脱责任。",
+    "image": "https://images.unsplash.com/photo-1534447677768-be436bb09401?w=300&q=80"
+  }
+]
