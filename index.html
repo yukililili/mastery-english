@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mastery English · 沉浸式多维语言工作台</title>
+  <style>
+    :root {
+      --primary: #1e3a8a;
+      --primary-green: #2d6a4f;
+      --light-green: #40916c;
+      --bg-body: #f4f6f9;
+      --card-bg: #ffffff;
+      --text-main: #1f2937;
+      --text-sub: #4b5563;
+      --text-muted: #6b7280;
+      --border-dashed: #b7d5be;
+      --border-light: #e5e7eb;
+      --accent-red: #dc2626;
+      --accent-purple: #7c3aed;
+      --accent-amber: #d97706;
+      --accent-blue: #2563eb;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", sans-serif;
+      background-color: var(--bg-body);
+      color: var(--text-main);
+      padding-bottom: 60px;
+    }
+
+    /* 顶部自适应导航与控制区 */
+    .nav-header {
+      position: sticky;
+      top: 0;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-light);
+      z-index: 100;
+      padding: 10px 16px;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    /* 顶部顶栏：场景切换 + 音色选择器 */
+    .top-control-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .stage-switch {
+      display: flex;
+      gap: 6px;
+    }
+
+    .stage-btn {
+      border: none;
+      background: #e2e8f0;
+      padding: 5px 12px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      border-radius: 16px;
+      color: var(--text-sub);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .stage-btn.active {
+      background: #1e293b;
+      color: #ffffff;
+    }
+
+    /* 音色选择下拉框 */
+    .voice-picker-wrap {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: #f1f5f9;
+      padding: 4px 10px;
+      border-radius: 16px;
+      border: 1px solid var(--border-light);
+    }
+
+    .voice-picker-wrap label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--text-sub);
+      display: flex;
+      align-items: center;
+      gap: 3px;
+    }
+
+    .voice-select {
+      background: transparent;
+      border: none;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-main);
+      outline: none;
+      cursor: pointer;
+      max-width: 180px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    /* 二级胶囊导航 */
+    .tab-scroll-box {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 2px;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+      justify-content: flex-start;
+    }
+
+    .tab-scroll-box::-webkit-scrollbar {
+      display: none;
+    }
+
+    .tab-chip {
+      white-space: nowrap;
+      border: 1px solid var(--border-light);
+      background: #ffffff;
+      padding: 7px 15px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text-sub);
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.2s;
+      flex-shrink: 0;
+    }
+
+    .tab-chip.active {
+      background: var(--primary-green);
+      color: #ffffff;
+      border-color: var(--primary-green);
+      box-shadow: 0 2px 8px rgba(45, 106, 79, 0.2);
+    }
+
+    /* 主容器 */
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 20px auto 0;
+      padding: 0 16px;
+    }
+
+    .tab-pane { display: none; }
+    .tab-pane.active { display: block; }
+
+    /* 模块 1：词汇语块 */
+    .vocab-wrapper {
+      background: var(--card-bg);
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+    }
+
+    .category-badge {
+      display: inline-block;
+      background-color: var(--primary-green);
+      color: #ffffff;
+      font-size: 1.15rem;
+      font-weight: 700;
+      padding: 6px 18px;
+      border-radius: 999px;
+      margin-bottom: 20px;
+    }
+
+    .vocab-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .vocab-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px;
+      background: #fafbfa;
+      border-radius: 14px;
+      border: 1px dashed var(--border-dashed);
+      gap: 12px;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .vocab-item:hover {
+      background: #ffffff;
+      box-shadow: 0 4px 12px rgba(45, 106, 79, 0.08);
+      transform: translateY(-2px);
+    }
+
+    .vocab-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .word-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .index-num {
+      background-color: var(--primary-green);
+      color: #ffffff;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    .word-title {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--text-main);
+      cursor: pointer;
+    }
+
+    .word-title:hover { color: var(--primary-green); }
+
+    .word-meta {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--primary-green);
+    }
+
+    .phonetic {
+      font-size: 0.9rem;
+      color: var(--primary-green);
+      margin-left: 30px;
+    }
+
+    .sentence-en {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-top: 4px;
+      margin-left: 30px;
+      cursor: pointer;
+      line-height: 1.35;
+    }
+
+    .sentence-en:hover { color: var(--light-green); }
+
+    .sentence-zh {
+      font-size: 0.9rem;
+      color: var(--text-sub);
+      margin-left: 30px;
+    }
+
+    .vocab-img-wrap {
+      width: 84px;
+      height: 84px;
+      background-color: #f2f5f2;
+      border-radius: 10px;
+      flex-shrink: 0;
+      overflow: hidden;
+    }
+
+    .vocab-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* 模块 2：生活口语 */
+    .daily-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+
+    .daily-card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 18px;
+      border: 1px solid var(--border-light);
+    }
+
+    .scene-tag {
+      display: inline-block;
+      background: #ecfeff;
+      color: #0891b2;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    .dialogue-flow { display: flex; flex-direction: column; gap: 10px; margin-bottom: 12px; }
+
+    .dialogue-bubble {
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-size: 0.95rem;
+      line-height: 1.45;
+      cursor: pointer;
+    }
+
+    .speaker-a { background: #f1f5f9; align-self: flex-start; border-left: 3px solid #64748b; }
+    .speaker-b { background: #e6fffa; align-self: flex-start; border-left: 3px solid #0d9488; }
+    .nuance-tip { background: #fffbeb; border-radius: 8px; padding: 9px 12px; font-size: 0.85rem; color: #92400e; }
+
+    /* 模块 3：职场沟通 */
+    .work-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+
+    .work-card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 20px;
+      border: 1px solid var(--border-light);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .work-header { display: flex; justify-content: space-between; align-items: center; }
+    .work-badge { background: #f3e8ff; color: #7e22ce; font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 6px; }
+    .contrast-box { display: grid; grid-template-columns: 1fr; gap: 10px; }
+    .direct-bad { background: #fff1f2; border-left: 3px solid #f43f5e; padding: 10px 12px; border-radius: 0 8px 8px 0; font-size: 0.9rem; color: #9f1239; }
+    .pro-good { background: #f0fdf4; border-left: 3px solid #22c55e; padding: 12px 14px; border-radius: 0 8px 8px 0; font-size: 0.95rem; font-weight: 600; color: #15803d; cursor: pointer; }
+    .work-formula { background: #f8fafc; padding: 10px 14px; border-radius: 8px; font-size: 0.85rem; color: var(--text-sub); }
+
+    /* 模块 4：雅思口语 */
+    .ielts-grid { display: grid; grid-template-columns: 1fr; gap: 18px; }
+
+    .ielts-card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 20px;
+      border: 1px solid var(--border-light);
+    }
+
+    .ielts-badge { display: inline-block; background: #e0f2fe; color: #0369a1; font-size: 0.8rem; font-weight: 700; padding: 3px 8px; border-radius: 6px; margin-bottom: 10px; }
+    .prompt-box { font-size: 1.1rem; font-weight: 750; margin-bottom: 12px; cursor: pointer; }
+    .ielts-script { background: #f8fafc; padding: 14px; border-radius: 10px; line-height: 1.6; font-size: 0.95rem; margin-bottom: 12px; cursor: pointer; }
+    .chunk-highlight { background: #fef08a; color: #854d0e; font-weight: 600; padding: 1px 4px; border-radius: 4px; }
+    .chunk-list { background: #fffbeb; border-left: 4px solid #f59e0b; padding: 10px 14px; border-radius: 0 8px 8px 0; font-size: 0.85rem; color: #92400e; }
+
+    /* 模块 5：商业破局 */
+    .biz-grid { display: grid; grid-template-columns: 1fr; gap: 18px; }
+
+    .biz-card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 20px;
+      border: 1px solid var(--border-light);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .biz-tag-trap { display: inline-block; background: #fee2e2; color: var(--accent-red); font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; }
+    .biz-tag-strategy { display: inline-block; background: #ecfdf5; color: var(--primary-green); font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; }
+    .biz-question-box { background: #fff5f5; border-left: 3px solid var(--accent-red); padding: 10px 12px; font-size: 0.9rem; font-weight: 600; color: #991b1b; }
+    .biz-response-box { background: #f8fafc; border-left: 3px solid var(--primary-green); padding: 12px 14px; font-size: 0.95rem; line-height: 1.55; cursor: pointer; }
+    .biz-punchline { background: #1e293b; color: #f8fafc; padding: 10px 14px; border-radius: 8px; font-size: 0.9rem; font-weight: 700; margin-top: auto; }
+
+    /* 模块 6：TED 演说 */
+    .ted-grid { display: grid; grid-template-columns: 1fr; gap: 18px; }
+
+    .ted-card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 20px;
+      border: 1px solid var(--border-light);
+    }
+
+    .ted-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; border-bottom: 1px solid #f3f4f6; padding-bottom: 8px; }
+    .ted-speaker { font-weight: 800; color: var(--accent-red); }
+    .ted-split-layout { display: grid; grid-template-columns: 1fr; gap: 14px; }
+    .ted-script { background: #fdf2f2; border-left: 3px solid var(--accent-red); padding: 12px 14px; line-height: 1.55; font-size: 0.95rem; cursor: pointer; }
+    .analysis-section { background: #f9fafb; border-radius: 8px; padding: 12px; font-size: 0.85rem; }
+    .tag-badge { display: inline-block; font-size: 0.75rem; font-weight: 700; padding: 2px 6px; border-radius: 4px; margin-bottom: 4px; }
+    .tag-exp { background: #dbeafe; color: #1e40af; }
+    .tag-strat { background: #fef3c7; color: #92400e; }
+    .tag-trans { background: #dcfce7; color: #166534; }
+
+    /* 桌面端响应式优化 */
+    @media (min-width: 768px) {
+      .vocab-grid, .daily-grid, .work-grid, .ielts-grid, .biz-grid { grid-template-columns: repeat(2, 1fr); }
+      .ted-split-layout, .contrast-box { grid-template-columns: 1fr 1fr; }
+      .voice-select { max-width: 240px; }
+    }
+
+    @media (min-width: 1024px) {
+      .vocab-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 顶部导航与控制栏 -->
+  <header class="nav-header">
+    <div class="nav-container">
+      <div class="top-control-bar">
+        <!-- 一级场景过滤 -->
+        <div class="stage-switch">
+          <button class="stage-btn active" onclick="filterTabs('all')">全部</button>
+          <button class="stage-btn" onclick="filterTabs('practical')">日常实战</button>
+          <button class="stage-btn" onclick="filterTabs('advanced')">高阶进阶</button>
+        </div>
+
+        <!-- 音色选择器 -->
+        <div class="voice-picker-wrap">
+          <label for="voiceSelect">🔊 音色:</label>
+          <select id="voiceSelect" class="voice-select" onchange="onVoiceChange()">
+            <option value="">正在加载音色库...</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- 二级胶囊导航 -->
+      <div class="tab-scroll-box">
+        <button class="tab-chip active" data-stage="practical" onclick="switchTab('vocab')">词汇语块</button>
+        <button class="tab-chip" data-stage="practical" onclick="switchTab('daily')">生活口语</button>
+        <button class="tab-chip" data-stage="practical" onclick="switchTab('work')">职场沟通</button>
+        <button class="tab-chip" data-stage="advanced" onclick="switchTab('ielts')">雅思口语</button>
+        <button class="tab-chip" data-stage="advanced" onclick="switchTab('biz')">商业破局</button>
+        <button class="tab-chip" data-stage="advanced" onclick="switchTab('ted')">TED演说</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="pane-vocab" class="tab-pane active">
+      <div class="vocab-wrapper">
+        <div class="category-badge" id="vocabCategory">挑选商品与日常购物</div>
+        <div class="vocab-grid" id="vocabContainer"></div>
+      </div>
+    </section>
+
+    <section id="pane-daily" class="tab-pane">
+      <div class="daily-grid" id="dailyContainer"></div>
+    </section>
+
+    <section id="pane-work" class="tab-pane">
+      <div class="work-grid" id="workContainer"></div>
+    </section>
+
+    <section id="pane-ielts" class="tab-pane">
+      <div class="ielts-grid" id="ieltsContainer"></div>
+    </section>
+
+    <section id="pane-biz" class="tab-pane">
+      <div class="biz-grid" id="bizContainer"></div>
+    </section>
+
+    <section id="pane-ted" class="tab-pane">
+      <div class="ted-grid" id="tedContainer"></div>
+    </section>
+  </main>
+
+  <script>
+    // 6 大模块结构化数据源
+    const appData = {
+      vocab: {
+        category: "挑选商品与日常购物",
+        items: [
+          {
+            id: 1,
+            word: "fresh",
+            pos: "adj.",
+            meaning: "新鲜的",
+            phonetic: "/freʃ/",
+            sentence: "Is this fresh?",
+            translation: "这个新鲜吗？",
+            image: "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=300&q=80"
+          },
+          {
+            id: 2,
+            word: "size",
+            pos: "n.",
+            meaning: "尺码/大小",
+            phonetic: "/saɪz/",
+            sentence: "Do you have a bigger size?",
+            translation: "有大一点的吗？",
+            image: "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=300&q=80"
+          },
+          {
+            id: 3,
+            word: "cheaper",
+            pos: "adj.",
+            meaning: "更便宜的",
+            phonetic: "/ˈtʃiː.pər/",
+            sentence: "Do you have a cheaper one?",
+            translation: "有便宜点的吗？",
+            image: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=300&q=80"
+          }
+        ]
+      },
+      daily: [
+        {
+          scene: "咖啡厅定制与特殊要求",
+          speakerA: "Can I get an iced Americano with oat milk?",
+          speakerAZh: "能帮我做杯冰美式，换燕麦奶吗？",
+          speakerB: "Sure thing. Just a heads up, there's a 50-cent upcharge for alternative milk.",
+          speakerBZh: "没问题。提醒一下，换植物奶需要加收 50 美分哦。",
+          tip: "💡 'Just a heads up' 是母语者高频使用的善意提醒。"
+        },
+        {
+          scene: "朋友聚餐分摊账单",
+          speakerA: "Let's split the bill evenly.",
+          speakerAZh: "咱们均摊吧。",
+          speakerB: "Actually, it's my treat today. You covered it last time!",
+          speakerBZh: "今天我请客！上次是你买的单。",
+          tip: "💡 'It's my treat' 表达我请客；AA制使用 'split the bill'。"
+        }
+      ],
+      work: [
+        {
+          topic: "推迟交付 / 向上管理",
+          scenario: "当手头任务冲突，无法在领导要求的原定截止日前完成时：",
+          directBad: "❌ 生硬拒绝：I can't finish this by tomorrow, I'm too busy.",
+          proGood: "I'm currently prioritizing the month-end closing report. If this new task takes precedence, I can deliver it by Wednesday instead. Would that work?",
+          proGoodZh: "我目前正在优先处理月末关账报表。如果这项新任务优先级更高，我可以在周三前交付。您看这样合适吗？",
+          formula: "📌 话术公式：陈述当前高优事项 + 给出可替代交付时间 + 留出决策权"
+        },
+        {
+          topic: "跨部门协作 / 委婉对齐",
+          scenario: "对方提供的材料数据有遗漏或口径不一致时：",
+          directBad: "❌ 指责对方：Your numbers are totally wrong.",
+          proGood: "Just looking over the ledger numbers and noticed a slight discrepancy with last month's figures. Could you help clarify the variance?",
+          proGoodZh: "我刚才过了一下总账数据，发现跟上月口径有一点小出入。能麻烦您协助确认一下变动原因吗？",
+          formula: "📌 话术公式：事实观察 (discrepancy) + 邀请协助澄清 (clarify variance)"
+        }
+      ],
+      ielts: [
+        {
+          part: "Part 1 · Daily Routine",
+          question: "Do you prefer working in the morning or in the afternoon?",
+          script: "I'm definitely a morning person. I find that I have <span class='chunk-highlight'>peak productivity</span> in the early hours before distractions start to <span class='chunk-highlight'>pile up</span>.",
+          translation: "我绝对是个早起型的人。清晨在杂事堆积之前是我专注力最高的时候。",
+          highlights: [
+            "peak productivity (生产力峰值/黄金时间)",
+            "pile up (大量堆积)"
+          ]
+        },
+        {
+          part: "Part 2 · Work & Decisions",
+          question: "Describe a difficult choice you made.",
+          script: "I had to <span class='chunk-highlight'>prioritize long-term value</span> over short-term gains when streamlining our reporting workflow.",
+          translation: "在优化汇报流程时，我不得不把长期价值置于短期收益之上。",
+          highlights: [
+            "prioritize long-term value (权衡长期价值)",
+            "streamline workflow (精简/优化工作流程)"
+          ]
+        }
+      ],
+      biz: [
+        {
+          trap: "记者挑衅：外界普遍认为你们依靠垄断压制创新？",
+          strategy: "重新定义问题 (Redefining Premise) + 站在用户利益反击",
+          questionEn: "Critics say your dominance is suffocating smaller innovators. How do you respond?",
+          responseEn: "We don't focus on crushing competitors; our obsession has always been empowering small businesses. If empowering 10 million SMEs to survive is considered a monopoly, then we are proud to serve them.",
+          responseZh: "我们从不关注击垮对手，我们的焦点永远是赋能小微企业。如果帮助 1000 万小商家生存被视作某种垄断，那我们很自豪能为他们服务。",
+          punchline: "“Don't defend the charge; reframe the mission.” (永远不要为指控辩解，重新定义你的使命。)"
+        }
+      ],
+      ted: [
+        {
+          title: "How Great Leaders Inspire Action",
+          speaker: "Simon Sinek",
+          sectionTitle: "开场认知失衡破题",
+          scriptEn: "How do you explain when things don't go as we assume? Or better yet, how do you explain when others achieve things that seem to defy all of the assumptions?",
+          scriptZh: "当事情不如预期时，你如何解释？或者更进一步说，当别人实现了颠覆常理的成就时，你又如何解释？",
+          expressions: [
+            "defy all assumptions (颠覆常规设想)",
+            "Or better yet... (甚至更进一步说)"
+          ],
+          strategy: "认知冲突设问 (Cognitive Dissonance)：连续抛出宏大对比问题制造好奇缺口。",
+          transition: "递进衔接 (Escalation Pivot)：使用 'Or better yet' 提升演说张力。"
+        }
+      ]
+    };
+
+    // ================= 多音色动态引擎与记忆 =================
+    let availableVoices = [];
+    let selectedVoice = null;
+
+    function populateVoiceList() {
+      if (!('speechSynthesis' in window)) return;
+      const allVoices = window.speechSynthesis.getVoices();
+      
+      // 筛选所有英文音色
+      availableVoices = allVoices.filter(v => v.lang.startsWith('en'));
+      const voiceSelect = document.getElementById('voiceSelect');
+      voiceSelect.innerHTML = '';
+
+      if (availableVoices.length === 0) {
+        const opt = document.createElement('option');
+        opt.textContent = '默认系统音色';
+        opt.value = '';
+        voiceSelect.appendChild(opt);
+        return;
+      }
+
+      const savedVoiceName = localStorage.getItem('mastery_preferred_voice');
+
+      availableVoices.forEach(voice => {
+        const opt = document.createElement('option');
+        let label = voice.name;
+        // 标注高音质/自然音色
+        if (voice.name.includes('Natural') || voice.name.includes('Enhanced') || voice.name.includes('Google') || voice.name.includes('Siri')) {
+          label += ' ⭐高品质';
+        }
+        opt.textContent = `${label} (${voice.lang})`;
+        opt.value = voice.name;
+        voiceSelect.appendChild(opt);
+      });
+
+      // 恢复上次选中的音色，或默认选用最佳音色
+      if (savedVoiceName && availableVoices.some(v => v.name === savedVoiceName)) {
+        voiceSelect.value = savedVoiceName;
+        selectedVoice = availableVoices.find(v => v.name === savedVoiceName);
+      } else {
+        // 默认挑一个高品质声音
+        const bestVoice = availableVoices.find(v => 
+          v.name.includes('Natural') || v.name.includes('Google') || v.name.includes('Enhanced') || v.name.includes('Siri')
+        ) || availableVoices[0];
+        
+        if (bestVoice) {
+          voiceSelect.value = bestVoice.name;
+          selectedVoice = bestVoice;
+        }
+      }
+    }
+
+    function onVoiceChange() {
+      const voiceSelect = document.getElementById('voiceSelect');
+      const voiceName = voiceSelect.value;
+      selectedVoice = availableVoices.find(v => v.name === voiceName);
+      if (selectedVoice) {
+        localStorage.setItem('mastery_preferred_voice', selectedVoice.name);
+        speakText("Voice updated");
+      }
+    }
+
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.onvoiceschanged = populateVoiceList;
+      populateVoiceList();
+    }
+
+    // 核心发音接口
+    function speakText(rawText) {
+      if (!('speechSynthesis' in window)) {
+        alert("当前浏览器不支持语音播放");
+        return;
+      }
+
+      const cleanText = rawText.replace(/<[^>]*>/g, '').replace(/&[a-z]+;/gi, ' ').trim();
+      if (!cleanText) return;
+
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(cleanText);
+
+      utterance.lang = 'en-US';
+      utterance.rate = 0.92;
+      utterance.pitch = 1.0;
+
+      if (selectedVoice) {
+        utterance.voice = selectedVoice;
+      }
+
+      setTimeout(() => {
+        window.speechSynthesis.speak(utterance);
+      }, 10);
+    }
+
+    // 安全数据索引寻址播放
+    function playVoice(module, idx, field) {
+      let targetText = '';
+      if (module === 'vocab') targetText = appData.vocab.items[idx][field];
+      else if (module === 'daily') targetText = appData.daily[idx][field];
+      else if (module === 'work') targetText = appData.work[idx][field];
+      else if (module === 'ielts') targetText = appData.ielts[idx][field];
+      else if (module === 'biz') targetText = appData.biz[idx][field];
+      else if (module === 'ted') targetText = appData.ted[idx][field];
+
+      if (targetText) speakText(targetText);
+    }
+
+    // ================= 模块渲染 =================
+    function renderAll() {
+      // 1. 词汇
+      document.getElementById('vocabCategory').textContent = appData.vocab.category;
+      document.getElementById('vocabContainer').innerHTML = appData.vocab.items.map((item, idx) => `
+        <div class="vocab-item">
+          <div class="vocab-content">
+            <div class="word-row">
+              <span class="index-num">${item.id}</span>
+              <span class="word-title" onclick="playVoice('vocab', ${idx}, 'word')">
+                ${item.word} 🔊
+              </span>
+              <span class="word-meta">${item.pos}（${item.meaning}）</span>
+            </div>
+            <div class="phonetic">${item.phonetic}</div>
+            <div class="sentence-en" onclick="playVoice('vocab', ${idx}, 'sentence')">
+              ${item.sentence} 🔊
+            </div>
+            <div class="sentence-zh">（${item.translation}）</div>
+          </div>
+          ${item.image ? `
+            <div class="vocab-img-wrap">
+              <img src="${item.image}" alt="${item.word}" loading="lazy">
+            </div>
+          ` : ''}
+        </div>
+      `).join('');
+
+      // 2. 生活口语
+      document.getElementById('dailyContainer').innerHTML = appData.daily.map((item, idx) => `
+        <div class="daily-card">
+          <div class="scene-tag">场景：${item.scene}</div>
+          <div class="dialogue-flow">
+            <div class="dialogue-bubble speaker-a" onclick="playVoice('daily', ${idx}, 'speakerA')">
+              <strong>A:</strong> ${item.speakerA} 🔊
+              <div style="color: var(--text-sub); font-size: 0.85rem; margin-top: 4px;">${item.speakerAZh}</div>
+            </div>
+            <div class="dialogue-bubble speaker-b" onclick="playVoice('daily', ${idx}, 'speakerB')">
+              <strong>B:</strong> ${item.speakerB} 🔊
+              <div style="color: var(--text-sub); font-size: 0.85rem; margin-top: 4px;">${item.speakerBZh}</div>
+            </div>
+          </div>
+          <div class="nuance-tip">${item.tip}</div>
+        </div>
+      `).join('');
+
+      // 3. 职场口语
+      document.getElementById('workContainer').innerHTML = appData.work.map((item, idx) => `
+        <div class="work-card">
+          <div class="work-header">
+            <strong>${item.topic}</strong>
+            <span class="work-badge">职场高情商</span>
+          </div>
+          <p style="font-size: 0.85rem; color: var(--text-sub);">${item.scenario}</p>
+          <div class="contrast-box">
+            <div class="direct-bad">${item.directBad}</div>
+            <div class="pro-good" onclick="playVoice('work', ${idx}, 'proGood')">
+              ${item.proGood} 🔊
+              <div style="font-size: 0.85rem; font-weight: normal; color: var(--text-sub); margin-top: 4px;">${item.proGoodZh}</div>
+            </div>
+          </div>
+          <div class="work-formula">${item.formula}</div>
+        </div>
+      `).join('');
+
+      // 4. 雅思口语
+      document.getElementById('ieltsContainer').innerHTML = appData.ielts.map((item, idx) => `
+        <div class="ielts-card">
+          <div class="ielts-badge">${item.part}</div>
+          <div class="prompt-box" onclick="playVoice('ielts', ${idx}, 'question')">
+            Q: ${item.question} 🔊
+          </div>
+          <div class="ielts-script" onclick="playVoice('ielts', ${idx}, 'script')">
+            ${item.script} 🔊
+            <div style="margin-top: 6px; color: var(--text-sub); font-size: 0.85rem;">${item.translation}</div>
+          </div>
+          <div class="chunk-list">
+            <strong>提分亮点：</strong>
+            <ul style="margin-left: 16px; margin-top: 4px;">
+              ${item.highlights.map(h => `<li>${h}</li>`).join('')}
+            </ul>
+          </div>
+        </div>
+      `).join('');
+
+      // 5. 商业破局
+      document.getElementById('bizContainer').innerHTML = appData.biz.map((item, idx) => `
+        <div class="biz-card">
+          <div><span class="biz-tag-trap">刁难情景</span></div>
+          <div class="biz-question-box">${item.trap}</div>
+          <div><span class="biz-tag-strategy">策略: ${item.strategy}</span></div>
+          <div class="biz-response-box" onclick="playVoice('biz', ${idx}, 'responseEn')">
+            <strong>回应话术：</strong><br>
+            ${item.responseEn} 🔊
+            <div style="margin-top: 4px; color: var(--text-sub); font-size: 0.85rem;">${item.responseZh}</div>
+          </div>
+          <div class="biz-punchline">${item.punchline}</div>
+        </div>
+      `).join('');
+
+      // 6. TED 演说
+      document.getElementById('tedContainer').innerHTML = appData.ted.map((item, idx) => `
+        <div class="ted-card">
+          <div class="ted-header">
+            <span class="ted-speaker">TED · ${item.speaker}</span>
+            <span style="font-size: 0.85rem; color: var(--text-muted);">${item.sectionTitle}</span>
+          </div>
+          <div class="ted-split-layout">
+            <div class="ted-script" onclick="playVoice('ted', ${idx}, 'scriptEn')">
+              ${item.scriptEn} 🔊
+              <div style="margin-top: 6px; color: var(--text-sub); font-size: 0.85rem;">${item.scriptZh}</div>
+            </div>
+            <div class="analysis-section">
+              <span class="tag-badge tag-exp">高阶语块</span>
+              <ul style="margin-left: 16px; margin-bottom: 6px;">
+                ${item.expressions.map(exp => `<li>${exp}</li>`).join('')}
+              </ul>
+              <span class="tag-badge tag-strat">演说策略</span>
+              <p style="color: #4b5563; margin-bottom: 6px;">${item.strategy}</p>
+              <span class="tag-badge tag-trans">衔接手法</span>
+              <p style="color: #4b5563;">${item.transition}</p>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    // Tab 切换
+    function switchTab(tabKey) {
+      document.querySelectorAll('.tab-chip').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+
+      event.target.classList.add('active');
+      document.getElementById(`pane-${tabKey}`).classList.add('active');
+    }
+
+    // 一级大分类筛选
+    function filterTabs(stage) {
+      document.querySelectorAll('.stage-btn').forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+
+      const chips = document.querySelectorAll('.tab-chip');
+      let firstVisible = null;
+
+      chips.forEach(chip => {
+        if (stage === 'all' || chip.dataset.stage === stage) {
+          chip.style.display = 'inline-block';
+          if (!firstVisible) firstVisible = chip;
+        } else {
+          chip.style.display = 'none';
+        }
+      });
+
+      if (firstVisible) firstVisible.click();
+    }
+
+    renderAll();
+  </script>
+</body>
+</html>
