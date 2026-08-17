@@ -1,1 +1,12 @@
-
+[
+  {
+    "part": "Part 1 · Daily Routine",
+    "question": "Do you prefer working in the morning or in the afternoon?",
+    "script": "I'm definitely a morning person. I find that I have <span class='chunk-highlight'>peak productivity</span> in the early hours before distractions start to <span class='chunk-highlight'>pile up</span>.",
+    "translation": "我绝对是个早起型的人。清晨在杂事堆积之前是我专注力最高的时候。",
+    "highlights": [
+      "peak productivity (生产力峰值/黄金时间)",
+      "pile up (大量堆积)"
+    ]
+  }
+]
