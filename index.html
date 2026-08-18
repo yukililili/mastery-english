@@ -30,6 +30,7 @@
       padding-bottom: 60px;
     }
 
+    /* 顶部导航与控制栏 */
     .nav-header {
       position: sticky;
       top: 0;
@@ -161,6 +162,7 @@
     .tab-pane { display: none; }
     .tab-pane.active { display: block; }
 
+    /* ================= 艾宾浩斯复习底栏 ================= */
     .ebbinghaus-bar {
       margin-top: 14px;
       padding-top: 10px;
@@ -204,12 +206,23 @@
     .btn-remember { background: #f0fdf4; color: #16a34a; border: 1px solid #bbf7d0; }
     .btn-remember:hover { background: #dcfce7; }
 
+    /* ================= 模块 1：词汇与翻卡功能 ================= */
     .vocab-wrapper {
       background: var(--card-bg);
       border-radius: 20px;
       padding: 24px;
       box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
     }
+
+    .vocab-header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
     .category-badge {
       display: inline-block;
       background-color: var(--primary-green);
@@ -218,23 +231,64 @@
       font-weight: 700;
       padding: 6px 18px;
       border-radius: 999px;
-      margin-bottom: 20px;
     }
+
+    .flashcard-toggle-btn {
+      border: 1px solid var(--primary-green);
+      background: #f0fdf4;
+      color: var(--primary-green);
+      padding: 6px 14px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      border-radius: 12px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s;
+    }
+    .flashcard-toggle-btn.active {
+      background: var(--primary-green);
+      color: #ffffff;
+      box-shadow: 0 2px 8px rgba(45, 106, 79, 0.25);
+    }
+
     .vocab-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+
     .vocab-item {
       display: flex;
       flex-direction: column;
-      padding: 16px;
+      padding: 18px;
       background: #fafbfa;
       border-radius: 14px;
       border: 1px dashed var(--border-dashed);
-      gap: 8px;
-      transition: transform 0.15s ease;
+      gap: 10px;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.2s ease;
+      cursor: pointer;
+      user-select: none;
     }
-    .vocab-item:hover { background: #ffffff; transform: translateY(-2px); }
-    .vocab-main-row { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
-    .vocab-content { flex: 1; display: flex; flex-direction: column; gap: 2px; }
-    .word-row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+    .vocab-item:hover {
+      background: #ffffff;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(45, 106, 79, 0.08);
+    }
+
+    .vocab-main-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .vocab-content { flex: 1; display: flex; flex-direction: column; gap: 4px; }
+    
+    .word-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    
     .index-num {
       background-color: var(--primary-green);
       color: #ffffff;
@@ -247,16 +301,89 @@
       font-size: 0.8rem;
       font-weight: 700;
     }
-    .word-title { font-size: 1.3rem; font-weight: 800; color: var(--text-main); cursor: pointer; }
+    
+    .word-title {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--text-main);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
     .word-title:hover { color: var(--primary-green); }
-    .word-meta { font-size: 0.9rem; font-weight: 600; color: var(--primary-green); }
-    .phonetic { font-size: 0.9rem; color: var(--primary-green); margin-left: 30px; }
-    .sentence-en { font-size: 1.05rem; font-weight: 700; color: var(--text-main); margin-top: 4px; margin-left: 30px; cursor: pointer; line-height: 1.35; }
+
+    .word-meta {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--primary-green);
+    }
+
+    /* 翻卡折叠核心样式 */
+    .flashcard-reveal-cue {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #0d9488;
+      background: #ecfeff;
+      padding: 4px 10px;
+      border-radius: 8px;
+      margin-top: 4px;
+      margin-left: 30px;
+      border: 1px dashed #a5f3fc;
+    }
+
+    .vocab-details {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      transition: all 0.25s ease;
+    }
+
+    .flashcard-mode .vocab-item:not(.revealed) .vocab-details,
+    .flashcard-mode .vocab-item:not(.revealed) .word-meta,
+    .flashcard-mode .vocab-item:not(.revealed) .vocab-img-wrap {
+      display: none !important;
+    }
+
+    .flashcard-mode .vocab-item.revealed .flashcard-reveal-cue {
+      display: none;
+    }
+
+    .phonetic {
+      font-size: 0.9rem;
+      color: var(--primary-green);
+      margin-left: 30px;
+    }
+
+    .sentence-en {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-top: 4px;
+      margin-left: 30px;
+      line-height: 1.35;
+    }
     .sentence-en:hover { color: var(--light-green); }
-    .sentence-zh { font-size: 0.9rem; color: var(--text-sub); margin-left: 30px; }
-    .vocab-img-wrap { width: 84px; height: 84px; background-color: #f2f5f2; border-radius: 10px; flex-shrink: 0; overflow: hidden; }
+
+    .sentence-zh {
+      font-size: 0.9rem;
+      color: var(--text-sub);
+      margin-left: 30px;
+    }
+
+    .vocab-img-wrap {
+      width: 84px;
+      height: 84px;
+      background-color: #f2f5f2;
+      border-radius: 10px;
+      flex-shrink: 0;
+      overflow: hidden;
+    }
     .vocab-img-wrap img { width: 100%; height: 100%; object-fit: cover; }
 
+    /* 模块 2：生活口语 */
     .daily-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
     .daily-card { background: var(--card-bg); border-radius: 16px; padding: 18px; border: 1px solid var(--border-light); }
     .scene-tag { display: inline-block; background: #ecfeff; color: #0891b2; font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 6px; margin-bottom: 10px; }
@@ -266,6 +393,7 @@
     .speaker-b { background: #e6fffa; align-self: flex-start; border-left: 3px solid #0d9488; }
     .nuance-tip { background: #fffbeb; border-radius: 8px; padding: 9px 12px; font-size: 0.85rem; color: #92400e; }
 
+    /* 模块 3：职场沟通 */
     .work-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
     .work-card { background: var(--card-bg); border-radius: 16px; padding: 20px; border: 1px solid var(--border-light); display: flex; flex-direction: column; gap: 12px; }
     .work-header { display: flex; justify-content: space-between; align-items: center; }
@@ -275,6 +403,7 @@
     .pro-good { background: #f0fdf4; border-left: 3px solid #22c55e; padding: 12px 14px; border-radius: 0 8px 8px 0; font-size: 0.95rem; font-weight: 600; color: #15803d; cursor: pointer; }
     .work-formula { background: #f8fafc; padding: 10px 14px; border-radius: 8px; font-size: 0.85rem; color: var(--text-sub); }
 
+    /* 模块 4：雅思口语 */
     .ielts-grid { display: grid; grid-template-columns: 1fr; gap: 18px; }
     .ielts-card { background: var(--card-bg); border-radius: 16px; padding: 20px; border: 1px solid var(--border-light); }
     .ielts-badge { display: inline-block; background: #e0f2fe; color: #0369a1; font-size: 0.8rem; font-weight: 700; padding: 3px 8px; border-radius: 6px; margin-bottom: 10px; }
@@ -283,6 +412,7 @@
     .chunk-highlight { background: #fef08a; color: #854d0e; font-weight: 600; padding: 1px 4px; border-radius: 4px; }
     .chunk-list { background: #fffbeb; border-left: 4px solid #f59e0b; padding: 10px 14px; border-radius: 0 8px 8px 0; font-size: 0.85rem; color: #92400e; }
 
+    /* 模块 5：商业破局 */
     .biz-grid { display: grid; grid-template-columns: 1fr; gap: 18px; }
     .biz-card { background: var(--card-bg); border-radius: 16px; padding: 20px; border: 1px solid var(--border-light); display: flex; flex-direction: column; gap: 10px; }
     .biz-tag-trap { display: inline-block; background: #fee2e2; color: var(--accent-red); font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; }
@@ -291,6 +421,7 @@
     .biz-response-box { background: #f8fafc; border-left: 3px solid var(--primary-green); padding: 12px 14px; font-size: 0.95rem; line-height: 1.55; cursor: pointer; }
     .biz-punchline { background: #1e293b; color: #f8fafc; padding: 10px 14px; border-radius: 8px; font-size: 0.9rem; font-weight: 700; margin-top: auto; }
 
+    /* 模块 6：TED 演说 */
     .ted-grid { display: grid; grid-template-columns: 1fr; gap: 18px; }
     .ted-card { background: var(--card-bg); border-radius: 16px; padding: 20px; border: 1px solid var(--border-light); }
     .ted-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; border-bottom: 1px solid #f3f4f6; padding-bottom: 8px; }
@@ -354,9 +485,14 @@
   </header>
 
   <main class="container">
-    <section id="pane-vocab" class="tab-pane active">
+    <section id="pane-vocab" class="tab-pane active flashcard-mode">
       <div class="vocab-wrapper">
-        <div class="category-badge" id="vocabCategory">词汇语块</div>
+        <div class="vocab-header-row">
+          <div class="category-badge" id="vocabCategory">词汇语块</div>
+          <button id="flashcardToggleBtn" class="flashcard-toggle-btn active" onclick="toggleFlashcardMode()">
+            🃏 翻卡自测模式: 已开启
+          </button>
+        </div>
         <div class="vocab-grid" id="vocabContainer"><div class="loading-hint">正在读取 data/vocab.json ...</div></div>
       </div>
     </section>
@@ -385,6 +521,7 @@
   <script>
     const EBBINGHAUS_DAYS = [0, 1, 2, 4, 7, 15, 30];
     let isReviewOnly = false;
+    let isFlashcardMode = true; // 默认开启翻卡自测模式
 
     function getMemoryStore() {
       try {
@@ -428,7 +565,8 @@
       return { record, isDue, badgeHtml };
     }
 
-    function reviewCard(module, cardKey, remembered) {
+    function reviewCard(module, cardKey, remembered, evt) {
+      if (evt) evt.stopPropagation(); // 避免触发翻卡事件
       const store = getMemoryStore();
       const current = store[cardKey] || { level: 0, nextReview: 0 };
       const now = Date.now();
@@ -455,14 +593,13 @@
             ${badgeHtml}
           </div>
           <div class="ebbinghaus-actions">
-            <button class="btn-ebh btn-forget" onclick="reviewCard('${module}', '${cardKey}', false)">❌ 模糊/重背</button>
-            <button class="btn-ebh btn-remember" onclick="reviewCard('${module}', '${cardKey}', true)">✅ 记住了</button>
+            <button class="btn-ebh btn-forget" onclick="reviewCard('${module}', '${cardKey}', false, event)">❌ 模糊/重背</button>
+            <button class="btn-ebh btn-remember" onclick="reviewCard('${module}', '${cardKey}', true, event)">✅ 记住了</button>
           </div>
         </div>
       `;
     }
 
-    // 辅助函数：统一获取模块列表（兼容数组与对象）
     function getModuleList(name) {
       const data = appData[name];
       if (!data) return [];
@@ -498,6 +635,33 @@
       if (activePane) {
         const modKey = activePane.id.replace('pane-', '');
         renderModule(modKey);
+      }
+    }
+
+    // 翻卡模式全局切换
+    function toggleFlashcardMode() {
+      isFlashcardMode = !isFlashcardMode;
+      const pane = document.getElementById('pane-vocab');
+      const btn = document.getElementById('flashcardToggleBtn');
+
+      if (isFlashcardMode) {
+        pane.classList.add('flashcard-mode');
+        btn.classList.add('active');
+        btn.innerHTML = '🃏 翻卡自测模式: 已开启';
+      } else {
+        pane.classList.remove('flashcard-mode');
+        btn.classList.remove('active');
+        btn.innerHTML = '📖 列表全览模式';
+      }
+    }
+
+    // 单张卡片点击翻开/收起
+    function toggleCardReveal(cardElement, evt) {
+      if (evt && (evt.target.closest('.ebbinghaus-bar') || evt.target.closest('.word-title'))) {
+        return; // 点击音频或复习按钮时不触发折叠
+      }
+      if (isFlashcardMode) {
+        cardElement.classList.toggle('revealed');
       }
     }
 
@@ -541,17 +705,20 @@
         document.getElementById('vocabContainer').innerHTML = items.map((item, idx) => {
           const cardKey = getCardKey('vocab', item, idx);
           return `
-            <div class="vocab-item">
+            <div class="vocab-item" onclick="toggleCardReveal(this, event)">
               <div class="vocab-main-row">
                 <div class="vocab-content">
                   <div class="word-row">
                     <span class="index-num">${item.id || (idx + 1)}</span>
-                    <span class="word-title" onclick="playVoice('vocab', ${idx}, 'word')">${item.word} 🔊</span>
+                    <span class="word-title" onclick="playVoice('vocab', ${idx}, 'word', event)">${item.word} 🔊</span>
                     <span class="word-meta">${item.pos || ''}（${item.meaning || ''}）</span>
                   </div>
-                  <div class="phonetic">${item.phonetic || ''}</div>
-                  <div class="sentence-en" onclick="playVoice('vocab', ${idx}, 'sentence')">${item.sentence || ''} 🔊</div>
-                  <div class="sentence-zh">（${item.translation || ''}）</div>
+                  <div class="flashcard-reveal-cue">👆 点击卡片翻看 释义与例句</div>
+                  <div class="vocab-details">
+                    <div class="phonetic">${item.phonetic || ''}</div>
+                    <div class="sentence-en" onclick="playVoice('vocab', ${idx}, 'sentence', event)">${item.sentence || ''} 🔊</div>
+                    <div class="sentence-zh">（${item.translation || ''}）</div>
+                  </div>
                 </div>
                 ${item.image ? `<div class="vocab-img-wrap"><img src="${item.image}" alt="${item.word}" loading="lazy"></div>` : ''}
               </div>
@@ -579,11 +746,11 @@
             <div class="daily-card">
               <div class="scene-tag">场景：${item.scene}</div>
               <div class="dialogue-flow">
-                <div class="dialogue-bubble speaker-a" onclick="playVoice('daily', ${idx}, 'speakerA')">
+                <div class="dialogue-bubble speaker-a" onclick="playVoice('daily', ${idx}, 'speakerA', event)">
                   <strong>A:</strong> ${item.speakerA} 🔊
                   <div style="color: var(--text-sub); font-size: 0.85rem; margin-top: 4px;">${item.speakerAZh}</div>
                 </div>
-                <div class="dialogue-bubble speaker-b" onclick="playVoice('daily', ${idx}, 'speakerB')">
+                <div class="dialogue-bubble speaker-b" onclick="playVoice('daily', ${idx}, 'speakerB', event)">
                   <strong>B:</strong> ${item.speakerB} 🔊
                   <div style="color: var(--text-sub); font-size: 0.85rem; margin-top: 4px;">${item.speakerBZh}</div>
                 </div>
@@ -618,7 +785,7 @@
               <p style="font-size: 0.85rem; color: var(--text-sub);">${item.scenario}</p>
               <div class="contrast-box">
                 <div class="direct-bad">${item.directBad}</div>
-                <div class="pro-good" onclick="playVoice('work', ${idx}, 'proGood')">
+                <div class="pro-good" onclick="playVoice('work', ${idx}, 'proGood', event)">
                   ${item.proGood} 🔊
                   <div style="font-size: 0.85rem; font-weight: normal; color: var(--text-sub); margin-top: 4px;">${item.proGoodZh}</div>
                 </div>
@@ -647,8 +814,8 @@
           return `
             <div class="ielts-card">
               <div class="ielts-badge">${item.part}</div>
-              <div class="prompt-box" onclick="playVoice('ielts', ${idx}, 'question')">Q: ${item.question} 🔊</div>
-              <div class="ielts-script" onclick="playVoice('ielts', ${idx}, 'script')">
+              <div class="prompt-box" onclick="playVoice('ielts', ${idx}, 'question', event)">Q: ${item.question} 🔊</div>
+              <div class="ielts-script" onclick="playVoice('ielts', ${idx}, 'script', event)">
                 ${item.script} 🔊
                 <div style="margin-top: 6px; color: var(--text-sub); font-size: 0.85rem;">${item.translation}</div>
               </div>
@@ -683,7 +850,7 @@
               <div><span class="biz-tag-trap">刁难情景</span></div>
               <div class="biz-question-box">${item.trap}</div>
               <div><span class="biz-tag-strategy">策略: ${item.strategy}</span></div>
-              <div class="biz-response-box" onclick="playVoice('biz', ${idx}, 'responseEn')">
+              <div class="biz-response-box" onclick="playVoice('biz', ${idx}, 'responseEn', event)">
                 <strong>回应话术：</strong><br>
                 ${item.responseEn} 🔊
                 <div style="margin-top: 4px; color: var(--text-sub); font-size: 0.85rem;">${item.responseZh}</div>
@@ -716,7 +883,7 @@
                 <span style="font-size: 0.85rem; color: var(--text-muted);">${item.sectionTitle}</span>
               </div>
               <div class="ted-split-layout">
-                <div class="ted-script" onclick="playVoice('ted', ${idx}, 'scriptEn')">
+                <div class="ted-script" onclick="playVoice('ted', ${idx}, 'scriptEn', event)">
                   ${item.scriptEn} 🔊
                   <div style="margin-top: 6px; color: var(--text-sub); font-size: 0.85rem;">${item.scriptZh}</div>
                 </div>
@@ -810,7 +977,8 @@
       setTimeout(() => window.speechSynthesis.speak(utterance), 10);
     }
 
-    function playVoice(module, idx, field) {
+    function playVoice(module, idx, field, evt) {
+      if (evt) evt.stopPropagation(); // 阻止触发翻卡遮挡
       const items = getModuleList(module);
       if (!items[idx]) return;
       const targetText = items[idx][field];
