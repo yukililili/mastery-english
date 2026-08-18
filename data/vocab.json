@@ -1248,5 +1248,755 @@
     "sentence": "She wore clear dental braces for a year to align her teeth.",
     "translation": "她佩戴了整整一年的隐形牙套来矫正排齐牙齿。",
     "image": "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=300&q=80"
+  },
+  {
+    "id": 126,
+    "word": "sales pitch",
+    "pos": "n.",
+    "meaning": "推销说辞 / 商业推介 [cite: 20]",
+    "phonetic": "/ˈseɪlz pɪtʃ/",
+    "sentence": "Her five-minute sales pitch won over the entire board.",
+    "translation": "她那段五分钟的商业推介彻底打动了全体董事会成员。",
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=300&q=80"
+  },
+  {
+    "id": 127,
+    "word": "reparation",
+    "pos": "n.",
+    "meaning": "经济赔偿 / 弥补损失 [cite: 20]",
+    "phonetic": "/ˌrepəˈreɪʃn/",
+    "sentence": "The company made full financial reparations to the affected consumers.",
+    "translation": "公司向所有受波及的消费者支付了全额经济赔偿。",
+    "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=300&q=80"
+  },
+  {
+    "id": 128,
+    "word": "it takes two to tango",
+    "pos": "phrase",
+    "meaning": "孤掌难鸣 / 一个巴掌拍不响 [cite: 20]",
+    "phonetic": "/ɪt teɪks tuː tu ˈtæŋɡoʊ/",
+    "sentence": "Blaming one party is unfair; it takes two to tango in any negotiation.",
+    "translation": "只怪某一方是不公平的，任何谈判僵局都是一个巴掌拍不响。",
+    "image": "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=300&q=80"
+  },
+  {
+    "id": 129,
+    "word": "chop",
+    "pos": "v.",
+    "meaning": "大幅削减 / 砍掉 [cite: 20, 21]",
+    "phonetic": "/tʃɑːp/",
+    "sentence": "The department had to chop its marketing budget by thirty percent.",
+    "translation": "该部门不得不将其市场营销预算大幅砍掉 30%。",
+    "image": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=300&q=80"
+  },
+  {
+    "id": 130,
+    "word": "through thick and thin",
+    "pos": "phrase",
+    "meaning": "同甘共苦 / 风雨同舟 [cite: 21]",
+    "phonetic": "/θruː θɪk ənd θɪn/",
+    "sentence": "They supported each other through thick and thin for over a decade.",
+    "translation": "十年多来，他们风雨同舟、同甘共苦地相互扶持。",
+    "image": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=300&q=80"
+  },
+  {
+    "id": 131,
+    "word": "balance out",
+    "pos": "phrase",
+    "meaning": "相互抵消 / 保持平衡 [cite: 21]",
+    "phonetic": "/ˈbæləns aʊt/",
+    "sentence": "Initial setup costs will balance out over the fiscal year.",
+    "translation": "前期的搭建成本将在整个财年中逐步被收益抹平抵消。",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=300&q=80"
+  },
+  {
+    "id": 132,
+    "word": "here goes nothing",
+    "pos": "phrase",
+    "meaning": "豁出去了 / 姑且试一把 [cite: 21]",
+    "phonetic": "/hɪr ɡoʊz ˈnʌθɪŋ/",
+    "sentence": "I've never pitched to venture capitalists before, but here goes nothing.",
+    "translation": "我以前从未向风投机构路演过，不过这次豁出去试一把吧！",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=300&q=80"
+  },
+  {
+    "id": 133,
+    "word": "rat race",
+    "pos": "n.",
+    "meaning": "职场内卷 / 激烈的名利竞争 [cite: 21, 22]",
+    "phonetic": "/ˈræt reɪs/",
+    "sentence": "He left the corporate rat race to pursue organic farming.",
+    "translation": "他毅然离开了大厂内卷的名利场，转行投身有机农业。",
+    "image": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=300&q=80"
+  },
+  {
+    "id": 134,
+    "word": "talk with your mouth full",
+    "pos": "phrase",
+    "meaning": "嘴里塞满东西说话（失礼） [cite: 22]",
+    "phonetic": "/tɔːk wɪð jər maʊθ fʊl/",
+    "sentence": "It is bad manners to talk with your mouth full at dinner.",
+    "translation": "在正餐餐桌上嘴里塞满食物说话是很不礼貌的行为。",
+    "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=300&q=80"
+  },
+  {
+    "id": 135,
+    "word": "home sweet home",
+    "pos": "phrase",
+    "meaning": "温馨的家 / 金窝银窝不如自己的狗窝 [cite: 22]",
+    "phonetic": "/hoʊm swiːt hoʊm/",
+    "sentence": "After two weeks of business travel, it's great to say home sweet home.",
+    "translation": "在连续出差两周之后，回到温馨家中的感觉真是太美好了。",
+    "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=300&q=80"
+  },
+  {
+    "id": 136,
+    "word": "smudge",
+    "pos": "n.",
+    "meaning": "污迹 / 蹭花的墨迹 [cite: 22, 23]",
+    "phonetic": "/smʌdʒ/",
+    "sentence": "There was an ink smudge across the contract signature line.",
+    "translation": "合同的签字栏处有一道被不小心蹭花的墨水污渍。",
+    "image": "https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?w=300&q=80"
+  },
+  {
+    "id": 137,
+    "word": "old habits die hard",
+    "pos": "phrase",
+    "meaning": "积习难改 / 固有习惯根深蒂固 [cite: 23]",
+    "phonetic": "/oʊld ˈhæbɪts daɪ hɑːrd/",
+    "sentence": "I still double-check manual ledgers because old habits die hard.",
+    "translation": "我还是习惯性地反复人工核算总账，毕竟多年习惯很难改变。",
+    "image": "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=300&q=80"
+  },
+  {
+    "id": 138,
+    "word": "cut and dried",
+    "pos": "adj.",
+    "meaning": "已成定局的 / 毫无悬念的 [cite: 23]",
+    "phonetic": "/ˌkʌt n ˈdraɪd/",
+    "sentence": "The legal settlement is essentially cut and dried now.",
+    "translation": "这份和解协议目前基本上已经板上钉钉、毫无悬念了。",
+    "image": "https://images.unsplash.com/photo-1450133064473-71024230f91b?w=300&q=80"
+  },
+  {
+    "id": 139,
+    "word": "what's the catch",
+    "pos": "phrase",
+    "meaning": "有什么隐藏猫腻 / 哪有这么便宜的事 [cite: 23]",
+    "phonetic": "/wʌts ðə kætʃ/",
+    "sentence": "The offer sounds too generous—what's the catch?",
+    "translation": "这个合作方案听起来也太划算了——背后有什么隐藏猫腻吗？",
+    "image": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=300&q=80"
+  },
+  {
+    "id": 140,
+    "word": "copious",
+    "pos": "adj.",
+    "meaning": "大量的 / 极其丰富的 [cite: 23, 24]",
+    "phonetic": "/ˈkoʊpiəs/",
+    "sentence": "She took copious notes throughout the entire executive briefing.",
+    "translation": "在整场高管汇报会议期间，她记录下了详尽充实的笔记。",
+    "image": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=300&q=80"
+  },
+  {
+    "id": 141,
+    "word": "deliverance",
+    "pos": "n.",
+    "meaning": "解脱 / 摆脱困境 [cite: 24]",
+    "phonetic": "/dɪˈlɪvərəns/",
+    "sentence": "Securing the bridge loan brought deliverance from bankruptcy.",
+    "translation": "及时拿到这笔过桥贷款让公司彻底摆脱了破产的危机。",
+    "image": "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=300&q=80"
+  },
+  {
+    "id": 142,
+    "word": "stick one's nose into",
+    "pos": "phrase",
+    "meaning": "插手管闲事 / 瞎打听 [cite: 24]",
+    "phonetic": "/stɪk wʌnz noʊz ˈɪntuː/",
+    "sentence": "Don't stick your nose into matters that don't concern you.",
+    "translation": "不要去插手打听那些与你无关的是非闲事。",
+    "image": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=300&q=80"
+  },
+  {
+    "id": 143,
+    "word": "off a cliff",
+    "pos": "phrase",
+    "meaning": "断崖式下跌 / 暴跌暴落 [cite: 24]",
+    "phonetic": "/ɔːf ə klɪf/",
+    "sentence": "User acquisition dropped off a cliff after the sudden price increase.",
+    "translation": "产品突然提价之后，新用户的获客量直接出现了断崖式下滑。",
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=300&q=80"
+  },
+  {
+    "id": 144,
+    "word": "spin out",
+    "pos": "v.",
+    "meaning": "分拆独立运营 / 失去控制打转 [cite: 24]",
+    "phonetic": "/spɪn aʊt/",
+    "sentence": "The tech giant decided to spin out its cloud computing division.",
+    "translation": "这家科技巨头决定将旗下的云计算部门单独分拆独立出去运营。",
+    "image": "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=300&q=80"
+  },
+  {
+    "id": 145,
+    "word": "a late bloomer",
+    "pos": "n.",
+    "meaning": "大器晚成的人 / 厚积薄发者 [cite: 24]",
+    "phonetic": "/ə leɪt ˈbluːmər/",
+    "sentence": "Don't worry about early setbacks; some leaders are late bloomers.",
+    "translation": "不用为早期的挫折焦虑，很多杰出的领袖都是厚积薄发的大器晚成者。",
+    "image": "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=300&q=80"
+  },
+  {
+    "id": 146,
+    "word": "own up to",
+    "pos": "phrase",
+    "meaning": "坦白认错 / 勇于承担责任 [cite: 24]",
+    "phonetic": "/oʊn ʌp tuː/",
+    "sentence": "A true professional will own up to their mistakes immediately.",
+    "translation": "一位真正成熟的专业人士会立刻坦诚直面并认领自己的失误。",
+    "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&q=80"
+  },
+  {
+    "id": 147,
+    "word": "fire away",
+    "pos": "phrase",
+    "meaning": "尽管问吧 / 开始讲吧 [cite: 24]",
+    "phonetic": "/ˈfaɪər əˈweɪ/",
+    "sentence": "I'm ready for the Q&A session, so fire away.",
+    "translation": "关于问答环节我已经准备就绪了，大家请尽管提问吧！",
+    "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=300&q=80"
+  },
+  {
+    "id": 148,
+    "word": "bundle up",
+    "pos": "phrase",
+    "meaning": "裹紧穿暖和 / 把……捆扎好 [cite: 24]",
+    "phonetic": "/ˈbʌndl ʌp/",
+    "sentence": "Make sure to bundle up before heading out into the blizzard.",
+    "translation": "在冒着暴风雪外出前，务必多穿几件衣服裹暖和点。",
+    "image": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=300&q=80"
+  },
+  {
+    "id": 149,
+    "word": "let's roll",
+    "pos": "phrase",
+    "meaning": "咱们出发吧 / 立即行动起来 [cite: 24]",
+    "phonetic": "/lets roʊl/",
+    "sentence": "The deployment checklist is complete, so let's roll.",
+    "translation": "上线发布检查清单已经全部核对完毕，咱们立刻行动上线！",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=300&q=80"
+  },
+  {
+    "id": 150,
+    "word": "stay the course",
+    "pos": "phrase",
+    "meaning": "保持战略定力 / 坚持到底 [cite: 24]",
+    "phonetic": "/steɪ ðə kɔːrs/",
+    "sentence": "Despite extreme market turbulence, management decided to stay the course.",
+    "translation": "尽管市场面临剧烈动荡，管理层依然决定保持战略定力坚持到底。",
+    "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=300&q=80"
+  },
+  {
+    "id": 151,
+    "word": "acrylic",
+    "pos": "adj.",
+    "meaning": "亚克力的 / 丙烯酸的",
+    "phonetic": "/əˈkrɪlɪk/",
+    "sentence": "The modern desk organizers are made of durable clear acrylic.",
+    "translation": "这些现代风格的桌面收纳盒是由耐用透明的亚克力材质制成的。",
+    "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=300&q=80"
+  },
+  {
+    "id": 152,
+    "word": "halal",
+    "pos": "adj.",
+    "meaning": "符合伊斯兰教规的 / 清真的",
+    "phonetic": "/həˈlɑːl/",
+    "sentence": "All meat served at the corporate catering event is certified halal.",
+    "translation": "本次企业餐饮活动提供的所有肉类均获得了正规清真认证。",
+    "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=300&q=80"
+  },
+  {
+    "id": 153,
+    "word": "turban",
+    "pos": "n.",
+    "meaning": "缠头巾 / 包头巾",
+    "phonetic": "/ˈtɜːrbən/",
+    "sentence": "He tied his vibrant silk turban neatly for the formal reception.",
+    "translation": "他为了正式招待会整整齐齐地系好了鲜艳的丝绸头巾。",
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=300&q=80"
+  },
+  {
+    "id": 154,
+    "word": "hajj",
+    "pos": "n.",
+    "meaning": "麦加朝圣",
+    "phonetic": "/hædʒ/",
+    "sentence": "Millions of devoted pilgrims undertake the annual hajj to Mecca.",
+    "translation": "数以百万计的虔诚信徒每年都会前往麦加进行朝圣之旅。",
+    "image": "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=300&q=80"
+  },
+  {
+    "id": 155,
+    "word": "pull some strings",
+    "pos": "phrase",
+    "meaning": "托关系 / 走后门协调",
+    "phonetic": "/pʊl sʌm strɪŋz/",
+    "sentence": "He had to pull some strings to expedite the enterprise license approval.",
+    "translation": "他不得不托关系从中协调，以加快企业牌照的审批进度。",
+    "image": "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=300&q=80"
+  },
+  {
+    "id": 156,
+    "word": "sacrilege",
+    "pos": "n.",
+    "meaning": "亵渎神明 / 大逆不道的行为",
+    "phonetic": "/ˈsækrəlɪdʒ/",
+    "sentence": "Discarding rare historical archives was considered an absolute sacrilege.",
+    "translation": "随意丢弃珍贵的历史档案被视作一种极其恶劣的大不敬行径。",
+    "image": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=300&q=80"
+  },
+  {
+    "id": 157,
+    "word": "tic",
+    "pos": "n.",
+    "meaning": "面部抽搐 / 习惯性小动作",
+    "phonetic": "/tɪk/",
+    "sentence": "He developed a subtle nervous tic during intense cross-examination.",
+    "translation": "在接受高强度质证盘问时，他出现了一点轻微的紧张性面部抽搐。",
+    "image": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=300&q=80"
+  },
+  {
+    "id": 158,
+    "word": "toy with",
+    "pos": "phrase",
+    "meaning": "不经意考虑 / 把玩玩弄",
+    "phonetic": "/tɔɪ wɪð/",
+    "sentence": "The leadership team is toying with the idea of a hybrid remote model.",
+    "translation": "管理层正在初步考量是否推行混合远程办公模式的想法。",
+    "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=300&q=80"
+  },
+  {
+    "id": 159,
+    "word": "rouge",
+    "pos": "n.",
+    "meaning": "腮红 / 胭脂",
+    "phonetic": "/ruːʒ/",
+    "sentence": "She applied a delicate dab of rouge to brighten her complexion.",
+    "translation": "她轻轻涂抹了一点腮红，让自己的气色显得更加红润。",
+    "image": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=300&q=80"
+  },
+  {
+    "id": 160,
+    "word": "sauna",
+    "pos": "n.",
+    "meaning": "桑拿浴室 / 蒸汽桑拿",
+    "phonetic": "/ˈsɔːnə/",
+    "sentence": "Unwinding in a cedar sauna helps relieve muscular fatigue after heavy lifts.",
+    "translation": "在大重量训练后去雪松木桑拿房放松一下，有助于有效缓解肌肉疲劳。",
+    "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=300&q=80"
+  },
+  {
+    "id": 161,
+    "word": "crankcase",
+    "pos": "n.",
+    "meaning": "曲轴箱（发动机部件）",
+    "phonetic": "/ˈkræŋkkeɪs/",
+    "sentence": "The mechanic inspected the motorcycle crankcase for oil leaks.",
+    "translation": "机修师傅仔细检查了摩托车的曲轴箱是否存在机油渗漏问题。",
+    "image": "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?w=300&q=80"
+  },
+  {
+    "id": 162,
+    "word": "elicitation",
+    "pos": "n.",
+    "meaning": "启发诱导 / 需求调研与获取",
+    "phonetic": "/ɪˌlɪsɪˈteɪʃn/",
+    "sentence": "Effective requirements elicitation is critical for ERP system migration.",
+    "translation": "高效的需求诱导调研对于顺利推进大型 ERP 系统的迁移至关重要。",
+    "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=300&q=80"
+  },
+  {
+    "id": 163,
+    "word": "namby-pamby",
+    "pos": "adj.",
+    "meaning": "优柔寡断的 / 娇里娇气的",
+    "phonetic": "/ˌnæmbi ˈpæmbi/",
+    "sentence": "We don't have time for namby-pamby half-measures during a crisis.",
+    "translation": "在危机处置关头，我们绝没有时间采取任何优柔寡断的折中妥协措施。",
+    "image": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=300&q=80"
+  },
+  {
+    "id": 164,
+    "word": "ballpark",
+    "pos": "adj.",
+    "meaning": "大致估计的 / 粗略数量级的",
+    "phonetic": "/ˈbɔːlpɑːrk/",
+    "sentence": "Can you give me a ballpark figure for the server infrastructure budget?",
+    "translation": "你能给我一个关于这笔服务器基建预算的大致估算区间吗？",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=300&q=80"
+  },
+  {
+    "id": 165,
+    "word": "out of the ballpark",
+    "pos": "phrase",
+    "meaning": "超乎寻常的成功 / 击出全垒打",
+    "phonetic": "/aʊt əv ðə ˈbɔːlpɑːrk/",
+    "sentence": "Her quarterly financial performance was completely out of the ballpark.",
+    "translation": "她本季度的财务业务交付成绩简直超乎寻常地优秀。",
+    "image": "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=300&q=80"
+  },
+  {
+    "id": 166,
+    "word": "with a grain of salt",
+    "pos": "phrase",
+    "meaning": "持保留态度 / 有所保留地看待",
+    "phonetic": "/wɪð ə ɡreɪn əv sɔːlt/",
+    "sentence": "Always take anonymous market rumors with a grain of salt.",
+    "translation": "对待市场上没有来源的匿名传言，一定要持理性的保留态度。",
+    "image": "https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=300&q=80"
+  },
+  {
+    "id": 167,
+    "word": "a grain of salt",
+    "pos": "phrase",
+    "meaning": "审慎的态度 / 留有余地",
+    "phonetic": "/ə ɡreɪn əv sɔːlt/",
+    "sentence": "Treat early analyst projections with a healthy grain of salt.",
+    "translation": "对于分析机构发布的早期预测数据，务必要抱以审慎客观的态度。",
+    "image": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=300&q=80"
+  },
+  {
+    "id": 168,
+    "word": "sift through",
+    "pos": "phrase",
+    "meaning": "仔细筛查 / 梳理甄别",
+    "phonetic": "/sɪft θruː/",
+    "sentence": "The audit team had to sift through thousands of historical ledger lines.",
+    "translation": "审计团队不得不仔细梳理筛查数千条历史凭证分录明细。",
+    "image": "https://images.unsplash.com/photo-1450133064473-71024230f91b?w=300&q=80"
+  },
+  {
+    "id": 169,
+    "word": "hitch",
+    "pos": "n.",
+    "meaning": "小波折 / 短暂故障障碍",
+    "phonetic": "/hɪtʃ/",
+    "sentence": "The database migration completed smoothly without a single hitch.",
+    "translation": "本次底层数据库的整体迁移进展得非常顺利，没有遇到任何故障波折。",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=300&q=80"
+  },
+  {
+    "id": 170,
+    "word": "indelible",
+    "pos": "adj.",
+    "meaning": "难以磨灭的 / 无法擦除的",
+    "phonetic": "/ɪnˈdeləbl/",
+    "sentence": "Her pioneering research left an indelible mark on modern economics.",
+    "translation": "她具有开创性的学术研究成果在现代经济学界留下了不可磨灭的印记。",
+    "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=300&q=80"
+  },
+  {
+    "id": 171,
+    "word": "duality",
+    "pos": "n.",
+    "meaning": "双重性 / 二元属性",
+    "phonetic": "/duːˈæləti/",
+    "sentence": "The product design embodies a subtle duality between utility and aesthetics.",
+    "translation": "该产品的工业设计巧妙体现了实用功能与视觉美学之间的双重平衡。",
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=300&q=80"
+  },
+  {
+    "id": 172,
+    "word": "tram",
+    "pos": "n.",
+    "meaning": "有轨电车",
+    "phonetic": "/træm/",
+    "sentence": "Taking the scenic electric tram is the easiest way to navigate downtown.",
+    "translation": "乘坐观光有轨电车是穿梭游览市中心核心街区最便捷的方式。",
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=300&q=80"
+  },
+  {
+    "id": 173,
+    "word": "mischievous",
+    "pos": "adj.",
+    "meaning": "调皮淘气的 / 恶作剧的",
+    "phonetic": "/ˈmɪstʃɪvəs/",
+    "sentence": "He gave a mischievous grin before revealing the surprise announcement.",
+    "translation": "在正式揭晓那个惊喜消息之前，他脸上浮现出一抹调皮的坏笑。",
+    "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&q=80"
+  },
+  {
+    "id": 174,
+    "word": "fornicate",
+    "pos": "v.",
+    "meaning": "私通 / 通奸",
+    "phonetic": "/ˈfɔːrnɪkeɪt/",
+    "sentence": "Ancient statutes strictly penalized those who chose to fornicate outside wedlock.",
+    "translation": "古代法典对婚外私通苟合的行为往往规定了严苛的惩罚条款。",
+    "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=300&q=80"
+  },
+  {
+    "id": 175,
+    "word": "detriment",
+    "pos": "n.",
+    "meaning": "损害 / 负面伤害",
+    "phonetic": "/ˈdetrɪmənt/",
+    "sentence": "Chasing short-term profit margins operated to the detriment of product quality.",
+    "translation": "一味片面追求短期利润率的做法最终损害了长期的产品质量。",
+    "image": "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=300&q=80"
+  },
+  {
+    "id": 176,
+    "word": "funnel",
+    "pos": "v.",
+    "meaning": "汇集输送 / 漏斗[cite: 1]",
+    "phonetic": "/ˈfʌnl/",
+    "sentence": "The enterprise funneled its surplus capital into cloud infrastructure.",
+    "translation": "该企业将其富余资金集中输送到了云基础设施的研发建设中。",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=300&q=80"
+  },
+  {
+    "id": 177,
+    "word": "reek of / reek with",
+    "pos": "phrase",
+    "meaning": "充斥着 / 散发强烈臭味或可疑气息[cite: 1]",
+    "phonetic": "/riːk wɪð/",
+    "sentence": "The unverified audit statement reeks with suspicious inconsistencies.",
+    "translation": "这份未经核验的审计报表充斥着疑点重重的自相矛盾之处。",
+    "image": "https://images.unsplash.com/photo-1450133064473-71024230f91b?w=300&q=80"
+  },
+  {
+    "id": 178,
+    "word": "imperative",
+    "pos": "adj.",
+    "meaning": "至关重要的 / 当务之急[cite: 1]",
+    "phonetic": "/ɪmˈperətɪv/",
+    "sentence": "Strict compliance with local tax regulations is absolutely imperative.",
+    "translation": "严格遵守属地税务合规法规是企业运营中至关重要的当务之急。",
+    "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=300&q=80"
+  },
+  {
+    "id": 179,
+    "word": "metronome",
+    "pos": "n.",
+    "meaning": "节拍器[cite: 1]",
+    "phonetic": "/ˈmetrənoʊm/",
+    "sentence": "The steady clicking of the metronome kept the pianist on tempo.",
+    "translation": "节拍器沉稳规律的滴答声让钢琴师始终保持着精准的演奏节奏。",
+    "image": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=300&q=80"
+  },
+  {
+    "id": 180,
+    "word": "numb out",
+    "pos": "phrase",
+    "meaning": "放空大脑 / 感觉麻木[cite: 1]",
+    "phonetic": "/nʌm aʊt/",
+    "sentence": "After a grueling week, I just wanted to numb out on the couch.",
+    "translation": "在经历了筋疲力尽的一周后，我只想瘫在沙发上彻底放空大脑。",
+    "image": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=300&q=80"
+  },
+  {
+    "id": 181,
+    "word": "flop on",
+    "pos": "phrase",
+    "meaning": "重重倒在 / 扑倒在[cite: 1]",
+    "phonetic": "/flɑːp ɑːn/",
+    "sentence": "He flopped on the hotel bed immediately after checking in.",
+    "translation": "办理完入住手续后，他一进房间便立刻重重地扑倒在酒店大床上。",
+    "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=300&q=80"
+  },
+  {
+    "id": 182,
+    "word": "binge-watching",
+    "pos": "n.",
+    "meaning": "连续狂看 / 刷剧[cite: 1]",
+    "phonetic": "/ˈbɪndʒ wɑːtʃɪŋ/",
+    "sentence": "Weekend binge-watching has become a favorite way to unwind.",
+    "translation": "周末一口气连看好几集热门剧集已成为许多人最爱的解压方式。",
+    "image": "https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?w=300&q=80"
+  },
+  {
+    "id": 183,
+    "word": "s'mores",
+    "pos": "n.",
+    "meaning": "烤棉花糖夹心饼干[cite: 1]",
+    "phonetic": "/smɔːrz/",
+    "sentence": "Roasting marshmallows for campfire s'mores is a classic tradition.",
+    "translation": "围着营火烘烤棉花糖制作巧克力夹心饼干是一项经典的露营传统。",
+    "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=300&q=80"
+  },
+  {
+    "id": 184,
+    "word": "sterno",
+    "pos": "n.",
+    "meaning": "固体酒精燃料罐[cite: 1]",
+    "phonetic": "/ˈstɜːrnoʊ/",
+    "sentence": "The catering staff lit the sterno cans under the buffet trays.",
+    "translation": "餐饮保障人员点燃了自助餐加热保温托盘底部的固体酒精燃料罐。",
+    "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=300&q=80"
+  },
+  {
+    "id": 185,
+    "word": "bucolic",
+    "pos": "adj.",
+    "meaning": "田园风光的 / 质朴乡村的[cite: 1]",
+    "phonetic": "/bjuːˈkɑːlɪk/",
+    "sentence": "They spent the holiday in a bucolic countryside retreat.",
+    "translation": "他们在充满恬静田园诗意的乡间度假山庄度过了愉快的假期。",
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=300&q=80"
+  },
+  {
+    "id": 186,
+    "word": "paradigm shift",
+    "pos": "n.",
+    "meaning": "根本性范式转变 / 颠覆性变革[cite: 1]",
+    "phonetic": "/ˈpærədaɪm ʃɪft/",
+    "sentence": "Automated ledger reconciliation represents a paradigm shift for accountants.",
+    "translation": "总账自动化比对勾稽代表了财务会计日常作业模式的根本性转变。",
+    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=300&q=80"
+  },
+  {
+    "id": 187,
+    "word": "cross my heart",
+    "pos": "phrase",
+    "meaning": "真心发誓 / 绝无虚言[cite: 1]",
+    "phonetic": "/krɔːs maɪ hɑːrt/",
+    "sentence": "Cross my heart, I did not disclose any confidential deal terms.",
+    "translation": "我摸着良心发誓，我绝对没有向外界透露过任何保密的交易条款。",
+    "image": "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=300&q=80"
+  },
+  {
+    "id": 188,
+    "word": "spatula",
+    "pos": "n.",
+    "meaning": "锅铲 / 刮刀抹刀[cite: 1]",
+    "phonetic": "/ˈspætʃələ/",
+    "sentence": "Use a silicone spatula to flip the delicate crepes gently.",
+    "translation": "使用硅胶锅铲轻轻翻动锅中薄而娇嫩的法式可丽饼。",
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=300&q=80"
+  },
+  {
+    "id": 189,
+    "word": "sworn enemy",
+    "pos": "n.",
+    "meaning": "势不两立的死敌[cite: 1]",
+    "phonetic": "/swɔːrn ˈenəmi/",
+    "sentence": "The two competing ride-hailing startups were sworn enemies in the market.",
+    "translation": "这两家相互竞争的网约车初创平台在市场上是势不两立的生死劲敌。",
+    "image": "https://images.unsplash.com/photo-1511193311914-0346f16efe90?w=300&q=80"
+  },
+  {
+    "id": 190,
+    "word": "nerve-wracking",
+    "pos": "adj.",
+    "meaning": "令人极度紧张的 / 备受煎熬的[cite: 1]",
+    "phonetic": "/ˈnɜːrv rækɪŋ/",
+    "sentence": "Presenting quarterly forecasts to the board was a nerve-wracking experience.",
+    "translation": "在董事会前公开汇报季度业绩预测是一次令人高度紧张的考验。",
+    "image": "https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?w=300&q=80"
+  },
+  {
+    "id": 191,
+    "word": "eggshell",
+    "pos": "n.",
+    "meaning": "蛋壳 / 极其脆弱易碎的处境[cite: 1]",
+    "phonetic": "/ˈeɡʃel/",
+    "sentence": "We were walking on eggshells around the strict tax inspector.",
+    "translation": "在严厉苛刻的税务稽查员面前，我们每个人都小心翼翼、如履薄冰。",
+    "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=300&q=80"
+  },
+  {
+    "id": 192,
+    "word": "pylon",
+    "pos": "n.",
+    "meaning": "高压电缆铁塔 / 路桩[cite: 1]",
+    "phonetic": "/ˈpaɪlɑːn/",
+    "sentence": "High-voltage transmission pylons stretch across the rugged hills.",
+    "translation": "高压输电电缆铁塔高耸矗立，连绵横跨于崎岖险峻的山丘之上。",
+    "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=300&q=80"
+  },
+  {
+    "id": 193,
+    "word": "enigmatical",
+    "pos": "adj.",
+    "meaning": "神秘莫测的 / 谜一般的[cite: 1]",
+    "phonetic": "/ˌenɪɡˈmætɪkl/",
+    "sentence": "The founder responded with an enigmatical smile during the interview.",
+    "translation": "在接受媒体采访时，这位创始人仅以一抹神秘莫测的微笑予以回应。",
+    "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&q=80"
+  },
+  {
+    "id": 194,
+    "word": "aka",
+    "pos": "abbr.",
+    "meaning": "又名 / 亦称（Also Known As）[cite: 1]",
+    "phonetic": "/ˌeɪ keɪ ˈeɪ/",
+    "sentence": "Zhang, aka our automation wizard, optimized the pipeline overnight.",
+    "translation": "张，也就是大家口中的自动化大神，连夜重构优化了数据处理流水线。",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=300&q=80"
+  },
+  {
+    "id": 195,
+    "word": "blister",
+    "pos": "n.",
+    "meaning": "水泡 / 气泡[cite: 1]",
+    "phonetic": "/ˈblɪstər/",
+    "sentence": "He developed a painful blister after hiking in new boots.",
+    "translation": "穿着新买的靴子徒步远足后，他的脚上磨出了一个令人疼痛的水泡。",
+    "image": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=300&q=80"
+  },
+  {
+    "id": 196,
+    "word": "anorexic",
+    "pos": "adj.",
+    "meaning": "厌食症的 / 消瘦憔悴的[cite: 1]",
+    "phonetic": "/ˌænəˈreksɪk/",
+    "sentence": "The patient received medical counseling for severe anorexic symptoms.",
+    "translation": "该患者因严重的神经性厌食症症状接受了系统的专业医学心理疏导。",
+    "image": "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=300&q=80"
+  },
+  {
+    "id": 197,
+    "word": "perch",
+    "pos": "v.",
+    "meaning": "高居 / 栖息坐落在[cite: 1]",
+    "phonetic": "/pɜːrtʃ/",
+    "sentence": "The secluded villa is perched on a scenic coastal cliff.",
+    "translation": "那座幽静私密的度假别墅高高坐落在风景如画的海岸悬崖边上。",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=300&q=80"
+  },
+  {
+    "id": 198,
+    "word": "satirical",
+    "pos": "adj.",
+    "meaning": "辛辣讽刺的 / 嘲弄的[cite: 1]",
+    "phonetic": "/səˈtɪrɪkl/",
+    "sentence": "The editorial offered a biting satirical take on corporate bureaucracy.",
+    "translation": "这篇深度社论对大企业内部僵化的官僚作风进行了极其辛辣犀利的讽刺。",
+    "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=300&q=80"
+  },
+  {
+    "id": 199,
+    "word": "accolade",
+    "pos": "n.",
+    "meaning": "高度赞誉 / 殊荣嘉奖[cite: 1]",
+    "phonetic": "/ˈækəleɪd/",
+    "sentence": "Winning the annual innovation accolade boosted team morale significantly.",
+    "translation": "荣获年度技术创新殊荣极大鼓舞了整个研发团队的士气与干劲。",
+    "image": "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=300&q=80"
+  },
+  {
+    "id": 200,
+    "word": "feel the pull",
+    "pos": "phrase",
+    "meaning": "受到强烈吸引 / 身不由己想去[cite: 1]",
+    "phonetic": "/fiːl ðə pʊl/",
+    "sentence": "Experienced traders often feel the pull of high-volatility arbitrage.",
+    "translation": "资深交易员往往难以抗拒高波动性套利机会所带来的强烈吸引力。",
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=300&q=80"
   }
 ]
