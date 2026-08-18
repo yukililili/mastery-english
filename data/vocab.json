@@ -498,5 +498,755 @@
     "sentence": "He always attempts to weasel his way out of cross-departmental reviews.",
     "translation": "每当遇到跨部门的对账复盘，他总是变着法子耍滑头推脱责任。",
     "image": "https://images.unsplash.com/photo-1534447677768-be436bb09401?w=300&q=80"
+  },
+  {
+    "id": 51,
+    "word": "chitterlings",
+    "pos": "n.",
+    "meaning": "猪小肠 / 传统杂碎料理",
+    "phonetic": "/ˈtʃɪtlɪŋz/",
+    "sentence": "Chitterlings are a traditional staple in Southern soul food cuisine.",
+    "translation": "猪小肠是美国南部传统灵魂料理中的经典主食之一。",
+    "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=300&q=80"
+  },
+  {
+    "id": 52,
+    "word": "platter",
+    "pos": "n.",
+    "meaning": "大浅盘 / 美食大拼盘",
+    "phonetic": "/ˈplætər/",
+    "sentence": "We ordered a shared fruit and cheese platter for the entire table.",
+    "translation": "我们为整桌人点了一份水果与奶酪共享大拼盘。",
+    "image": "https://images.unsplash.com/photo-1541544741938-0af808871cc0?w=300&q=80"
+  },
+  {
+    "id": 53,
+    "word": "keep your nose clean",
+    "pos": "phrase",
+    "meaning": "安分守己 / 远离是非麻烦",
+    "phonetic": "/kiːp jər noʊz kliːn/",
+    "sentence": "Just keep your nose clean and stay out of unnecessary office politics.",
+    "translation": "安分守己做好手头的工作，别卷入无谓的办公室政治是非。",
+    "image": "https://images.unsplash.com/photo-1450133064473-71024230f91b?w=300&q=80"
+  },
+  {
+    "id": 54,
+    "word": "ace in the hole",
+    "pos": "phrase",
+    "meaning": "压箱底的王牌 / 绝招杀手锏",
+    "phonetic": "/eɪs ɪn ðə hoʊl/",
+    "sentence": "Our proprietary automation script is our real ace in the hole.",
+    "translation": "我们自主开发的这套自动化脚本才是我们真正的压箱底王牌。",
+    "image": "https://images.unsplash.com/photo-1511193311914-0346f16efe90?w=300&q=80"
+  },
+  {
+    "id": 55,
+    "word": "cannoli",
+    "pos": "n.",
+    "meaning": "奶油甜馅煎饼卷（意式甜点）",
+    "phonetic": "/kəˈnoʊli/",
+    "sentence": "Grab an espresso and a fresh, crispy ricotta cannoli.",
+    "translation": "点一杯浓缩咖啡，配上一支新鲜酥脆的乳酪奶油煎饼卷吧。",
+    "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=300&q=80"
+  },
+  {
+    "id": 56,
+    "word": "tenor",
+    "pos": "n.",
+    "meaning": "男高音歌手 / 大体要旨与基调",
+    "phonetic": "/ˈtenər/",
+    "sentence": "The lead tenor delivered a breathtaking solo aria at the opera.",
+    "translation": "首席男高音在歌剧院带来了一段令人屏息沉醉的独唱咏叹调。",
+    "image": "https://images.unsplash.com/photo-1465847899084-d164df4dedc6?w=300&q=80"
+  },
+  {
+    "id": 57,
+    "word": "soprano",
+    "pos": "n.",
+    "meaning": "女高音歌手 / 最高音声部",
+    "phonetic": "/səˈprænoʊ/",
+    "sentence": "The soprano hit the climactic high note with effortless precision.",
+    "translation": "女高音歌唱家轻而易举、精准无误地唱出了全曲最高潮的高音。",
+    "image": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=300&q=80"
+  },
+  {
+    "id": 58,
+    "word": "drizzle",
+    "pos": "v.",
+    "meaning": "细雨蒙蒙 / 均匀淋洒（酱汁）",
+    "phonetic": "/ˈdrɪzl/",
+    "sentence": "Drizzle extra virgin olive oil over the fresh garden salad.",
+    "translation": "在新鲜的田园蔬菜沙拉上淋上少许特级初榨橄榄油。",
+    "image": "https://images.unsplash.com/photo-1470240731273-7821a6eeb6bd?w=300&q=80"
+  },
+  {
+    "id": 59,
+    "word": "swap meet",
+    "pos": "n.",
+    "meaning": "旧货跳蚤市场 / 物物交换集市",
+    "phonetic": "/ˈswɑːp miːt/",
+    "sentence": "We hunted for vintage hardware tools at the weekend swap meet.",
+    "translation": "我们在周末的旧货跳蚤市场上淘到了几件复古五金工具。",
+    "image": "https://images.unsplash.com/photo-1533900298318-6b8da08a523e?w=300&q=80"
+  },
+  {
+    "id": 60,
+    "word": "hindsight",
+    "pos": "n.",
+    "meaning": "后见之明 / 事后反思",
+    "phonetic": "/ˈhaɪndsaɪt/",
+    "sentence": "In hindsight, we should have locked in the fixed exchange rate earlier.",
+    "translation": "事后回想，我们当初本该早点锁定固定结算汇率的。",
+    "image": "https://images.unsplash.com/photo-1499209974431-9dac3ada0047?w=300&q=80"
+  },
+  {
+    "id": 61,
+    "word": "vilify",
+    "pos": "v.",
+    "meaning": "肆意诽谤 / 恶意中伤贬低",
+    "phonetic": "/ˈvɪlɪfaɪ/",
+    "sentence": "The smear campaign attempted to vilify the executive's record.",
+    "translation": "那场抹黑行动企图肆意诋毁这位高管过往的优异履历。",
+    "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=300&q=80"
+  },
+  {
+    "id": 62,
+    "word": "white elephant",
+    "pos": "n.",
+    "meaning": "昂贵却无用的累赘 / 白象工程",
+    "phonetic": "/ˌwaɪt ˈelɪfənt/",
+    "sentence": "The unused corporate facility became an expensive white elephant.",
+    "translation": "那处常年闲置的企业园区如今成了耗资巨大的沉重累赘。",
+    "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=300&q=80"
+  },
+  {
+    "id": 63,
+    "word": "get over yourself",
+    "pos": "phrase",
+    "meaning": "别自以为是了 / 别把自己太当回事",
+    "phonetic": "/ɡet ˈoʊvər jərˈself/",
+    "sentence": "Get over yourself; this team strategy is bigger than any single person.",
+    "translation": "别太自以为是了，整个团队的战略目标远大于任何个人得失。",
+    "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&q=80"
+  },
+  {
+    "id": 64,
+    "word": "go for broke",
+    "pos": "phrase",
+    "meaning": "孤注一掷 / 全力放手一搏",
+    "phonetic": "/ɡoʊ fər broʊk/",
+    "sentence": "With nothing left to lose, the startup decided to go for broke.",
+    "translation": "在毫无退路的情况下，这家初创团队决定放手一搏、孤注一掷。",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=300&q=80"
+  },
+  {
+    "id": 65,
+    "word": "magnanimous",
+    "pos": "adj.",
+    "meaning": "宽宏大量的 / 豁达有雅量的",
+    "phonetic": "/mæɡˈnænɪməs/",
+    "sentence": "He was magnanimous in victory and sincerely commended his rivals.",
+    "translation": "他在赢得胜利后表现得极为豁达大度，真诚称赞了竞争对手。",
+    "image": "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=300&q=80"
+  },
+  {
+    "id": 66,
+    "word": "chirpy",
+    "pos": "adj.",
+    "meaning": "活泼欢快的 / 精神抖擞的",
+    "phonetic": "/ˈtʃɜːrpi/",
+    "sentence": "She arrived at the morning standup looking exceptionally chirpy.",
+    "translation": "在早晨的站立晨会上，她看起来神采奕奕、格外有活力。",
+    "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&q=80"
+  },
+  {
+    "id": 67,
+    "word": "go off the deep end",
+    "pos": "phrase",
+    "meaning": "大发雷霆 / 情绪彻底失控",
+    "phonetic": "/ɡoʊ ɔːf ðə diːp end/",
+    "sentence": "Don't go off the deep end before reviewing the reconciled ledger.",
+    "translation": "在核对完平账后的总账明细之前，千万别急着发脾气大发雷霆。",
+    "image": "https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?w=300&q=80"
+  },
+  {
+    "id": 68,
+    "word": "Achilles' heel",
+    "pos": "n.",
+    "meaning": "致命软肋 / 唯一致命弱点",
+    "phonetic": "/əˈkɪliːz hiːl/",
+    "sentence": "Poor liquidity management remains the enterprise's Achilles' heel.",
+    "translation": "薄弱的流动性资金管理依然是这家企业最致命的软肋。",
+    "image": "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=300&q=80"
+  },
+  {
+    "id": 69,
+    "word": "wither",
+    "pos": "v.",
+    "meaning": "枯萎凋零 / 逐渐衰退消亡",
+    "phonetic": "/ˈwɪðər/",
+    "sentence": "Without consistent user retention, organic traffic will simply wither.",
+    "translation": "如果缺乏稳定的用户留存率，自然增长的流量很快就会萎缩枯竭。",
+    "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=300&q=80"
+  },
+  {
+    "id": 70,
+    "word": "prowess",
+    "pos": "n.",
+    "meaning": "超凡技艺 / 卓越本领",
+    "phonetic": "/ˈpraʊəs/",
+    "sentence": "His technical prowess in financial modeling saved hours of manual work.",
+    "translation": "他在财务建模方面的高超技术为团队节省了大量的人工耗时。",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=300&q=80"
+  },
+  {
+    "id": 71,
+    "word": "philtrum",
+    "pos": "n.",
+    "meaning": "人中（鼻下与上唇之间的凹槽）",
+    "phonetic": "/ˈfɪltrəm/",
+    "sentence": "The anatomical portrait highlighted the contour of the subject's philtrum.",
+    "translation": "这幅解剖肖像图清晰勾勒出了模特人中部位的立体轮廓。",
+    "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&q=80"
+  },
+  {
+    "id": 72,
+    "word": "rack up",
+    "pos": "phrase",
+    "meaning": "迅速积累 / 大量获取",
+    "phonetic": "/ræk ʌp/",
+    "sentence": "The automated deployment pipeline helped us rack up rapid iterations.",
+    "translation": "这套自动化部署流水线帮助我们迅速累积了多次版本快速迭代。",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&q=80"
+  },
+  {
+    "id": 73,
+    "word": "to no avail",
+    "pos": "phrase",
+    "meaning": "徒劳无功 / 毫无成效",
+    "phonetic": "/tuː noʊ əˈveɪl/",
+    "sentence": "We attempted to bypass the network timeout repeatedly, to no avail.",
+    "translation": "我们多次尝试绕过网络请求超时的限制，但全都徒劳无功。",
+    "image": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=300&q=80"
+  },
+  {
+    "id": 74,
+    "word": "homage",
+    "pos": "n.",
+    "meaning": "崇高敬意 / 效忠与致敬",
+    "phonetic": "/ˈhɑːmɪdʒ/",
+    "sentence": "The architecture pays homage to classical mid-century structural design.",
+    "translation": "该建筑的设计风格向 20 世纪中叶的经典结构美学致以了崇高敬意。",
+    "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=300&q=80"
+  },
+  {
+    "id": 75,
+    "word": "right up your alley",
+    "pos": "phrase",
+    "meaning": "正合心意 / 正是某人的拿手好戏",
+    "phonetic": "/raɪt ʌp jər ˈæli/",
+    "sentence": "This backend optimization challenge is right up your alley.",
+    "translation": "这项后端架构性能优化的攻坚任务完全是你的拿手好戏，正合你意。",
+    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=300&q=80"
+  },
+  {
+    "id": 76,
+    "word": "tag along",
+    "pos": "phrase",
+    "meaning": "结伴同行 / 跟随一同前往",
+    "phonetic": "/tæɡ əˈlɔːŋ/",
+    "sentence": "Do you mind if I tag along for the client lunch?",
+    "translation": "你介意我跟你们一起去参加这场客户午餐会吗？",
+    "image": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=300&q=80"
+  },
+  {
+    "id": 77,
+    "word": "stop meddling",
+    "pos": "phrase",
+    "meaning": "别瞎插手 / 别多管闲事",
+    "phonetic": "/stɑːp ˈmedlɪŋ/",
+    "sentence": "Stop meddling in operational decisions that don't concern your department.",
+    "translation": "不要再插手那些与你部门职责无关的日常运营决策了。",
+    "image": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=300&q=80"
+  },
+  {
+    "id": 78,
+    "word": "no takers",
+    "pos": "phrase",
+    "meaning": "无人问津 / 没人响应接单",
+    "phonetic": "/noʊ ˈteɪkərz/",
+    "sentence": "We put out an open call for weekend overtime, but there were no takers.",
+    "translation": "我们发出了周末自愿加班的报名通知，但根本无人响应问津。",
+    "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=300&q=80"
+  },
+  {
+    "id": 79,
+    "word": "deface",
+    "pos": "v.",
+    "meaning": "涂污 / 损毁外观与标牌",
+    "phonetic": "/dɪˈfeɪs/",
+    "sentence": "It is strictly forbidden to deface public transit property with graffiti.",
+    "translation": "严禁在公共交通设施上乱涂乱画损毁其外观与标识。",
+    "image": "https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?w=300&q=80"
+  },
+  {
+    "id": 80,
+    "word": "sleeve",
+    "pos": "n.",
+    "meaning": "衣袖 / 保护套管 / 唱片封套",
+    "phonetic": "/sliːv/",
+    "sentence": "He rolled up his sleeves and immediately got down to debugging the script.",
+    "translation": "他利落地挽起衣袖，立刻全身心投入到脚本的排错调试中。",
+    "image": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=300&q=80"
+  },
+  {
+    "id": 81,
+    "word": "cup holder",
+    "pos": "n.",
+    "meaning": "杯托 / 车载饮料架",
+    "phonetic": "/ˈkʌp hoʊldər/",
+    "sentence": "The central console is thoughtfully equipped with dual thermal cup holders.",
+    "translation": "汽车中控台贴心配置了带保温功能的双水杯托架。",
+    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=300&q=80"
+  },
+  {
+    "id": 82,
+    "word": "get the hang of",
+    "pos": "phrase",
+    "meaning": "摸清门道 / 掌握操作诀窍",
+    "phonetic": "/ɡet ðə hæŋ əv/",
+    "sentence": "Once you get the hang of Git branch rebasing, version control becomes effortless.",
+    "translation": "一旦你摸清了 Git 分支变基的门道诀窍，版本协作管理就会轻松自如。",
+    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=300&q=80"
+  },
+  {
+    "id": 83,
+    "word": "have a soft spot for",
+    "pos": "phrase",
+    "meaning": "对……格外偏爱 / 难以抗拒",
+    "phonetic": "/hæv ə sɔːft spɑːt fər/",
+    "sentence": "She has always had a soft spot for artisan pour-over single-origin coffee.",
+    "translation": "她对精品手冲单一产地的原产咖啡豆总是有着一种难以抗拒的偏爱。",
+    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=300&q=80"
+  },
+  {
+    "id": 84,
+    "word": "horoscope",
+    "pos": "n.",
+    "meaning": "星座运势 / 星盘占星图",
+    "phonetic": "/ˈhɔːrəskoʊp/",
+    "sentence": "Reading daily horoscopes is just a harmless form of morning entertainment.",
+    "translation": "早晨读一读每日星座运势纯粹是一种无伤大雅的消遣放松。",
+    "image": "https://images.unsplash.com/photo-1532968961962-8a0cb3a2d4f5?w=300&q=80"
+  },
+  {
+    "id": 85,
+    "word": "check horoscope",
+    "pos": "phrase",
+    "meaning": "查看星座星盘运势",
+    "phonetic": "/tʃek ˈhɔːrəskoʊp/",
+    "sentence": "She routinely checks her horoscope before booking long-distance flights.",
+    "translation": "在预订长途国际航班前，她习惯性地先看一眼当月的星座星盘运程。",
+    "image": "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=300&q=80"
+  },
+  {
+    "id": 86,
+    "word": "circadian rhythm",
+    "pos": "n.",
+    "meaning": "昼夜节律 / 生物钟",
+    "phonetic": "/sɜːrˈkeɪdiən ˈrɪðəm/",
+    "sentence": "Minimizing blue light exposure before bed protects your natural circadian rhythm.",
+    "translation": "睡前尽量减少蓝光屏幕照射有助于保护人体天然的昼夜生物节律。",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=300&q=80"
+  },
+  {
+    "id": 87,
+    "word": "hit the spot",
+    "pos": "phrase",
+    "meaning": "正合心意 / 恰到好处（解渴解馋解困）",
+    "phonetic": "/hɪt ðə spɑːt/",
+    "sentence": "That tall glass of iced sparkling water really hit the spot after a heavy workout.",
+    "translation": "大重量高强度训练后喝下一大杯冰镇气泡水，真是爽快极了、恰到好处。",
+    "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=300&q=80"
+  },
+  {
+    "id": 88,
+    "word": "be stacked against",
+    "pos": "phrase",
+    "meaning": "形势极端不利 / 处于天然劣势",
+    "phonetic": "/biː stækt əˈɡenst/",
+    "sentence": "The odds were stacked against us, but the deployment executed without downtime.",
+    "translation": "尽管客观客观条件对我们极为不利，但本次发布迁移依然实现了零停机平稳交付。",
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=300&q=80"
+  },
+  {
+    "id": 89,
+    "word": "just a blip",
+    "pos": "phrase",
+    "meaning": "短暂的小波动 / 只是个小插曲",
+    "phonetic": "/dʒʌst ə blɪp/",
+    "sentence": "The temporary dip in Q2 revenue was just a blip on our long-term growth curve.",
+    "translation": "二季度营收的短暂下滑只是我们长期稳健增长曲线上的一次微小波动而已。",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=300&q=80"
+  },
+  {
+    "id": 90,
+    "word": "rocket science",
+    "pos": "n.",
+    "meaning": "高深莫测的难事（常用于否定句）",
+    "phonetic": "/ˈrɑːkɪt ˈsaɪəns/",
+    "sentence": "Configuring reverse proxy rules on an edge server is not rocket science.",
+    "translation": "在边缘网关节点上配置反向代理规则并不是什么高深复杂的难事。",
+    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=300&q=80"
+  },
+  {
+    "id": 91,
+    "word": "here's the kicker",
+    "pos": "phrase",
+    "meaning": "意想不到的转折来了 / 重点是 / 离谱的是",
+    "phonetic": "/hɪrz ðə ˈkɪkər/",
+    "sentence": "We spent all night reconciling the ledgers, but here's the kicker: the audit got postponed.",
+    "translation": "我们熬了一整夜核对勾稽总账明细，但最离谱的转折是：审计被临时延期了。",
+    "image": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=300&q=80"
+  },
+  {
+    "id": 92,
+    "word": "have the bandwidth",
+    "pos": "phrase",
+    "meaning": "有精力 / 腾得出时间处理",
+    "phonetic": "/hæv ðə ˈbændwɪdθ/",
+    "sentence": "Do you have the bandwidth to review these multi-currency cash flow projections?",
+    "translation": "你手头能腾出空余精力来复核一下这些多币种的现金流测算表吗？",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=300&q=80"
+  },
+  {
+    "id": 93,
+    "word": "late bloomer",
+    "pos": "n.",
+    "meaning": "大器晚成的人 / 厚积薄发者",
+    "phonetic": "/leɪt ˈbluːmər/",
+    "sentence": "He was a quiet late bloomer who emerged as an industry leader in his forties.",
+    "translation": "他是一位沉潜厚积薄发的大器晚成者，到了四十岁才逐渐成长为行业领军人物。",
+    "image": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=300&q=80"
+  },
+  {
+    "id": 94,
+    "word": "going places",
+    "pos": "phrase",
+    "meaning": "前途无量 / 必有大作为",
+    "phonetic": "/ˈɡoʊɪŋ ˈpleɪsɪz/",
+    "sentence": "With her sharp analytical mindset and work ethic, that junior accountant is going places.",
+    "translation": "凭借着敏锐的分析思维与严谨的职业素养，那位年轻的会计师未来绝对前途无量。",
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=300&q=80"
+  },
+  {
+    "id": 95,
+    "word": "fish mint",
+    "pos": "n.",
+    "meaning": "鱼腥草 / 折耳根",
+    "phonetic": "/fɪʃ mɪnt/",
+    "sentence": "Fish mint is a fragrant, polarizing herb widely enjoyed across Southwestern China.",
+    "translation": "鱼腥草（折耳根）是一种风味独特、极具地方特色的草本植物，在西南地区广受喜爱。",
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=300&q=80"
+  },
+  {
+    "id": 96,
+    "word": "in cadence",
+    "pos": "phrase",
+    "meaning": "步调一致 / 节奏齐整地",
+    "phonetic": "/ɪn ˈkeɪdns/",
+    "sentence": "The sprint cycles were executed in perfect cadence across all functional teams.",
+    "translation": "所有跨职能业务团队之间的敏捷迭代周期推进得井然有序、步调极其一致。",
+    "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=300&q=80"
+  },
+  {
+    "id": 97,
+    "word": "vice versa",
+    "pos": "adv.",
+    "meaning": "反之亦然 / 倒过来也成立",
+    "phonetic": "/ˌvaɪsi ˈvɜːrsə/",
+    "sentence": "Clean system architecture improves code maintainability, and vice versa.",
+    "translation": "清晰干净的系统架构能显著提升代码的可维护性，反之亦然。",
+    "image": "https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=300&q=80"
+  },
+  {
+    "id": 98,
+    "word": "pop the cork",
+    "pos": "phrase",
+    "meaning": "开香槟庆祝 / 举杯狂欢",
+    "phonetic": "/pɑːp ðə kɔːrk/",
+    "sentence": "Let's pop the cork to celebrate the successful closing of our funding round.",
+    "translation": "新一轮融资成功落地交割了，咱们开瓶香槟好好举杯庆祝一番！",
+    "image": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=300&q=80"
+  },
+  {
+    "id": 99,
+    "word": "force of habit",
+    "pos": "n.",
+    "meaning": "习惯使然 / 出于职业惯性",
+    "phonetic": "/fɔːrs əv ˈhæbɪt/",
+    "sentence": "I ran the cross-validation script twice purely out of force of habit.",
+    "translation": "我下意识地把交叉比对核验脚本又跑了一遍，纯粹是多年养成的职业习惯使然。",
+    "image": "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=300&q=80"
+  },
+  {
+    "id": 100,
+    "word": "heap praise on",
+    "pos": "phrase",
+    "meaning": "大加赞赏 / 对……赞不绝口",
+    "phonetic": "/hiːp preɪz ɑːn/",
+    "sentence": "Senior leadership heaped praise on the automation framework for eliminating reporting lag.",
+    "translation": "管理层对这套消除了报表延迟的自动化处理框架给予了高度评价并赞不绝口。",
+    "image": "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=300&q=80"
+  },
+  {
+    "id": 101,
+    "word": "heap praise on",
+    "pos": "phrase",
+    "meaning": "大加赞赏 / 极力称赞",
+    "phonetic": "/hiːp preɪz ɑːn/",
+    "sentence": "Critics heaped praise on her breakthrough performance.",
+    "translation": "评论界对她的突破性表演给予了高度赞扬与肯定。",
+    "image": "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=300&q=80"
+  },
+  {
+    "id": 102,
+    "word": "SparkNotes",
+    "pos": "n.",
+    "meaning": "要点速览 / 核心摘要",
+    "phonetic": "/ˈspɑːrk noʊts/",
+    "sentence": "Can you give me the SparkNotes version of the meeting?",
+    "translation": "你能把刚才会议的核心要点跟我快速同步一下吗？",
+    "image": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=300&q=80"
+  },
+  {
+    "id": 103,
+    "word": "raccoon",
+    "pos": "n.",
+    "meaning": "浣熊",
+    "phonetic": "/ræˈkuːn/",
+    "sentence": "A curious raccoon was rummaging through the backyard bin.",
+    "translation": "一只好奇的小浣熊正在后院的垃圾桶里翻找零食。",
+    "image": "https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?w=300&q=80"
+  },
+  {
+    "id": 104,
+    "word": "xenophobia",
+    "pos": "n.",
+    "meaning": "排外倾向 / 恐外偏见",
+    "phonetic": "/ˌzenəˈfoʊbiə/",
+    "sentence": "We must foster an inclusive culture and reject xenophobia.",
+    "translation": "我们必须构建包容的企业文化，坚决抵制任何排外偏见。",
+    "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&q=80"
+  },
+  {
+    "id": 105,
+    "word": "streamline",
+    "pos": "v.",
+    "meaning": "精简优化 / 提高运作效率",
+    "phonetic": "/ˈstriːmlaɪn/",
+    "sentence": "We streamlined the onboarding workflow to eliminate manual delays.",
+    "translation": "我们精简优化了入职流程，彻底消除了人工操作的延迟。",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=300&q=80"
+  },
+  {
+    "id": 106,
+    "word": "groundhog",
+    "pos": "n.",
+    "meaning": "土拨鼠 / 旱獭",
+    "phonetic": "/ˈɡraʊndhɑːɡ/",
+    "sentence": "The groundhog poked its head out of the burrow cautiously.",
+    "translation": "土拨鼠小心翼翼地从地洞里探出了小脑袋。",
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=300&q=80"
+  },
+  {
+    "id": 107,
+    "word": "preempt",
+    "pos": "v.",
+    "meaning": "先发制人 / 预先防范阻止",
+    "phonetic": "/priˈempt/",
+    "sentence": "The PR team preempted the controversy with a prompt statement.",
+    "translation": "公关团队通过及时发布声明，先发制人地平息了潜在争议。",
+    "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=300&q=80"
+  },
+  {
+    "id": 108,
+    "word": "cast blame",
+    "pos": "phrase",
+    "meaning": "推卸责任 / 互相甩锅",
+    "phonetic": "/kæst bleɪm/",
+    "sentence": "Instead of casting blame, let's focus on resolving the issue.",
+    "translation": "与其互相推诿甩锅，不如集中精力快速解决当前问题。",
+    "image": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=300&q=80"
+  },
+  {
+    "id": 109,
+    "word": "flesh out",
+    "pos": "phrase",
+    "meaning": "充实完善 / 补充细节内容",
+    "phonetic": "/fleʃ aʊt/",
+    "sentence": "We need to flesh out the strategic plan before tomorrow's pitch.",
+    "translation": "在明天的路演前，我们需要进一步充实完善战略方案的细节。",
+    "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=300&q=80"
+  },
+  {
+    "id": 110,
+    "word": "tone-deaf",
+    "pos": "adj.",
+    "meaning": "缺乏同理心 / 不知趣 / 没眼力见",
+    "phonetic": "/ˈtoʊn def/",
+    "sentence": "Bragging about record bonuses during layoffs was completely tone-deaf.",
+    "translation": "在公司裁员期间大肆炫耀天价奖金，显得格外没有眼力见且缺乏同理心。",
+    "image": "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=300&q=80"
+  },
+  {
+    "id": 111,
+    "word": "archenemy",
+    "pos": "n.",
+    "meaning": "头号劲敌 / 宿敌",
+    "phonetic": "/ˌɑːrtʃˈenəmi/",
+    "sentence": "The two delivery platforms have been bitter archenemies for years.",
+    "translation": "这两家外卖巨头多年来一直是针锋相对的头号竞争死敌。",
+    "image": "https://images.unsplash.com/photo-1511193311914-0346f16efe90?w=300&q=80"
+  },
+  {
+    "id": 112,
+    "word": "inferno",
+    "pos": "n.",
+    "meaning": "火海炼狱 / 肆虐的熊熊烈火",
+    "phonetic": "/ɪnˈfɜːrnoʊ/",
+    "sentence": "Brave first responders rushed into the warehouse inferno.",
+    "translation": "英勇的救援人员义无反顾地冲进了仓库的熊熊火海之中。",
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=300&q=80"
+  },
+  {
+    "id": 113,
+    "word": "ablaze",
+    "pos": "adj.",
+    "meaning": "烈火熊熊的 / 绚烂夺目的",
+    "phonetic": "/əˈbleɪz/",
+    "sentence": "The autumn hills were ablaze with radiant amber leaves.",
+    "translation": "秋日连绵的群山在金红落叶的映衬下绚丽如火、美不胜收。",
+    "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=300&q=80"
+  },
+  {
+    "id": 114,
+    "word": "blaze",
+    "pos": "n.",
+    "meaning": "大火 / 闪耀光芒",
+    "phonetic": "/bleɪz/",
+    "sentence": "The sunrise broke through morning fog in a blaze of brilliant gold.",
+    "translation": "朝阳穿透晨雾，绽放出万道耀眼夺目的金色霞光。",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=300&q=80"
+  },
+  {
+    "id": 115,
+    "word": "poached",
+    "pos": "adj.",
+    "meaning": "水波煮的 / 嫩煨的",
+    "phonetic": "/poʊtʃt/",
+    "sentence": "She enjoys crispy sourdough toast topped with warm poached eggs.",
+    "translation": "她格外喜欢在酥脆的酸面包吐司上配一颗温热嫩滑的水波蛋。",
+    "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=300&q=80"
+  },
+  {
+    "id": 116,
+    "word": "sow discord",
+    "pos": "phrase",
+    "meaning": "挑拨离间 / 制造内部矛盾",
+    "phonetic": "/soʊ ˈdɪskɔːrd/",
+    "sentence": "Spreading anonymous gossip was an attempt to sow discord.",
+    "translation": "四处散播匿名八卦是企图在团队内部挑拨离间的不良行径。",
+    "image": "https://images.unsplash.com/photo-1450133064473-71024230f91b?w=300&q=80"
+  },
+  {
+    "id": 117,
+    "word": "incorrigible",
+    "pos": "adj.",
+    "meaning": "无可救药的 / 屡教不改的",
+    "phonetic": "/ɪnˈkɔːrɪdʒəbl/",
+    "sentence": "He is an incorrigible perfectionist when inspecting UI design details.",
+    "translation": "在把关 UI 界面设计细节时，他是个无可救药的完美主义者。",
+    "image": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=300&q=80"
+  },
+  {
+    "id": 118,
+    "word": "the game is afoot",
+    "pos": "phrase",
+    "meaning": "好戏开场了 / 行动正式展开",
+    "phonetic": "/ðə ɡeɪm ɪz əˈfʊt/",
+    "sentence": "The market bell has rung; the game is officially afoot.",
+    "translation": "开市钟声已经敲响，真正激烈的商业较量正式拉开序幕。",
+    "image": "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=300&q=80"
+  },
+  {
+    "id": 119,
+    "word": "read the room",
+    "pos": "phrase",
+    "meaning": "察言观色 / 审时度势",
+    "phonetic": "/riːd ðə ruːm/",
+    "sentence": "Always read the room before pitching aggressive budget cuts.",
+    "translation": "在正式提出激进的削减预算方案前，一定要先察言观色看清场上气氛。",
+    "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=300&q=80"
+  },
+  {
+    "id": 120,
+    "word": "a passing fancy",
+    "pos": "phrase",
+    "meaning": "一时兴起 / 三分钟热度",
+    "phonetic": "/ə ˈpæsɪŋ ˈfænsi/",
+    "sentence": "His passion for crypto trading turned out to be just a passing fancy.",
+    "translation": "他对加密货币炒作的热情最终证明不过是三分钟热度的一时兴起。",
+    "image": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=300&q=80"
+  },
+  {
+    "id": 121,
+    "word": "make a pact",
+    "pos": "phrase",
+    "meaning": "立下誓约 / 达成互信协议",
+    "phonetic": "/meɪk ə pækt/",
+    "sentence": "The co-founders made a pact to always communicate candidly.",
+    "translation": "两位联合创始人立下约定，彼此间永远坦诚透明地沟通。",
+    "image": "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=300&q=80"
+  },
+  {
+    "id": 122,
+    "word": "solitaire",
+    "pos": "n.",
+    "meaning": "单人纸牌接龙 / 单颗镶嵌珠宝",
+    "phonetic": "/ˈsɑːləter/",
+    "sentence": "She passed the flight layover playing a quick round of solitaire.",
+    "translation": "在转机候机期间，她玩了一局单人纸牌接龙来消磨时间。",
+    "image": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=300&q=80"
+  },
+  {
+    "id": 123,
+    "word": "adorn",
+    "pos": "v.",
+    "meaning": "装饰 / 点缀打扮",
+    "phonetic": "/əˈdɔːrn/",
+    "sentence": "Modern minimalist paintings adorn the lobby walls.",
+    "translation": "现代简约风的画作将公司大堂的墙面点缀得格外雅致。",
+    "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=300&q=80"
+  },
+  {
+    "id": 124,
+    "word": "laurel",
+    "pos": "n.",
+    "meaning": "月桂花环 / 荣誉成就",
+    "phonetic": "/ˈlɔːrəl/",
+    "sentence": "Never rest on your laurels; stay hungry for innovation.",
+    "translation": "永远不要躺在过去的功劳簿上沾沾自喜，要始终保持对创新的渴望。",
+    "image": "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=300&q=80"
+  },
+  {
+    "id": 125,
+    "word": "braces",
+    "pos": "n.",
+    "meaning": "牙齿矫正器 / 裤子背带",
+    "phonetic": "/ˈbreɪsɪz/",
+    "sentence": "She wore clear dental braces for a year to align her teeth.",
+    "translation": "她佩戴了整整一年的隐形牙套来矫正排齐牙齿。",
+    "image": "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=300&q=80"
   }
 ]
