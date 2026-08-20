@@ -30,7 +30,7 @@
       padding-bottom: 60px;
     }
 
-    /* 顶部导航与控制栏 */
+    /* ================= 顶部导航与控制栏 ================= */
     .nav-header {
       position: sticky;
       top: 0;
@@ -206,7 +206,7 @@
     .btn-remember { background: #f0fdf4; color: #16a34a; border: 1px solid #bbf7d0; }
     .btn-remember:hover { background: #dcfce7; }
 
-    /* ================= 模块 1：词汇与翻卡功能 ================= */
+    /* ================= 模块 1：词汇与分级功能 ================= */
     .vocab-wrapper {
       background: var(--card-bg);
       border-radius: 20px;
@@ -220,7 +220,7 @@
       align-items: center;
       flex-wrap: wrap;
       gap: 12px;
-      margin-bottom: 20px;
+      margin-bottom: 14px;
     }
 
     .category-badge {
@@ -232,6 +232,67 @@
       padding: 6px 18px;
       border-radius: 999px;
     }
+
+    /* 智能分级筛选工具栏 */
+    .vocab-level-filter-bar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+      padding: 10px 14px;
+      background: #f8fafc;
+      border-radius: 12px;
+      border: 1px solid var(--border-light);
+    }
+
+    .level-filter-label {
+      font-size: 0.82rem;
+      font-weight: 800;
+      color: var(--text-sub);
+      margin-right: 4px;
+    }
+
+    .level-filter-chip {
+      border: 1px solid #cbd5e1;
+      background: #ffffff;
+      color: var(--text-sub);
+      padding: 4px 12px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .level-filter-chip:hover {
+      background: #f1f5f9;
+      border-color: #94a3b8;
+    }
+
+    .level-filter-chip.active {
+      background: #1e293b;
+      color: #ffffff;
+      border-color: #1e293b;
+      box-shadow: 0 2px 6px rgba(30, 41, 59, 0.2);
+    }
+
+    /* 分级专属卡片标签样式 */
+    .level-tag {
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 6px;
+      letter-spacing: 0.3px;
+    }
+    .level-spoken { background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; }
+    .level-cet46 { background: #dcfce7; color: #15803d; border: 1px solid #bbf7d0; }
+    .level-ielts { background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; }
+    .level-gmat { background: #fff7ed; color: #c2410c; border: 1px solid #ffedd5; }
+    .level-tem8 { background: #fdf4ff; color: #86198f; border: 1px solid #f5d0fe; }
+    .level-gre { background: #fee2e2; color: #b91c1c; border: 1px solid #fecaca; }
 
     .flashcard-toggle-btn {
       border: 1px solid var(--primary-green);
@@ -292,14 +353,14 @@
     .index-num {
       background-color: var(--primary-green);
       color: #ffffff;
-      width: 22px;
-      height: 22px;
+      width: 24px;
+      height: 24px;
       border-radius: 50%;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      font-size: 0.8rem;
-      font-weight: 700;
+      font-size: 0.78rem;
+      font-weight: 800;
     }
     
     .word-title {
@@ -330,7 +391,7 @@
       padding: 4px 10px;
       border-radius: 8px;
       margin-top: 4px;
-      margin-left: 30px;
+      margin-left: 32px;
       border: 1px dashed #a5f3fc;
     }
 
@@ -354,7 +415,7 @@
     .phonetic {
       font-size: 0.9rem;
       color: var(--primary-green);
-      margin-left: 30px;
+      margin-left: 32px;
     }
 
     .sentence-en {
@@ -362,7 +423,7 @@
       font-weight: 700;
       color: var(--text-main);
       margin-top: 4px;
-      margin-left: 30px;
+      margin-left: 32px;
       line-height: 1.35;
     }
     .sentence-en:hover { color: var(--light-green); }
@@ -370,7 +431,7 @@
     .sentence-zh {
       font-size: 0.9rem;
       color: var(--text-sub);
-      margin-left: 30px;
+      margin-left: 32px;
     }
 
     .vocab-img-wrap {
@@ -493,6 +554,19 @@
             🃏 翻卡自测模式: 已开启
           </button>
         </div>
+
+        <!-- 智能分级过滤器（支持 口语 / 四六级 / 雅思托福 / GMAT / 专八 / GRE） -->
+        <div class="vocab-level-filter-bar">
+          <span class="level-filter-label">🏷️ 词汇分级:</span>
+          <button class="level-filter-chip active" onclick="setVocabLevel('all', event)">全部 (<span id="count-all">0</span>)</button>
+          <button class="level-filter-chip" onclick="setVocabLevel('spoken', event)">🗣️ 口语/常用 (<span id="count-spoken">0</span>)</button>
+          <button class="level-filter-chip" onclick="setVocabLevel('cet46', event)">🎓 四六级 (<span id="count-cet46">0</span>)</button>
+          <button class="level-filter-chip" onclick="setVocabLevel('ielts', event)">✈️ 雅思/托福 (<span id="count-ielts">0</span>)</button>
+          <button class="level-filter-chip" onclick="setVocabLevel('gmat', event)">📊 GMAT (<span id="count-gmat">0</span>)</button>
+          <button class="level-filter-chip" onclick="setVocabLevel('tem8', event)">📚 英语专八 (<span id="count-tem8">0</span>)</button>
+          <button class="level-filter-chip" onclick="setVocabLevel('gre', event)">🏛️ GRE/高阶 (<span id="count-gre">0</span>)</button>
+        </div>
+
         <div class="vocab-grid" id="vocabContainer"><div class="loading-hint">正在读取 data/vocab.json ...</div></div>
       </div>
     </section>
@@ -522,7 +596,98 @@
     const EBBINGHAUS_DAYS = [0, 1, 2, 4, 7, 15, 30];
     let isReviewOnly = false;
     let isFlashcardMode = true; // 默认开启翻卡自测模式
+    let currentVocabLevel = 'all'; // 词汇分级筛选状态: all | spoken | cet46 | ielts | gmat | tem8 | gre
 
+    // ================= 前端智能启发式分级引擎 =================
+    function classifyWord(word = '', meaning = '') {
+      const w = word.toLowerCase().trim();
+
+      // 1. 口语高频 / 实用短语 / 惯用口语表达
+      if (w.includes(' ') || w.includes('-') || w.length <= 4) {
+        if (w.length > 10 && !w.includes(' ')) return 'gre';
+        return 'spoken';
+      }
+
+      // 2. GMAT 核心词汇（商业、金融、审计、经济博弈、逻辑与管理决策词汇）
+      const gmatKeywords = [
+        /(fiscal|amortization|depreciation|accrual|liquidity|solvency|leverage|arbitrage|hedging|variance|bottleneck|throughput|concurrency|redundancy|failover|scalability|elasticity|sharding|clustering|indexing|schema|deadlock|fiduciary|jurisprudential|antitrust|extradition|arraignment|sublet|surplus|deficit|ledger|voucher|audit|reconciliation|prepayment|optimi|contingency|discrepancy|mitigation|prerequisite|consolidate|expedite|synergy|governance|valuation|turnstile|underwrite|portfolio|escrow|suborn|recourse|indemnity|divest|moratorium|breach|monopoly|cartel|duopoly|oligopoly|macroeconomic)/
+      ];
+      if (gmatKeywords.some(p => p.test(w))) {
+        return 'gmat';
+      }
+
+      // 3. 英语专业八级 (TEM-8) 核心词汇（文学色彩浓厚、修辞学、历史人文、精巧冷门形容词/名词）
+      const tem8Keywords = [
+        /(sylvan|diaphanous|rime|copse|gossamer|pellucid|limpid|tenebrous|coruscating|incandescent|somatic|impalpable|abeyance|hiatus|celerity|alacrity|dilatory|lassitude|hebetude|somnolence|soporific|anodyne|paregoric|emollient|demulcent|palliative|salubrious|mephitic|pestilential|putrefy|fester|suppurate|cankerous|gangrenous|purulent|scabrous|tempest|zephyr|billow|cataclysm|maelstrom|vortex|torrent|ooze|exude|percolate|macerate|drench|parch|cauterize|desiccate|infecund|fecund|fecundity|luxuriant|verdant|verdurous|arboreal|nemoral|boscage|thicket|coppice|spinney|underbrush|undergrowth|chaparral|scrubland|heath|moor|fen|morass|sward|greensward|lea|prairie|steppe|tundra|taiga|boreal|sirocco|mistral|foehn|chinook|blizzard|hailstorm|waterspout|simoom|haboob|hoarfrost|verglas|icicle|stalactite|stalagmite|speleothem|cavern|grotto|doline|cenote|caldera|fumarole|solfatara|magma|basalt|obsidian|pumice|schist|gneiss|shale|dolomite|quartzite|feldspar|amphibole|pyroxene|olivine|peridotite|kimberlite|pegmatite|aplite|diorite|gabbro|syenite|monzonite|andesite|dacite|rhyolite|trachyte|phonolite|latite|tephra|lahar|pyroclastic|ignimbrite|breccia|conglomerate|marl|chalcedony|tourmaline|spinel|zircon|corundum|beryl|morganite|heliodor|tanzanite|jadeite|nephrite|malachite|azurite|hematite|magnetite|pyrite|chalcopyrite|galena|sphalerite|cinnabar|orpiment|realgar|cryolite|cassiterite|wolframite|molybdenite|quintessence|plethora|dearth|paucity|copiousness|superfluity)/
+      ];
+      if (tem8Keywords.some(p => p.test(w))) {
+        return 'tem8';
+      }
+
+      // 4. GRE / 极高阶学术与批判性思维词汇
+      const grePatterns = [
+        /^(archaeo|osteo|thrombo|pseudo|paleo|hemo|necro)/,
+        /(tude|ous|acious|istic|philic|pathology|cide|cracy|logy|morph|scribe|scence|dox|plice|phobia|osis|rrhea|phile)$/,
+        /(gravitas|repine|draconian|beguile|sentient|incontestable|misbegotten|expostulation|hemostat|ossuary|recidivism|seditious|parsimonious|perspicacious|pusillanimous|obfuscate|quagmire|supercilious|vituperative|inchoate|deleterious|noisome|mordant|scurrilous|asinine|jejune|puerile|hubris|imperious|contumely|braggadocio|grandiloquent|turgid|evanescent|fugacious|protean|truculent|pugnacious|fractious|inimical|propitious|salutary|specious|mendacious|avarice|cupidity|munificent|capricious|ubiquitous|pragmatic|dichotomy|coalesce|esoteric|germane|zenith|nadir|auspicious|salient|circumspect|tractable|anomalous|bellicose|garrulous|loquacious|tacit|laconic|pithy|cogent)/
+      ];
+      if (w.length >= 10 || grePatterns.some(p => p.test(w))) {
+        return 'gre';
+      }
+
+      // 5. 雅思 / 托福 / 进阶学术书面语
+      const ieltsPatterns = [
+        /(ment|ity|able|ible|ence|ance|ize|ise|ation|ition|itive|icate|ular|ward|scope|metry|graph)$/,
+        /(fiscal|millennium|contrition|delineate|banal|forage|fallback|cholesterol|granular|milestone|align|deliverable|boilerplate|scrutinize|supposition|prolific|decree|inscrutable|tempestuous|potent|provincial|travesty|caveat|opaque|volition|nemesis|ubiquity|internalise|nuance|elicit|complacency|fortuitous|gratis|gratuitous|corrigible|insulate|nascent|raconteur|sedulous|ancillary|provident|trenchant|efficacious|surmise|desultory|sapient|stringent|retrofit|renege|mercurial|detritus|heist|abscond|salvageable|predatory|consecutive|connotation|virulent|chronic|eviscerate|upheaval|bulwark|torpid|attest|capitulate|perceive|ensue|precedence|dispel|voracious|retention|interchangeable|scintillating|suffice|incognito|inundate|perpetuity|expediency|verbatim|debase|covet|propensity|ruinous|incremental|clemency|leeway|decorum|delve|convalesce|recalcitrant|demur|disparate|fastidious|perfunctory|ostensible|innocuous|ephemeral)/
+      ];
+      if (w.length >= 7 || ieltsPatterns.some(p => p.test(w))) {
+        return 'ielts';
+      }
+
+      // 6. 四六级 / 考研基础核心词汇
+      if (w.length >= 5) {
+        return 'cet46';
+      }
+
+      return 'spoken';
+    }
+
+    function getLevelInfo(level) {
+      switch(level) {
+        case 'gre': return { label: '🏛️ GRE', className: 'level-gre' };
+        case 'tem8': return { label: '📚 专八', className: 'level-tem8' };
+        case 'gmat': return { label: '📊 GMAT', className: 'level-gmat' };
+        case 'ielts': return { label: '✈️ 雅思', className: 'level-ielts' };
+        case 'cet46': return { label: '🎓 四六级', className: 'level-cet46' };
+        default: return { label: '🗣️ 口语', className: 'level-spoken' };
+      }
+    }
+
+    function setVocabLevel(level, evt) {
+      if (evt) evt.stopPropagation();
+      currentVocabLevel = level;
+      document.querySelectorAll('.level-filter-chip').forEach(btn => btn.classList.remove('active'));
+      if (evt && evt.target) evt.target.classList.add('active');
+      renderModule('vocab');
+    }
+
+    function updateVocabCounts() {
+      const items = getModuleList('vocab');
+      const counts = { all: items.length, spoken: 0, cet46: 0, ielts: 0, gmat: 0, tem8: 0, gre: 0 };
+      items.forEach(item => {
+        const lvl = item.level || 'spoken';
+        if (counts[lvl] !== undefined) counts[lvl]++;
+      });
+
+      document.getElementById('count-all').textContent = counts.all;
+      document.getElementById('count-spoken').textContent = counts.spoken;
+      document.getElementById('count-cet46').textContent = counts.cet46;
+      document.getElementById('count-ielts').textContent = counts.ielts;
+      document.getElementById('count-gmat').textContent = counts.gmat;
+      document.getElementById('count-tem8').textContent = counts.tem8;
+      document.getElementById('count-gre').textContent = counts.gre;
+    }
+
+    // ================= 艾宾浩斯记忆与状态存储 =================
     function getMemoryStore() {
       try {
         return JSON.parse(localStorage.getItem('ebbinghaus_memory_v1') || '{}');
@@ -566,7 +731,7 @@
     }
 
     function reviewCard(module, cardKey, remembered, evt) {
-      if (evt) evt.stopPropagation(); // 避免触发翻卡事件
+      if (evt) evt.stopPropagation();
       const store = getMemoryStore();
       const current = store[cardKey] || { level: 0, nextReview: 0 };
       const now = Date.now();
@@ -658,7 +823,7 @@
     // 单张卡片点击翻开/收起
     function toggleCardReveal(cardElement, evt) {
       if (evt && (evt.target.closest('.ebbinghaus-bar') || evt.target.closest('.word-title'))) {
-        return; // 点击音频或复习按钮时不触发折叠
+        return;
       }
       if (isFlashcardMode) {
         cardElement.classList.toggle('revealed');
@@ -671,7 +836,29 @@
       try {
         const res = await fetch(`./data/${name}.json`);
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        appData[name] = await res.json();
+        const rawJson = await res.json();
+
+        // 动态注入智能分级属性（完全免改 JSON 源文件）
+        if (name === 'vocab') {
+          if (Array.isArray(rawJson)) {
+            appData.vocab = rawJson.map(item => ({
+              ...item,
+              level: item.level || classifyWord(item.word, item.meaning)
+            }));
+          } else if (rawJson && Array.isArray(rawJson.items)) {
+            appData.vocab = {
+              ...rawJson,
+              items: rawJson.items.map(item => ({
+                ...item,
+                level: item.level || classifyWord(item.word, item.meaning)
+              }))
+            };
+          }
+          updateVocabCounts();
+        } else {
+          appData[name] = rawJson;
+        }
+
         renderModule(name);
         updateDueCount();
       } catch (err) {
@@ -691,19 +878,26 @@
         const title = Array.isArray(appData.vocab) ? '词汇语块' : (appData.vocab.category || '词汇语块');
         document.getElementById('vocabCategory').textContent = title;
         
+        // 分级过滤筛选
+        if (currentVocabLevel !== 'all') {
+          items = items.filter(item => (item.level || 'spoken') === currentVocabLevel);
+        }
+
+        // 今日待复习过滤筛选
         if (isReviewOnly) {
           items = items.filter((item, idx) => getCardEbhStatus(getCardKey('vocab', item, idx)).isDue);
         }
 
         if (items.length === 0) {
           document.getElementById('vocabContainer').innerHTML = isReviewOnly
-            ? `<div class="loading-hint">🎉 太棒了！词汇模块今日已全部复习完毕！</div>`
-            : `<div class="loading-hint">暂无词汇数据</div>`;
+            ? `<div class="loading-hint">🎉 太棒了！该分类下今日已全部复习完毕！</div>`
+            : `<div class="loading-hint">该分类下暂无词汇数据</div>`;
           return;
         }
 
         document.getElementById('vocabContainer').innerHTML = items.map((item, idx) => {
           const cardKey = getCardKey('vocab', item, idx);
+          const lvl = getLevelInfo(item.level || 'spoken');
           return `
             <div class="vocab-item" onclick="toggleCardReveal(this, event)">
               <div class="vocab-main-row">
@@ -711,6 +905,7 @@
                   <div class="word-row">
                     <span class="index-num">${item.id || (idx + 1)}</span>
                     <span class="word-title" onclick="playVoice('vocab', ${idx}, 'word', event)">${item.word} 🔊</span>
+                    <span class="level-tag ${lvl.className}">${lvl.label}</span>
                     <span class="word-meta">${item.pos || ''}（${item.meaning || ''}）</span>
                   </div>
                   <div class="flashcard-reveal-cue">👆 点击卡片翻看 释义与例句</div>
@@ -978,7 +1173,7 @@
     }
 
     function playVoice(module, idx, field, evt) {
-      if (evt) evt.stopPropagation(); // 阻止触发翻卡遮挡
+      if (evt) evt.stopPropagation();
       const items = getModuleList(module);
       if (!items[idx]) return;
       const targetText = items[idx][field];
