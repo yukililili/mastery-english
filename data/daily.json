@@ -1,10 +1,67 @@
 [
   {
-    "scene": "咖啡厅定制与特殊要求",
-    "speakerA": "Can I get an iced Americano with oat milk?",
-    "speakerAZh": "能帮我做杯冰美式，换燕麦奶吗？",
-    "speakerB": "Sure thing. Just a heads up, there's a 50-cent upcharge for alternative milk.",
-    "speakerBZh": "没问题。提醒一下，换植物奶需要加收 50 美分哦。",
-    "tip": "💡 'Just a heads up' 是母语者高频使用的善意提醒。"
+    "category": "社交与处事",
+    "categoryKey": "social",
+    "tag": "半开玩笑",
+    "basicZh": "这其实挺好笑的，别太当真/半开玩笑的",
+    "basicEn": "It's sort of funny, not too serious.",
+    "nativeEn": "It's sort of tongue in cheek.",
+    "contextA": "Are you serious about that dramatic post online?",
+    "contextAZh": "你在网上发的那个夸张评论是认真的吗？",
+    "contextB": "Don't take it too literally; it's sort of tongue in cheek.",
+    "contextBZh": "别太字面理解，那其实只是半开玩笑的调侃而已。",
+    "tip": "💡 tongue in cheek：字面指“舌头抵住腮帮子”，指言论半开玩笑、并非一本正经。"
+  },
+  {
+    "category": "社交与处事",
+    "categoryKey": "social",
+    "tag": "避免乌鸦嘴",
+    "basicZh": "别说出来，不然事情可能要搞砸了/别乌鸦嘴",
+    "basicEn": "Don't say it, or it might go wrong.",
+    "nativeEn": "Let's not jinx anything.",
+    "contextA": "Everything is running so smoothly today! We'll wrap up early.",
+    "contextAZh": "今天进展太顺了！看来咱们肯定能提前收工。",
+    "contextB": "Shh, knock on wood! Let's not jinx anything before it's done.",
+    "contextBZh": "嘘，赶紧摸摸木头！在彻底搞定前，咱们可别乌鸦嘴坏了好运。",
+    "tip": "💡 jinx：专指“乌鸦嘴/带来霉运”，常与 knock on wood（祈求好运）连用。"
+  },
+  {
+    "category": "情绪与心态",
+    "categoryKey": "emotion",
+    "tag": "彻底释怀",
+    "basicZh": "我差不多接受/想通了这个事实",
+    "basicEn": "I kind of accepted the fact that...",
+    "nativeEn": "I've made peace with the fact that...",
+    "contextA": "Are you still upset about missing out on the event?",
+    "contextAZh": "错过了那个活动，你心里还在难受吗？",
+    "contextB": "Not really. I've made peace with the fact that I can't attend everything.",
+    "contextBZh": "不难受了。我已经彻底释怀，接受了‘不可能样样都赶上’这个事实。",
+    "tip": "💡 make peace with：与……握手言和/释怀，比 accepted 更有内心放下纠结的平静感。"
+  },
+  {
+    "category": "观点与表达",
+    "categoryKey": "opinion",
+    "tag": "展现多面个性",
+    "basicZh": "展现我自己不同的侧面/展示多维度的我",
+    "basicEn": "Show different sides of myself.",
+    "nativeEn": "Showcase aspects of my personality.",
+    "contextA": "Why do you share such a wide variety of hobbies online?",
+    "contextAZh": "你为什么在网上分享那么多跨度极大的兴趣爱好？",
+    "contextB": "I want to create content that can truly showcase aspects of my personality.",
+    "contextBZh": "我想创作一些能真正展现我多面个性特质的内容。",
+    "tip": "💡 showcase：生动展示；aspects of personality 比 different sides 更地道饱满。"
+  },
+  {
+    "category": "探秘与闲聊",
+    "categoryKey": "chitchat",
+    "tag": "窥探幕后秘密",
+    "basicZh": "大家能看到私底下/幕后发生的事情",
+    "basicEn": "People could see what happens secretly.",
+    "nativeEn": "A huge peek behind the curtain.",
+    "contextA": "What did you think of that documentary about studio production?",
+    "contextAZh": "你觉得那部关于电影幕后制作的纪录片怎么样？",
+    "contextB": "It was fascinating! It offered a huge peek behind the curtain of the industry.",
+    "contextBZh": "太精彩了！它掀开帷幕，让观众得以一窥这个行业的幕后运转。",
+    "tip": "💡 a peek behind the curtain：源自戏剧幕布隐喻，指“窥探内部秘密/探秘幕后”。"
   }
 ]
