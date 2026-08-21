@@ -206,6 +206,50 @@
     .btn-remember { background: #f0fdf4; color: #16a34a; border: 1px solid #bbf7d0; }
     .btn-remember:hover { background: #dcfce7; }
 
+    /* ================= 模块通用筛选栏 ================= */
+    .module-filter-bar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+      padding: 10px 14px;
+      background: #f8fafc;
+      border-radius: 12px;
+      border: 1px solid var(--border-light);
+    }
+
+    .filter-label {
+      font-size: 0.82rem;
+      font-weight: 800;
+      color: var(--text-sub);
+      margin-right: 4px;
+    }
+
+    .filter-chip {
+      border: 1px solid #cbd5e1;
+      background: #ffffff;
+      color: var(--text-sub);
+      padding: 4px 12px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .filter-chip:hover {
+      background: #f1f5f9;
+      border-color: #94a3b8;
+    }
+
+    .filter-chip.active {
+      background: #1e293b;
+      color: #ffffff;
+      border-color: #1e293b;
+      box-shadow: 0 2px 6px rgba(30, 41, 59, 0.2);
+    }
+
     /* ================= 模块 1：词汇与分级功能 ================= */
     .vocab-wrapper {
       background: var(--card-bg);
@@ -233,51 +277,6 @@
       border-radius: 999px;
     }
 
-    /* 智能分级筛选工具栏 */
-    .vocab-level-filter-bar {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      flex-wrap: wrap;
-      margin-bottom: 20px;
-      padding: 10px 14px;
-      background: #f8fafc;
-      border-radius: 12px;
-      border: 1px solid var(--border-light);
-    }
-
-    .level-filter-label {
-      font-size: 0.82rem;
-      font-weight: 800;
-      color: var(--text-sub);
-      margin-right: 4px;
-    }
-
-    .level-filter-chip {
-      border: 1px solid #cbd5e1;
-      background: #ffffff;
-      color: var(--text-sub);
-      padding: 4px 12px;
-      font-size: 0.8rem;
-      font-weight: 700;
-      border-radius: 20px;
-      cursor: pointer;
-      transition: all 0.2s;
-    }
-
-    .level-filter-chip:hover {
-      background: #f1f5f9;
-      border-color: #94a3b8;
-    }
-
-    .level-filter-chip.active {
-      background: #1e293b;
-      color: #ffffff;
-      border-color: #1e293b;
-      box-shadow: 0 2px 6px rgba(30, 41, 59, 0.2);
-    }
-
-    /* 分级专属卡片标签样式 */
     .level-tag {
       display: inline-flex;
       align-items: center;
@@ -379,7 +378,6 @@
       color: var(--primary-green);
     }
 
-    /* 翻卡折叠核心样式 */
     .flashcard-reveal-cue {
       display: inline-flex;
       align-items: center;
@@ -444,17 +442,99 @@
     }
     .vocab-img-wrap img { width: 100%; height: 100%; object-fit: cover; }
 
-    /* 模块 2：生活口语 */
+    /* ================= 模块 2：生活口语（升级对比结构） ================= */
     .daily-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
-    .daily-card { background: var(--card-bg); border-radius: 16px; padding: 18px; border: 1px solid var(--border-light); }
-    .scene-tag { display: inline-block; background: #ecfeff; color: #0891b2; font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 6px; margin-bottom: 10px; }
-    .dialogue-flow { display: flex; flex-direction: column; gap: 10px; margin-bottom: 12px; }
-    .dialogue-bubble { padding: 10px 14px; border-radius: 10px; font-size: 0.95rem; line-height: 1.45; cursor: pointer; }
-    .speaker-a { background: #f1f5f9; align-self: flex-start; border-left: 3px solid #64748b; }
-    .speaker-b { background: #e6fffa; align-self: flex-start; border-left: 3px solid #0d9488; }
+    .daily-card { 
+      background: var(--card-bg); 
+      border-radius: 16px; 
+      padding: 18px; 
+      border: 1px solid var(--border-light); 
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .scene-tag { 
+      display: inline-block; 
+      background: #ecfeff; 
+      color: #0891b2; 
+      font-size: 0.78rem; 
+      font-weight: 800; 
+      padding: 3px 10px; 
+      border-radius: 6px; 
+      border: 1px solid #cffafe;
+    }
+
+    .contrast-box-daily {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .basic-box {
+      background: #f8fafc;
+      border-left: 3px solid #94a3b8;
+      padding: 10px 12px;
+      border-radius: 0 8px 8px 0;
+    }
+    .basic-zh {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #475569;
+      margin-bottom: 2px;
+    }
+    .basic-en {
+      font-size: 0.92rem;
+      color: #64748b;
+      font-style: italic;
+    }
+
+    .native-box {
+      background: #f0fdf4;
+      border-left: 3px solid #22c55e;
+      padding: 12px 14px;
+      border-radius: 0 8px 8px 0;
+      cursor: pointer;
+      transition: background-color 0.15s ease;
+    }
+    .native-box:hover {
+      background: #dcfce7;
+    }
+    .native-label {
+      font-size: 0.75rem;
+      font-weight: 800;
+      color: #16a34a;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+    .native-en {
+      font-size: 1.08rem;
+      font-weight: 800;
+      color: #15803d;
+      line-height: 1.35;
+    }
+
+    .dialogue-flow { 
+      display: flex; 
+      flex-direction: column; 
+      gap: 8px; 
+      background: #fafafa;
+      padding: 12px;
+      border-radius: 10px;
+      border: 1px dashed #e2e8f0;
+    }
+    .dialogue-bubble { 
+      padding: 8px 12px; 
+      border-radius: 8px; 
+      font-size: 0.9rem; 
+      line-height: 1.45; 
+      cursor: pointer; 
+    }
+    .speaker-a { background: #ffffff; border-left: 3px solid #64748b; box-shadow: 0 1px 3px rgba(0,0,0,0.03); }
+    .speaker-b { background: #f0fdfa; border-left: 3px solid #0d9488; box-shadow: 0 1px 3px rgba(0,0,0,0.03); }
+    .bubble-zh { color: var(--text-sub); font-size: 0.8rem; margin-top: 2px; }
     .nuance-tip { background: #fffbeb; border-radius: 8px; padding: 9px 12px; font-size: 0.85rem; color: #92400e; }
 
-    /* 模块 3：职场沟通 */
+    /* ================= 模块 3：职场沟通 ================= */
     .work-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
     .work-card { background: var(--card-bg); border-radius: 16px; padding: 20px; border: 1px solid var(--border-light); display: flex; flex-direction: column; gap: 12px; }
     .work-header { display: flex; justify-content: space-between; align-items: center; }
@@ -464,7 +544,7 @@
     .pro-good { background: #f0fdf4; border-left: 3px solid #22c55e; padding: 12px 14px; border-radius: 0 8px 8px 0; font-size: 0.95rem; font-weight: 600; color: #15803d; cursor: pointer; }
     .work-formula { background: #f8fafc; padding: 10px 14px; border-radius: 8px; font-size: 0.85rem; color: var(--text-sub); }
 
-    /* 模块 4：雅思口语 */
+    /* ================= 模块 4：雅思口语 ================= */
     .ielts-grid { display: grid; grid-template-columns: 1fr; gap: 18px; }
     .ielts-card { background: var(--card-bg); border-radius: 16px; padding: 20px; border: 1px solid var(--border-light); }
     .ielts-badge { display: inline-block; background: #e0f2fe; color: #0369a1; font-size: 0.8rem; font-weight: 700; padding: 3px 8px; border-radius: 6px; margin-bottom: 10px; }
@@ -473,7 +553,7 @@
     .chunk-highlight { background: #fef08a; color: #854d0e; font-weight: 600; padding: 1px 4px; border-radius: 4px; }
     .chunk-list { background: #fffbeb; border-left: 4px solid #f59e0b; padding: 10px 14px; border-radius: 0 8px 8px 0; font-size: 0.85rem; color: #92400e; }
 
-    /* 模块 5：商业破局 */
+    /* ================= 模块 5：商业破局 ================= */
     .biz-grid { display: grid; grid-template-columns: 1fr; gap: 18px; }
     .biz-card { background: var(--card-bg); border-radius: 16px; padding: 20px; border: 1px solid var(--border-light); display: flex; flex-direction: column; gap: 10px; }
     .biz-tag-trap { display: inline-block; background: #fee2e2; color: var(--accent-red); font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; }
@@ -482,7 +562,7 @@
     .biz-response-box { background: #f8fafc; border-left: 3px solid var(--primary-green); padding: 12px 14px; font-size: 0.95rem; line-height: 1.55; cursor: pointer; }
     .biz-punchline { background: #1e293b; color: #f8fafc; padding: 10px 14px; border-radius: 8px; font-size: 0.9rem; font-weight: 700; margin-top: auto; }
 
-    /* 模块 6：TED 演说 */
+    /* ================= 模块 6：TED 演说 ================= */
     .ted-grid { display: grid; grid-template-columns: 1fr; gap: 18px; }
     .ted-card { background: var(--card-bg); border-radius: 16px; padding: 20px; border: 1px solid var(--border-light); }
     .ted-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; border-bottom: 1px solid #f3f4f6; padding-bottom: 8px; }
@@ -546,6 +626,7 @@
   </header>
 
   <main class="container">
+    <!-- 模块 1：词汇语块 -->
     <section id="pane-vocab" class="tab-pane active flashcard-mode">
       <div class="vocab-wrapper">
         <div class="vocab-header-row">
@@ -555,38 +636,51 @@
           </button>
         </div>
 
-        <!-- 智能分级过滤器（支持 口语 / 四六级 / 雅思托福 / GMAT / 专八 / GRE） -->
-        <div class="vocab-level-filter-bar">
-          <span class="level-filter-label">🏷️ 词汇分级:</span>
-          <button class="level-filter-chip active" onclick="setVocabLevel('all', event)">全部 (<span id="count-all">0</span>)</button>
-          <button class="level-filter-chip" onclick="setVocabLevel('spoken', event)">🗣️ 口语/常用 (<span id="count-spoken">0</span>)</button>
-          <button class="level-filter-chip" onclick="setVocabLevel('cet46', event)">🎓 四六级 (<span id="count-cet46">0</span>)</button>
-          <button class="level-filter-chip" onclick="setVocabLevel('ielts', event)">✈️ 雅思/托福 (<span id="count-ielts">0</span>)</button>
-          <button class="level-filter-chip" onclick="setVocabLevel('gmat', event)">📊 GMAT (<span id="count-gmat">0</span>)</button>
-          <button class="level-filter-chip" onclick="setVocabLevel('tem8', event)">📚 英语专八 (<span id="count-tem8">0</span>)</button>
-          <button class="level-filter-chip" onclick="setVocabLevel('gre', event)">🏛️ GRE/高阶 (<span id="count-gre">0</span>)</button>
+        <div class="module-filter-bar">
+          <span class="filter-label">🏷️ 词汇分级:</span>
+          <button class="filter-chip active" onclick="setVocabLevel('all', event)">全部 (<span id="count-all">0</span>)</button>
+          <button class="filter-chip" onclick="setVocabLevel('spoken', event)">🗣️ 口语/常用 (<span id="count-spoken">0</span>)</button>
+          <button class="filter-chip" onclick="setVocabLevel('cet46', event)">🎓 四六级 (<span id="count-cet46">0</span>)</button>
+          <button class="filter-chip" onclick="setVocabLevel('ielts', event)">✈️ 雅思/托福 (<span id="count-ielts">0</span>)</button>
+          <button class="filter-chip" onclick="setVocabLevel('gmat', event)">📊 GMAT (<span id="count-gmat">0</span>)</button>
+          <button class="filter-chip" onclick="setVocabLevel('tem8', event)">📚 英语专八 (<span id="count-tem8">0</span>)</button>
+          <button class="filter-chip" onclick="setVocabLevel('gre', event)">🏛️ GRE/高阶 (<span id="count-gre">0</span>)</button>
         </div>
 
         <div class="vocab-grid" id="vocabContainer"><div class="loading-hint">正在读取 data/vocab.json ...</div></div>
       </div>
     </section>
 
+    <!-- 模块 2：生活口语（带大类筛选与 Basic vs Native 对比） -->
     <section id="pane-daily" class="tab-pane">
+      <div class="module-filter-bar">
+        <span class="filter-label">🧭 口语分类:</span>
+        <button class="filter-chip active" onclick="setDailyCategory('all', event)">全部 (<span id="daily-count-all">0</span>)</button>
+        <button class="filter-chip" onclick="setDailyCategory('emotion', event)">❤️ 情绪与心态 (<span id="daily-count-emotion">0</span>)</button>
+        <button class="filter-chip" onclick="setDailyCategory('social', event)">🤝 社交与处事 (<span id="daily-count-social">0</span>)</button>
+        <button class="filter-chip" onclick="setDailyCategory('opinion', event)">💡 观点与表达 (<span id="daily-count-opinion">0</span>)</button>
+        <button class="filter-chip" onclick="setDailyCategory('chitchat', event)">🔍 探秘与闲聊 (<span id="daily-count-chitchat">0</span>)</button>
+        <button class="filter-chip" onclick="setDailyCategory('action', event)">⚡ 决断与行动 (<span id="daily-count-action">0</span>)</button>
+      </div>
       <div class="daily-grid" id="dailyContainer"><div class="loading-hint">正在读取 data/daily.json ...</div></div>
     </section>
 
+    <!-- 模块 3：职场沟通 -->
     <section id="pane-work" class="tab-pane">
       <div class="work-grid" id="workContainer"><div class="loading-hint">正在读取 data/work.json ...</div></div>
     </section>
 
+    <!-- 模块 4：雅思口语 -->
     <section id="pane-ielts" class="tab-pane">
       <div class="ielts-grid" id="ieltsContainer"><div class="loading-hint">正在读取 data/ielts.json ...</div></div>
     </section>
 
+    <!-- 模块 5：商业破局 -->
     <section id="pane-biz" class="tab-pane">
       <div class="biz-grid" id="bizContainer"><div class="loading-hint">正在读取 data/biz.json ...</div></div>
     </section>
 
+    <!-- 模块 6：TED 演说 -->
     <section id="pane-ted" class="tab-pane">
       <div class="ted-grid" id="tedContainer"><div class="loading-hint">正在读取 data/ted.json ...</div></div>
     </section>
@@ -595,20 +689,19 @@
   <script>
     const EBBINGHAUS_DAYS = [0, 1, 2, 4, 7, 15, 30];
     let isReviewOnly = false;
-    let isFlashcardMode = true; // 默认开启翻卡自测模式
-    let currentVocabLevel = 'all'; // 词汇分级筛选状态: all | spoken | cet46 | ielts | gmat | tem8 | gre
+    let isFlashcardMode = true;
+    let currentVocabLevel = 'all';
+    let currentDailyCategory = 'all';
 
-    // ================= 前端智能启发式分级引擎 =================
+    // ================= 前端智能词汇分级引擎 =================
     function classifyWord(word = '', meaning = '') {
       const w = word.toLowerCase().trim();
 
-      // 1. 口语高频 / 实用短语 / 惯用口语表达
       if (w.includes(' ') || w.includes('-') || w.length <= 4) {
         if (w.length > 10 && !w.includes(' ')) return 'gre';
         return 'spoken';
       }
 
-      // 2. GMAT 核心词汇（商业、金融、审计、经济博弈、逻辑与管理决策词汇）
       const gmatKeywords = [
         /(fiscal|amortization|depreciation|accrual|liquidity|solvency|leverage|arbitrage|hedging|variance|bottleneck|throughput|concurrency|redundancy|failover|scalability|elasticity|sharding|clustering|indexing|schema|deadlock|fiduciary|jurisprudential|antitrust|extradition|arraignment|sublet|surplus|deficit|ledger|voucher|audit|reconciliation|prepayment|optimi|contingency|discrepancy|mitigation|prerequisite|consolidate|expedite|synergy|governance|valuation|turnstile|underwrite|portfolio|escrow|suborn|recourse|indemnity|divest|moratorium|breach|monopoly|cartel|duopoly|oligopoly|macroeconomic)/
       ];
@@ -616,7 +709,6 @@
         return 'gmat';
       }
 
-      // 3. 英语专业八级 (TEM-8) 核心词汇（文学色彩浓厚、修辞学、历史人文、精巧冷门形容词/名词）
       const tem8Keywords = [
         /(sylvan|diaphanous|rime|copse|gossamer|pellucid|limpid|tenebrous|coruscating|incandescent|somatic|impalpable|abeyance|hiatus|celerity|alacrity|dilatory|lassitude|hebetude|somnolence|soporific|anodyne|paregoric|emollient|demulcent|palliative|salubrious|mephitic|pestilential|putrefy|fester|suppurate|cankerous|gangrenous|purulent|scabrous|tempest|zephyr|billow|cataclysm|maelstrom|vortex|torrent|ooze|exude|percolate|macerate|drench|parch|cauterize|desiccate|infecund|fecund|fecundity|luxuriant|verdant|verdurous|arboreal|nemoral|boscage|thicket|coppice|spinney|underbrush|undergrowth|chaparral|scrubland|heath|moor|fen|morass|sward|greensward|lea|prairie|steppe|tundra|taiga|boreal|sirocco|mistral|foehn|chinook|blizzard|hailstorm|waterspout|simoom|haboob|hoarfrost|verglas|icicle|stalactite|stalagmite|speleothem|cavern|grotto|doline|cenote|caldera|fumarole|solfatara|magma|basalt|obsidian|pumice|schist|gneiss|shale|dolomite|quartzite|feldspar|amphibole|pyroxene|olivine|peridotite|kimberlite|pegmatite|aplite|diorite|gabbro|syenite|monzonite|andesite|dacite|rhyolite|trachyte|phonolite|latite|tephra|lahar|pyroclastic|ignimbrite|breccia|conglomerate|marl|chalcedony|tourmaline|spinel|zircon|corundum|beryl|morganite|heliodor|tanzanite|jadeite|nephrite|malachite|azurite|hematite|magnetite|pyrite|chalcopyrite|galena|sphalerite|cinnabar|orpiment|realgar|cryolite|cassiterite|wolframite|molybdenite|quintessence|plethora|dearth|paucity|copiousness|superfluity)/
       ];
@@ -624,7 +716,6 @@
         return 'tem8';
       }
 
-      // 4. GRE / 极高阶学术与批判性思维词汇
       const grePatterns = [
         /^(archaeo|osteo|thrombo|pseudo|paleo|hemo|necro)/,
         /(tude|ous|acious|istic|philic|pathology|cide|cracy|logy|morph|scribe|scence|dox|plice|phobia|osis|rrhea|phile)$/,
@@ -634,7 +725,6 @@
         return 'gre';
       }
 
-      // 5. 雅思 / 托福 / 进阶学术书面语
       const ieltsPatterns = [
         /(ment|ity|able|ible|ence|ance|ize|ise|ation|ition|itive|icate|ular|ward|scope|metry|graph)$/,
         /(fiscal|millennium|contrition|delineate|banal|forage|fallback|cholesterol|granular|milestone|align|deliverable|boilerplate|scrutinize|supposition|prolific|decree|inscrutable|tempestuous|potent|provincial|travesty|caveat|opaque|volition|nemesis|ubiquity|internalise|nuance|elicit|complacency|fortuitous|gratis|gratuitous|corrigible|insulate|nascent|raconteur|sedulous|ancillary|provident|trenchant|efficacious|surmise|desultory|sapient|stringent|retrofit|renege|mercurial|detritus|heist|abscond|salvageable|predatory|consecutive|connotation|virulent|chronic|eviscerate|upheaval|bulwark|torpid|attest|capitulate|perceive|ensue|precedence|dispel|voracious|retention|interchangeable|scintillating|suffice|incognito|inundate|perpetuity|expediency|verbatim|debase|covet|propensity|ruinous|incremental|clemency|leeway|decorum|delve|convalesce|recalcitrant|demur|disparate|fastidious|perfunctory|ostensible|innocuous|ephemeral)/
@@ -643,7 +733,6 @@
         return 'ielts';
       }
 
-      // 6. 四六级 / 考研基础核心词汇
       if (w.length >= 5) {
         return 'cet46';
       }
@@ -665,7 +754,7 @@
     function setVocabLevel(level, evt) {
       if (evt) evt.stopPropagation();
       currentVocabLevel = level;
-      document.querySelectorAll('.level-filter-chip').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('#pane-vocab .filter-chip').forEach(btn => btn.classList.remove('active'));
       if (evt && evt.target) evt.target.classList.add('active');
       renderModule('vocab');
     }
@@ -687,6 +776,31 @@
       document.getElementById('count-gre').textContent = counts.gre;
     }
 
+    // ================= 口语大类筛选 =================
+    function setDailyCategory(cat, evt) {
+      if (evt) evt.stopPropagation();
+      currentDailyCategory = cat;
+      document.querySelectorAll('#pane-daily .filter-chip').forEach(btn => btn.classList.remove('active'));
+      if (evt && evt.target) evt.target.classList.add('active');
+      renderModule('daily');
+    }
+
+    function updateDailyCounts() {
+      const items = getModuleList('daily');
+      const counts = { all: items.length, emotion: 0, social: 0, opinion: 0, chitchat: 0, action: 0 };
+      items.forEach(item => {
+        const key = item.categoryKey || 'social';
+        if (counts[key] !== undefined) counts[key]++;
+      });
+
+      document.getElementById('daily-count-all').textContent = counts.all;
+      document.getElementById('daily-count-emotion').textContent = counts.emotion;
+      document.getElementById('daily-count-social').textContent = counts.social;
+      document.getElementById('daily-count-opinion').textContent = counts.opinion;
+      document.getElementById('daily-count-chitchat').textContent = counts.chitchat;
+      document.getElementById('daily-count-action').textContent = counts.action;
+    }
+
     // ================= 艾宾浩斯记忆与状态存储 =================
     function getMemoryStore() {
       try {
@@ -701,7 +815,7 @@
 
     function getCardKey(module, item, idx) {
       if (module === 'vocab') return `vocab_${item.word || idx}`;
-      if (module === 'daily') return `daily_${item.scene || idx}`;
+      if (module === 'daily') return `daily_${item.tag || item.nativeEn || item.scene || idx}`;
       if (module === 'work') return `work_${item.topic || idx}`;
       if (module === 'ielts') return `ielts_${item.question?.substring(0, 15) || idx}`;
       if (module === 'biz') return `biz_${item.trap?.substring(0, 15) || idx}`;
@@ -803,7 +917,6 @@
       }
     }
 
-    // 翻卡模式全局切换
     function toggleFlashcardMode() {
       isFlashcardMode = !isFlashcardMode;
       const pane = document.getElementById('pane-vocab');
@@ -820,7 +933,6 @@
       }
     }
 
-    // 单张卡片点击翻开/收起
     function toggleCardReveal(cardElement, evt) {
       if (evt && (evt.target.closest('.ebbinghaus-bar') || evt.target.closest('.word-title'))) {
         return;
@@ -838,7 +950,6 @@
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const rawJson = await res.json();
 
-        // 动态注入智能分级属性（完全免改 JSON 源文件）
         if (name === 'vocab') {
           if (Array.isArray(rawJson)) {
             appData.vocab = rawJson.map(item => ({
@@ -855,6 +966,9 @@
             };
           }
           updateVocabCounts();
+        } else if (name === 'daily') {
+          appData.daily = rawJson;
+          updateDailyCounts();
         } else {
           appData[name] = rawJson;
         }
@@ -878,12 +992,10 @@
         const title = Array.isArray(appData.vocab) ? '词汇语块' : (appData.vocab.category || '词汇语块');
         document.getElementById('vocabCategory').textContent = title;
         
-        // 分级过滤筛选
         if (currentVocabLevel !== 'all') {
           items = items.filter(item => (item.level || 'spoken') === currentVocabLevel);
         }
 
-        // 今日待复习过滤筛选
         if (isReviewOnly) {
           items = items.filter((item, idx) => getCardEbhStatus(getCardKey('vocab', item, idx)).isDue);
         }
@@ -923,34 +1035,64 @@
         }).join('');
       }
 
-      // 2. 生活口语
+      // 2. 生活口语（兼容新老格式：支持 Basic vs Native 对比与分类筛选）
       if (name === 'daily' && appData.daily) {
+        if (currentDailyCategory !== 'all') {
+          items = items.filter(item => (item.categoryKey || 'social') === currentDailyCategory);
+        }
+
         if (isReviewOnly) {
           items = items.filter((item, idx) => getCardEbhStatus(getCardKey('daily', item, idx)).isDue);
         }
+
         if (items.length === 0) {
           document.getElementById('dailyContainer').innerHTML = isReviewOnly
             ? `<div class="loading-hint">🎉 太棒了！生活口语今日已全部复习完毕！</div>`
-            : `<div class="loading-hint">暂无数据</div>`;
+            : `<div class="loading-hint">该分类下暂无口语数据</div>`;
           return;
         }
 
         document.getElementById('dailyContainer').innerHTML = items.map((item, idx) => {
           const cardKey = getCardKey('daily', item, idx);
+          const categoryText = item.category || '生活日常';
+          const tagText = item.tag || item.scene || '地道口语';
+          const nativeText = item.nativeEn || item.speakerB || '';
+          const contextA = item.contextA || item.speakerA || '';
+          const contextAZh = item.contextAZh || item.speakerAZh || '';
+          const contextB = item.contextB || item.speakerB || '';
+          const contextBZh = item.contextBZh || item.speakerBZh || '';
+
           return `
             <div class="daily-card">
-              <div class="scene-tag">场景：${item.scene}</div>
-              <div class="dialogue-flow">
-                <div class="dialogue-bubble speaker-a" onclick="playVoice('daily', ${idx}, 'speakerA', event)">
-                  <strong>A:</strong> ${item.speakerA} 🔊
-                  <div style="color: var(--text-sub); font-size: 0.85rem; margin-top: 4px;">${item.speakerAZh}</div>
-                </div>
-                <div class="dialogue-bubble speaker-b" onclick="playVoice('daily', ${idx}, 'speakerB', event)">
-                  <strong>B:</strong> ${item.speakerB} 🔊
-                  <div style="color: var(--text-sub); font-size: 0.85rem; margin-top: 4px;">${item.speakerBZh}</div>
-                </div>
+              <div class="daily-card-header">
+                <span class="scene-tag">${categoryText} · ${tagText}</span>
               </div>
-              <div class="nuance-tip">${item.tip}</div>
+
+              ${(item.basicEn || item.basicZh) ? `
+              <div class="contrast-box-daily">
+                <div class="basic-box">
+                  <div class="basic-zh">💭 普通/中文思维：${item.basicZh || ''}</div>
+                  <div class="basic-en">${item.basicEn || ''}</div>
+                </div>
+                <div class="native-box" onclick="playVoice('daily', ${idx}, 'nativeEn', event)">
+                  <div class="native-label">🌟 地道地胆表达 (Native) 🔊</div>
+                  <div class="native-en">${nativeText}</div>
+                </div>
+              </div>` : ''}
+
+              ${contextA ? `
+              <div class="dialogue-flow">
+                <div class="dialogue-bubble speaker-a" onclick="playVoice('daily', ${idx}, 'contextA', event)">
+                  <strong>A:</strong> ${contextA} 🔊
+                  ${contextAZh ? `<div class="bubble-zh">${contextAZh}</div>` : ''}
+                </div>
+                <div class="dialogue-bubble speaker-b" onclick="playVoice('daily', ${idx}, 'contextB', event)">
+                  <strong>B:</strong> ${contextB} 🔊
+                  ${contextBZh ? `<div class="bubble-zh">${contextBZh}</div>` : ''}
+                </div>
+              </div>` : ''}
+
+              ${item.tip ? `<div class="nuance-tip">${item.tip}</div>` : ''}
               ${renderEbhBar('daily', cardKey)}
             </div>
           `;
