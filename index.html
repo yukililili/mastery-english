@@ -206,7 +206,33 @@
     .btn-remember { background: #f0fdf4; color: #16a34a; border: 1px solid #bbf7d0; }
     .btn-remember:hover { background: #dcfce7; }
 
-    /* ================= 模块通用筛选栏 ================= */
+    /* ================= 模块通用筛选栏与面板容器 ================= */
+    .module-wrapper {
+      background: var(--card-bg);
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+    }
+
+    .module-header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .module-badge {
+      display: inline-block;
+      background-color: var(--primary-green);
+      color: #ffffff;
+      font-size: 1.15rem;
+      font-weight: 700;
+      padding: 6px 18px;
+      border-radius: 999px;
+    }
+
     .module-filter-bar {
       display: flex;
       align-items: center;
@@ -250,49 +276,7 @@
       box-shadow: 0 2px 6px rgba(30, 41, 59, 0.2);
     }
 
-    /* ================= 模块 1：词汇与分级功能 ================= */
-    .vocab-wrapper {
-      background: var(--card-bg);
-      border-radius: 20px;
-      padding: 24px;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
-    }
-
-    .vocab-header-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-bottom: 14px;
-    }
-
-    .category-badge {
-      display: inline-block;
-      background-color: var(--primary-green);
-      color: #ffffff;
-      font-size: 1.15rem;
-      font-weight: 700;
-      padding: 6px 18px;
-      border-radius: 999px;
-    }
-
-    .level-tag {
-      display: inline-flex;
-      align-items: center;
-      font-size: 0.72rem;
-      font-weight: 800;
-      padding: 2px 8px;
-      border-radius: 6px;
-      letter-spacing: 0.3px;
-    }
-    .level-spoken { background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; }
-    .level-cet46 { background: #dcfce7; color: #15803d; border: 1px solid #bbf7d0; }
-    .level-ielts { background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; }
-    .level-gmat { background: #fff7ed; color: #c2410c; border: 1px solid #ffedd5; }
-    .level-tem8 { background: #fdf4ff; color: #86198f; border: 1px solid #f5d0fe; }
-    .level-gre { background: #fee2e2; color: #b91c1c; border: 1px solid #fecaca; }
-
+    /* 翻卡模式通用切换按钮 */
     .flashcard-toggle-btn {
       border: 1px solid var(--primary-green);
       background: #f0fdf4;
@@ -312,6 +296,37 @@
       color: #ffffff;
       box-shadow: 0 2px 8px rgba(45, 106, 79, 0.25);
     }
+
+    .flashcard-reveal-cue {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #0d9488;
+      background: #ecfeff;
+      padding: 6px 12px;
+      border-radius: 8px;
+      border: 1px dashed #a5f3fc;
+      margin: 4px 0;
+    }
+
+    /* ================= 模块 1：词汇与分级功能 ================= */
+    .level-tag {
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 6px;
+      letter-spacing: 0.3px;
+    }
+    .level-spoken { background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; }
+    .level-cet46 { background: #dcfce7; color: #15803d; border: 1px solid #bbf7d0; }
+    .level-ielts { background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; }
+    .level-gmat { background: #fff7ed; color: #c2410c; border: 1px solid #ffedd5; }
+    .level-tem8 { background: #fdf4ff; color: #86198f; border: 1px solid #f5d0fe; }
+    .level-gre { background: #fee2e2; color: #b91c1c; border: 1px solid #fecaca; }
 
     .vocab-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
 
@@ -378,21 +393,6 @@
       color: var(--primary-green);
     }
 
-    .flashcard-reveal-cue {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      color: #0d9488;
-      background: #ecfeff;
-      padding: 4px 10px;
-      border-radius: 8px;
-      margin-top: 4px;
-      margin-left: 32px;
-      border: 1px dashed #a5f3fc;
-    }
-
     .vocab-details {
       display: flex;
       flex-direction: column;
@@ -407,7 +407,7 @@
     }
 
     .flashcard-mode .vocab-item.revealed .flashcard-reveal-cue {
-      display: none;
+      display: none !important;
     }
 
     .phonetic {
@@ -442,17 +442,26 @@
     }
     .vocab-img-wrap img { width: 100%; height: 100%; object-fit: cover; }
 
-    /* ================= 模块 2：生活口语（升级对比结构） ================= */
+    /* ================= 模块 2：生活口语（翻卡与自测样式） ================= */
     .daily-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
     .daily-card { 
-      background: var(--card-bg); 
+      background: #fafbfa; 
       border-radius: 16px; 
-      padding: 18px; 
-      border: 1px solid var(--border-light); 
+      padding: 20px; 
+      border: 1px dashed var(--border-dashed); 
       display: flex;
       flex-direction: column;
       gap: 12px;
+      cursor: pointer;
+      user-select: none;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.2s ease;
     }
+    .daily-card:hover {
+      background: #ffffff;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(45, 106, 79, 0.08);
+    }
+
     .scene-tag { 
       display: inline-block; 
       background: #ecfeff; 
@@ -470,29 +479,47 @@
       gap: 10px;
     }
 
+    /* 普通思维框：始终显示 */
     .basic-box {
       background: #f8fafc;
-      border-left: 3px solid #94a3b8;
-      padding: 10px 12px;
-      border-radius: 0 8px 8px 0;
+      border-left: 4px solid #94a3b8;
+      padding: 12px 14px;
+      border-radius: 0 10px 10px 0;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.02);
     }
     .basic-zh {
-      font-size: 0.85rem;
-      font-weight: 700;
-      color: #475569;
-      margin-bottom: 2px;
+      font-size: 0.92rem;
+      font-weight: 800;
+      color: #334155;
+      margin-bottom: 3px;
     }
     .basic-en {
-      font-size: 0.92rem;
+      font-size: 0.95rem;
       color: #64748b;
       font-style: italic;
     }
 
+    /* 口语卡片折叠细节容器 */
+    .daily-details {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      transition: all 0.25s ease;
+    }
+
+    /* 翻卡遮挡核心控制 */
+    .flashcard-mode .daily-card:not(.revealed) .daily-details {
+      display: none !important;
+    }
+    .flashcard-mode .daily-card.revealed .flashcard-reveal-cue {
+      display: none !important;
+    }
+
     .native-box {
       background: #f0fdf4;
-      border-left: 3px solid #22c55e;
+      border-left: 4px solid #22c55e;
       padding: 12px 14px;
-      border-radius: 0 8px 8px 0;
+      border-radius: 0 10px 10px 0;
       cursor: pointer;
       transition: background-color 0.15s ease;
     }
@@ -507,7 +534,7 @@
       margin-bottom: 2px;
     }
     .native-en {
-      font-size: 1.08rem;
+      font-size: 1.15rem;
       font-weight: 800;
       color: #15803d;
       line-height: 1.35;
@@ -517,21 +544,21 @@
       display: flex; 
       flex-direction: column; 
       gap: 8px; 
-      background: #fafafa;
+      background: #ffffff;
       padding: 12px;
       border-radius: 10px;
-      border: 1px dashed #e2e8f0;
+      border: 1px solid #e2e8f0;
     }
     .dialogue-bubble { 
       padding: 8px 12px; 
       border-radius: 8px; 
-      font-size: 0.9rem; 
+      font-size: 0.92rem; 
       line-height: 1.45; 
       cursor: pointer; 
     }
-    .speaker-a { background: #ffffff; border-left: 3px solid #64748b; box-shadow: 0 1px 3px rgba(0,0,0,0.03); }
-    .speaker-b { background: #f0fdfa; border-left: 3px solid #0d9488; box-shadow: 0 1px 3px rgba(0,0,0,0.03); }
-    .bubble-zh { color: var(--text-sub); font-size: 0.8rem; margin-top: 2px; }
+    .speaker-a { background: #f8fafc; border-left: 3px solid #64748b; }
+    .speaker-b { background: #f0fdfa; border-left: 3px solid #0d9488; }
+    .bubble-zh { color: var(--text-sub); font-size: 0.82rem; margin-top: 2px; }
     .nuance-tip { background: #fffbeb; border-radius: 8px; padding: 9px 12px; font-size: 0.85rem; color: #92400e; }
 
     /* ================= 模块 3：职场沟通 ================= */
@@ -628,10 +655,10 @@
   <main class="container">
     <!-- 模块 1：词汇语块 -->
     <section id="pane-vocab" class="tab-pane active flashcard-mode">
-      <div class="vocab-wrapper">
-        <div class="vocab-header-row">
-          <div class="category-badge" id="vocabCategory">词汇语块</div>
-          <button id="flashcardToggleBtn" class="flashcard-toggle-btn active" onclick="toggleFlashcardMode()">
+      <div class="module-wrapper">
+        <div class="module-header-row">
+          <div class="module-badge" id="vocabCategory">词汇语块</div>
+          <button id="flashcardToggleBtn" class="flashcard-toggle-btn active" onclick="toggleFlashcardMode('vocab')">
             🃏 翻卡自测模式: 已开启
           </button>
         </div>
@@ -651,18 +678,28 @@
       </div>
     </section>
 
-    <!-- 模块 2：生活口语（带大类筛选与 Basic vs Native 对比） -->
-    <section id="pane-daily" class="tab-pane">
-      <div class="module-filter-bar">
-        <span class="filter-label">🧭 口语分类:</span>
-        <button class="filter-chip active" onclick="setDailyCategory('all', event)">全部 (<span id="daily-count-all">0</span>)</button>
-        <button class="filter-chip" onclick="setDailyCategory('emotion', event)">❤️ 情绪与心态 (<span id="daily-count-emotion">0</span>)</button>
-        <button class="filter-chip" onclick="setDailyCategory('social', event)">🤝 社交与处事 (<span id="daily-count-social">0</span>)</button>
-        <button class="filter-chip" onclick="setDailyCategory('opinion', event)">💡 观点与表达 (<span id="daily-count-opinion">0</span>)</button>
-        <button class="filter-chip" onclick="setDailyCategory('chitchat', event)">🔍 探秘与闲聊 (<span id="daily-count-chitchat">0</span>)</button>
-        <button class="filter-chip" onclick="setDailyCategory('action', event)">⚡ 决断与行动 (<span id="daily-count-action">0</span>)</button>
+    <!-- 模块 2：生活口语（支持翻卡自测：普通/中文思维常驻，地道表达翻卡展现） -->
+    <section id="pane-daily" class="tab-pane flashcard-mode">
+      <div class="module-wrapper">
+        <div class="module-header-row">
+          <div class="module-badge">生活口语 · 地道表达</div>
+          <button id="dailyFlashcardToggleBtn" class="flashcard-toggle-btn active" onclick="toggleFlashcardMode('daily')">
+            🃏 翻卡自测模式: 已开启
+          </button>
+        </div>
+
+        <div class="module-filter-bar">
+          <span class="filter-label">🧭 口语分类:</span>
+          <button class="filter-chip active" onclick="setDailyCategory('all', event)">全部 (<span id="daily-count-all">0</span>)</button>
+          <button class="filter-chip" onclick="setDailyCategory('emotion', event)">❤️ 情绪与心态 (<span id="daily-count-emotion">0</span>)</button>
+          <button class="filter-chip" onclick="setDailyCategory('social', event)">🤝 社交与处事 (<span id="daily-count-social">0</span>)</button>
+          <button class="filter-chip" onclick="setDailyCategory('opinion', event)">💡 观点与表达 (<span id="daily-count-opinion">0</span>)</button>
+          <button class="filter-chip" onclick="setDailyCategory('chitchat', event)">🔍 探秘与闲聊 (<span id="daily-count-chitchat">0</span>)</button>
+          <button class="filter-chip" onclick="setDailyCategory('action', event)">⚡ 决断与行动 (<span id="daily-count-action">0</span>)</button>
+        </div>
+
+        <div class="daily-grid" id="dailyContainer"><div class="loading-hint">正在读取 data/daily.json ...</div></div>
       </div>
-      <div class="daily-grid" id="dailyContainer"><div class="loading-hint">正在读取 data/daily.json ...</div></div>
     </section>
 
     <!-- 模块 3：职场沟通 -->
@@ -689,7 +726,8 @@
   <script>
     const EBBINGHAUS_DAYS = [0, 1, 2, 4, 7, 15, 30];
     let isReviewOnly = false;
-    let isFlashcardMode = true;
+    let isVocabFlashcardMode = true;
+    let isDailyFlashcardMode = true;
     let currentVocabLevel = 'all';
     let currentDailyCategory = 'all';
 
@@ -917,27 +955,53 @@
       }
     }
 
-    function toggleFlashcardMode() {
-      isFlashcardMode = !isFlashcardMode;
-      const pane = document.getElementById('pane-vocab');
-      const btn = document.getElementById('flashcardToggleBtn');
-
-      if (isFlashcardMode) {
-        pane.classList.add('flashcard-mode');
-        btn.classList.add('active');
-        btn.innerHTML = '🃏 翻卡自测模式: 已开启';
-      } else {
-        pane.classList.remove('flashcard-mode');
-        btn.classList.remove('active');
-        btn.innerHTML = '📖 列表全览模式';
+    // 通用翻卡自测模式切换 (支持 vocab 与 daily)
+    function toggleFlashcardMode(module) {
+      if (module === 'vocab') {
+        isVocabFlashcardMode = !isVocabFlashcardMode;
+        const pane = document.getElementById('pane-vocab');
+        const btn = document.getElementById('flashcardToggleBtn');
+        if (isVocabFlashcardMode) {
+          pane.classList.add('flashcard-mode');
+          btn.classList.add('active');
+          btn.innerHTML = '🃏 翻卡自测模式: 已开启';
+        } else {
+          pane.classList.remove('flashcard-mode');
+          btn.classList.remove('active');
+          btn.innerHTML = '📖 列表全览模式';
+        }
+      } else if (module === 'daily') {
+        isDailyFlashcardMode = !isDailyFlashcardMode;
+        const pane = document.getElementById('pane-daily');
+        const btn = document.getElementById('dailyFlashcardToggleBtn');
+        if (isDailyFlashcardMode) {
+          pane.classList.add('flashcard-mode');
+          btn.classList.add('active');
+          btn.innerHTML = '🃏 翻卡自测模式: 已开启';
+        } else {
+          pane.classList.remove('flashcard-mode');
+          btn.classList.remove('active');
+          btn.innerHTML = '📖 列表全览模式';
+        }
       }
     }
 
+    // 词汇卡片点击翻开/折叠
     function toggleCardReveal(cardElement, evt) {
       if (evt && (evt.target.closest('.ebbinghaus-bar') || evt.target.closest('.word-title'))) {
         return;
       }
-      if (isFlashcardMode) {
+      if (isVocabFlashcardMode) {
+        cardElement.classList.toggle('revealed');
+      }
+    }
+
+    // 生活口语卡片点击翻开/折叠 (普通思维常驻，地道表达翻卡展现)
+    function toggleDailyCardReveal(cardElement, evt) {
+      if (evt && (evt.target.closest('.ebbinghaus-bar') || evt.target.closest('.native-box') || evt.target.closest('.dialogue-bubble'))) {
+        return;
+      }
+      if (isDailyFlashcardMode) {
         cardElement.classList.toggle('revealed');
       }
     }
@@ -1035,7 +1099,7 @@
         }).join('');
       }
 
-      // 2. 生活口语（兼容新老格式：支持 Basic vs Native 对比与分类筛选）
+      // 2. 生活口语（普通/中文思维常驻显示，地道表达支持翻卡自测）
       if (name === 'daily' && appData.daily) {
         if (currentDailyCategory !== 'all') {
           items = items.filter(item => (item.categoryKey || 'social') === currentDailyCategory);
@@ -1063,36 +1127,44 @@
           const contextBZh = item.contextBZh || item.speakerBZh || '';
 
           return `
-            <div class="daily-card">
+            <div class="daily-card" onclick="toggleDailyCardReveal(this, event)">
               <div class="daily-card-header">
                 <span class="scene-tag">${categoryText} · ${tagText}</span>
               </div>
 
-              ${(item.basicEn || item.basicZh) ? `
               <div class="contrast-box-daily">
+                <!-- 普通思维框：始终显示 -->
                 <div class="basic-box">
-                  <div class="basic-zh">💭 普通/中文思维：${item.basicZh || ''}</div>
+                  <div class="basic-zh">💭 普通/中文思维：${item.basicZh || '日常表达'}</div>
                   <div class="basic-en">${item.basicEn || ''}</div>
                 </div>
-                <div class="native-box" onclick="playVoice('daily', ${idx}, 'nativeEn', event)">
-                  <div class="native-label">🌟 地道地胆表达 (Native) 🔊</div>
-                  <div class="native-en">${nativeText}</div>
-                </div>
-              </div>` : ''}
 
-              ${contextA ? `
-              <div class="dialogue-flow">
-                <div class="dialogue-bubble speaker-a" onclick="playVoice('daily', ${idx}, 'contextA', event)">
-                  <strong>A:</strong> ${contextA} 🔊
-                  ${contextAZh ? `<div class="bubble-zh">${contextAZh}</div>` : ''}
-                </div>
-                <div class="dialogue-bubble speaker-b" onclick="playVoice('daily', ${idx}, 'contextB', event)">
-                  <strong>B:</strong> ${contextB} 🔊
-                  ${contextBZh ? `<div class="bubble-zh">${contextBZh}</div>` : ''}
-                </div>
-              </div>` : ''}
+                <!-- 翻卡提示 -->
+                <div class="flashcard-reveal-cue">👆 点击卡片翻看 地道地胆表达与实战对话</div>
 
-              ${item.tip ? `<div class="nuance-tip">${item.tip}</div>` : ''}
+                <!-- 翻卡折叠内容：地道表达、实战对话与贴士 -->
+                <div class="daily-details">
+                  <div class="native-box" onclick="playVoice('daily', ${idx}, 'nativeEn', event)">
+                    <div class="native-label">🌟 地道地胆表达 (Native) 🔊</div>
+                    <div class="native-en">${nativeText}</div>
+                  </div>
+
+                  ${contextA ? `
+                  <div class="dialogue-flow">
+                    <div class="dialogue-bubble speaker-a" onclick="playVoice('daily', ${idx}, 'contextA', event)">
+                      <strong>A:</strong> ${contextA} 🔊
+                      ${contextAZh ? `<div class="bubble-zh">${contextAZh}</div>` : ''}
+                    </div>
+                    <div class="dialogue-bubble speaker-b" onclick="playVoice('daily', ${idx}, 'contextB', event)">
+                      <strong>B:</strong> ${contextB} 🔊
+                      ${contextBZh ? `<div class="bubble-zh">${contextBZh}</div>` : ''}
+                    </div>
+                  </div>` : ''}
+
+                  ${item.tip ? `<div class="nuance-tip">${item.tip}</div>` : ''}
+                </div>
+              </div>
+
               ${renderEbhBar('daily', cardKey)}
             </div>
           `;
