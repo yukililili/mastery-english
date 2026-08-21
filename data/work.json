@@ -6,5 +6,46 @@
     "proGood": "I'm currently prioritizing the month-end closing report. If this new task takes precedence, I can deliver it by Wednesday instead. Would that work?",
     "proGoodZh": "我目前正在优先处理月末关账报表。如果这项新任务优先级更高，我可以在周三前交付。您看这样合适吗？",
     "formula": "📌 话术公式：陈述当前高优事项 + 给出可替代交付时间 + 留出决策权"
+  },
+  {
+    "topic": "阐述核心竞争力 · 降维打击",
+    "scenario": "在晋升答辩、求职面试或方案汇报中，表达自身复合背景所带来的不可替代性",
+    "directBad": "That gives me a special advantage.",
+    "proGood": "Combining my financial acumen with automation scripts gives me a unique edge.",
+    "proGoodZh": "将敏锐的财务底盘与自动化脚本深度结合，赋予了我独一无二的差异化竞争壁垒。",
+    "formula": "核心复合技能 + gives me a unique edge (打造专属护城河)"
+  },
+  {
+    "topic": "面对顶尖团队 · 谦逊自驱",
+    "scenario": "复盘与行业大牛、高阶团队共事时的体验，表达身处高压高维环境下的快速成长",
+    "directBad": "I was around people who were much better than me.",
+    "proGood": "I was always the small fish in the big pond, which forced me to evolve rapidly.",
+    "proGoodZh": "身处大牛如云的圈子里我始终是那条小鱼，但这种差距反倒倒逼我实现了高速进化。",
+    "formula": "be the small fish in the big pond (身处高手云集的顶尖环境)"
+  },
+  {
+    "topic": "高阶认可 · 认知赞美",
+    "scenario": "向上管理或跨部门协作中，高度赞赏同仁在新技术、新工具上的极速上手与重塑能力",
+    "directBad": "You learn new things very quickly.",
+    "proGood": "The way you adapt to these new architectures proves your neuroplasticity is off the charts.",
+    "proGoodZh": "你适应这些全新系统架构的速度，足以证明你的大脑学习重塑能力简直爆表。",
+    "formula": "neuroplasticity is off the charts (极具科技与认知感的降维夸人方式)"
+  },
+  {
+    "topic": "整合组织智慧 · 借力破局",
+    "scenario": "承接跨部门重大新项目时，展现善于调动公司专家库与前辈沉淀资产的统筹能力",
+    "directBad": "I can learn from other people's experience.",
+    "proGood": "We can navigate this project efficiently by drawing from that immense wealth of knowledge.",
+    "proGoodZh": "通过充分汲取资深专家沉淀的深厚知识宝库，我们能够高效推进该项目落地。",
+    "formula": "draw from a wealth of knowledge / experience (向内借力与沉淀萃取)"
+  },
+  {
+    "topic": "复盘复议 · 虚心纳谏",
+    "scenario": "面对严格的外部审计、领导严苛批示或同行代码评审意见时，展现大格局与高抗压特质",
+    "directBad": "Helpful criticism is a gift.",
+    "proGood": "Being given constructive criticism during audit reviews is truly the biggest blessing for our system.",
+    "proGoodZh": "在审计审查中能收获这些具有建设性的中肯批评，对我们系统的完善而言是莫大的幸事。",
+    "formula": "Being given constructive criticism is the biggest blessing (格局拉满的复盘态度)"
   }
 ]
+
