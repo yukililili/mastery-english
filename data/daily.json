@@ -63,5 +63,70 @@
     "contextB": "It was fascinating! It offered a huge peek behind the curtain of the industry.",
     "contextBZh": "太精彩了！它掀开帷幕，让观众得以一窥这个行业的幕后运转。",
     "tip": "💡 a peek behind the curtain：源自戏剧幕布隐喻，指“窥探内部秘密/探秘幕后”。"
+  },
+  {
+    "category": "观点与表达",
+    "categoryKey": "opinion",
+    "tag": "深有共鸣",
+    "basicZh": "在这情况下确实感觉很有道理/很真实",
+    "basicEn": "It really feels true in this situation.",
+    "nativeEn": "That really rings true here.",
+    "contextA": "The mentor said consistency beats intensity in the long run.",
+    "contextAZh": "导师说从长远来看，持之以恒远胜过一时的突击冲刺。",
+    "contextB": "Looking at our project results, that really rings true here.",
+    "contextBZh": "看看咱们的项目结果，这句话放在这里确实再真切不过了。",
+    "tip": "💡 ring true：意为“听起来真实可信/切中要害/引发共鸣”，比平淡生硬的 'feels true in this situation' 更地道自然。"
+  },
+  {
+    "category": "决断与行动",
+    "categoryKey": "action",
+    "tag": "另辟蹊径",
+    "basicZh": "你没必要按常规套路/老一套的方法来做事",
+    "basicEn": "You don't have to do things the normal way.",
+    "nativeEn": "You don't need to follow the beaten path.",
+    "contextA": "Should I pursue the standard corporate ladder like everyone else?",
+    "contextAZh": "我应该像其他人一样按部就班地走传统的晋升路线吗？",
+    "contextB": "Not necessarily. You don't need to follow the beaten path to build a fulfilling career.",
+    "contextBZh": "未必。想打造有成就感的事业，你完全没必要走别人踩出来的老路。",
+    "tip": "💡 the beaten path：指“老路/常规套路/现成路径”，常用搭配如 'follow/off the beaten path'，比 'do things the normal way' 形象生动得多。"
+  },
+  {
+    "category": "情绪与心态",
+    "categoryKey": "emotion",
+    "tag": "拒绝FOMO",
+    "basicZh": "有时候我没参加也不觉得有什么遗憾或难受",
+    "basicEn": "Sometimes I don't feel bad about not joining.",
+    "nativeEn": "I don't really feel like I'm missing out.",
+    "contextA": "Aren't you going to the big weekend networking mixer?",
+    "contextAZh": "周末那场大型社交酒会你不去参加吗？",
+    "contextB": "I'd rather rest at home; I don't really feel like I'm missing out.",
+    "contextBZh": "我宁愿在家里休息；我真不觉得没去会有什么错过的遗憾（拒绝FOMO）。",
+    "tip": "💡 miss out (FOMO)：'feel like I'm missing out' 直击“错失恐惧”，比 'don't feel bad about not joining' 地道精准得多。"
+  },
+  {
+    "category": "观点与表达",
+    "categoryKey": "opinion",
+    "tag": "价值观契合",
+    "basicZh": "他们的理念/想法和我想的是不是一回事？",
+    "basicEn": "Do they believe in the same things as I do?",
+    "nativeEn": "Are these values aligning with mine?",
+    "contextA": "What is your main criteria when choosing a long-term business partner?",
+    "contextAZh": "你在挑选长期商业合作伙伴时最看重什么？",
+    "contextB": "I always ask myself: Are these values aligning with mine?",
+    "contextBZh": "我总是会问自己：他们的核心价值观是否与我的同频契合？",
+    "tip": "💡 align with：意为“同频对齐/契合一致”，搭配 values 比平白的 'believe in the same things' 更显高级且具成熟格局。"
+  },
+  {
+    "category": "决断与行动",
+    "categoryKey": "action",
+    "tag": "全流程参与",
+    "basicZh": "整个流程我都有参与",
+    "basicEn": "I'm part of this whole process.",
+    "nativeEn": "I really am involved from the start to the finish.",
+    "contextA": "Did you only help with the initial brainstorming stage?",
+    "contextAZh": "你只是在最初的头脑风暴阶段帮了下忙吗？",
+    "contextB": "Not at all. From system design to production rollout, I really am involved from the start to the finish.",
+    "contextBZh": "完全不是。从系统架构设计到最终生产环境上线，我自始至终深度参与了全过程。",
+    "tip": "💡 from the start to the finish：指“自始至终/全流程闭环”，比普通的 'part of this whole process' 更具执行力与深度负责的闭环感。"
   }
 ]
